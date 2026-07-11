@@ -1,4 +1,4 @@
-const CACHE = "astro-kviz-v11";
+const CACHE = "astro-kviz-v13";
 const ASSETS = [
   "./",
   "./index.html",
@@ -6,7 +6,8 @@ const ASSETS = [
   "./manifest.json",
   "./icon.svg",
   "./mobile-v9.css",
-  "./mobile-v9.js"
+  "./mobile-v9.js",
+  "./mobile-v13.css"
 ];
 
 self.addEventListener("install", event => {
@@ -20,18 +21,22 @@ self.addEventListener("activate", event => {
     await Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)));
     await self.clients.claim();
 
-    // Nakon nadogradnje jednom osvježi otvorenu aplikaciju kako bi se promjene odmah učitale.
     const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
     await Promise.all(clients.map(client => client.navigate(client.url).catch(() => null)));
   })());
 });
 
 function injectMobileAssets(html) {
+  html = html.replace(/<link rel="stylesheet" href="mobile-v13\.css\?v=\d+">/g, "");
+
   if (!html.includes("mobile-v9.css")) {
-    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v9.css?v=11"></head>');
+    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v9.css?v=13"></head>');
+  }
+  if (!html.includes("mobile-v13.css")) {
+    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v13.css?v=13"></head>');
   }
   if (!html.includes("mobile-v9.js")) {
-    html = html.replace("</body>", '<script src="mobile-v9.js?v=11"></script></body>');
+    html = html.replace("</body>", '<script src="mobile-v9.js?v=13"></script></body>');
   }
   return html;
 }
