@@ -26,12 +26,12 @@
   /* Slika zviježđa uz pitanje: cijela stane, ostavlja mjesto odgovorima */
   body.screen-quiz .question-pane .qimage { max-height: none; }
   body.screen-quiz .question-pane .qimage svg {
-    width: auto !important;
-    max-width: 100% !important;
-    height: auto !important;
-    max-height: 200px;
-    max-height: 26dvh !important;
-    margin: 0 auto;
+    width: 100% !important;
+    height: 200px !important;
+    height: 26dvh !important;
+    max-width: none !important;
+    max-height: none !important;
+    display: block;
   }
   body.screen-quiz .answer,
   body.screen-quiz.long-answers .answer {
@@ -71,7 +71,16 @@
      ograničenja max-width/max-height je smanje da stane u okvir.
      Kontejner se stišće oko slike umjesto da je reže. */
   body.screen-quiz .lesson-visual.qimage { max-height: none !important; }
-  body.screen-quiz .lesson-visual.qimage svg,
+  /* SVG dobiva čvrst okvir; viewBox (preserveAspectRatio "meet") sam
+     uklopi CIJELI crtež unutra — rezanje je nemoguće u svim preglednicima */
+  body.screen-quiz .lesson-visual.qimage svg {
+    width: 100% !important;
+    height: 240px !important;
+    height: 30dvh !important;
+    max-width: none !important;
+    max-height: none !important;
+    display: block;
+  }
   body.screen-quiz .lesson-visual.qimage img {
     width: auto !important;
     height: auto !important;
@@ -112,10 +121,17 @@
     body.screen-quiz .answer,
     body.screen-quiz.long-answers .answer { min-height: 62px; }
     body.screen-quiz .lesson-block p { font-size: .94rem; }
-    body.screen-quiz .lesson-visual.qimage svg,
+    body.screen-quiz .lesson-visual.qimage svg {
+      height: 180px !important;
+      height: 23dvh !important;
+    }
     body.screen-quiz .lesson-visual.qimage img {
       max-height: 180px;
       max-height: 23dvh !important;
+    }
+    body.screen-quiz .question-pane .qimage svg {
+      height: 160px !important;
+      height: 21dvh !important;
     }
   }
 }
