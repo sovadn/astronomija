@@ -1,4 +1,4 @@
-const CACHE = "astro-kviz-v9";
+const CACHE = "astro-kviz-v10";
 const ASSETS = [
   "./",
   "./index.html",
@@ -20,7 +20,7 @@ self.addEventListener("activate", event => {
     await Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)));
     await self.clients.claim();
 
-    // Nakon nadogradnje jednom osvježi otvorenu aplikaciju kako bi se novi mobilni prikaz odmah učitao.
+    // Nakon nadogradnje jednom osvježi otvorenu aplikaciju kako bi se promjene odmah učitale.
     const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
     await Promise.all(clients.map(client => client.navigate(client.url).catch(() => null)));
   })());
@@ -28,10 +28,10 @@ self.addEventListener("activate", event => {
 
 function injectMobileAssets(html) {
   if (!html.includes("mobile-v9.css")) {
-    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v9.css?v=9"></head>');
+    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v9.css?v=10"></head>');
   }
   if (!html.includes("mobile-v9.js")) {
-    html = html.replace("</body>", '<script src="mobile-v9.js?v=9"></script></body>');
+    html = html.replace("</body>", '<script src="mobile-v9.js?v=10"></script></body>');
   }
   return html;
 }
