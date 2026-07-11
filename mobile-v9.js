@@ -145,6 +145,9 @@
   });
   byId("retryWrongBtn").addEventListener("click", () => setScreen("quiz"));
 
+  const countSelect = byId("count");
+  if (countSelect) countSelect.value = "10";
+
   setScreen(byId("quiz").classList.contains("hidden") ? "setup" : "quiz");
   activateTab("question");
 })();
