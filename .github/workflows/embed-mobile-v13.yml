@@ -1,0 +1,35 @@
+name: Embed mobile button styles v13
+
+on:
+  push:
+    paths:
+      - .github/workflows/embed-mobile-v13.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add versioned v13 stylesheet to index.html
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path('index.html')
+          html = path.read_text(encoding='utf-8')
+          html = re.sub(r'\s*<link rel="stylesheet" href="mobile-v13\.css\?v=\d+">', '', html)
+          html = html.replace('</head>', '<link rel="stylesheet" href="mobile-v13.css?v=13">\n</head>')
+          path.write_text(html, encoding='utf-8')
+          PY
+
+      - name: Commit updated index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Load clearer mobile button styles v13"
+          git push
