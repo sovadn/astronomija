@@ -1,0 +1,184 @@
+/* Astro kviz v13 - čišći i čitljiviji gumbi na mobitelu */
+@media (max-width: 700px) {
+  :root {
+    --btn-shadow: 0 12px 28px rgba(3, 8, 35, .34);
+    --btn-shadow-strong: 0 14px 30px rgba(61, 86, 255, .28);
+  }
+
+  button { -webkit-tap-highlight-color: transparent; }
+
+  /* Početni ekran */
+  body.screen-setup .setup-tab {
+    font-weight: 900;
+    letter-spacing: .01em;
+    color: #dbe4ff;
+  }
+  body.screen-setup .setup-tab.active {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.22);
+  }
+
+  body.screen-setup .count-choices { gap: 10px; }
+  body.screen-setup .count-choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 58px;
+    border: 2px solid #33427f;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #0c1238 0%, #10184a 100%);
+    color: #eef3ff;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: .02em;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.05), var(--btn-shadow);
+  }
+  body.screen-setup .count-choice.active {
+    border-color: #59dbff;
+    background: linear-gradient(135deg, #3b8cff 0%, #6956ff 100%);
+    color: #fff;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.14), var(--btn-shadow-strong);
+  }
+
+  body.screen-setup select,
+  body.screen-setup .advanced-toggle {
+    font-weight: 800;
+    color: #f0f4ff;
+  }
+  body.screen-setup select {
+    border-width: 2px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+  }
+  body.screen-setup .advanced-toggle {
+    border: 2px solid #33427f;
+    background: linear-gradient(180deg, #0d133d 0%, #10184a 100%);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.04), var(--btn-shadow);
+  }
+  body.screen-setup .advanced-toggle .chev {
+    color: #dfe7ff;
+    font-size: 1.08rem;
+    font-weight: 900;
+  }
+
+  body.screen-setup .start-actions {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  body.screen-setup .start-actions button,
+  body.screen-setup .progress-actions button {
+    width: 100%;
+    min-height: 60px;
+    border-radius: 20px;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.15;
+    font-weight: 900;
+    letter-spacing: .01em;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.06), var(--btn-shadow);
+  }
+  body.screen-setup #startBtn {
+    background: linear-gradient(135deg, #8e63ff 0%, #7c5cff 38%, #5e8cff 100%);
+    border-color: #b795ff;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.22);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.14), 0 16px 36px rgba(109, 96, 255, .34);
+  }
+  body.screen-setup #retryWrongBtn {
+    background: linear-gradient(180deg, #18245f 0%, #1a2558 100%);
+    border-color: #4257a0;
+    color: #f3f6ff;
+  }
+  body.screen-setup #retryWrongBtn[disabled] { opacity: .55; }
+  body.screen-setup #resetStatsBtn {
+    background: linear-gradient(180deg, #121a49 0%, #0d143d 100%);
+    border-color: #394982;
+    color: #dbe4ff;
+  }
+
+  /* Tabovi kviza */
+  body.screen-quiz .quiz-tab {
+    font-weight: 900;
+    letter-spacing: .01em;
+    color: #cfd8ff;
+  }
+  body.screen-quiz .quiz-tab.active {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.18);
+  }
+
+  /* Gumbi odgovora */
+  body.screen-quiz .answers { gap: 10px; }
+  body.screen-quiz.short-answers .answers {
+    grid-template-rows: repeat(2, minmax(150px, 1fr));
+  }
+  body.screen-quiz .answer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    padding: 14px 16px;
+    border: 2px solid #33427f;
+    border-radius: 22px;
+    background: linear-gradient(180deg, rgba(13, 20, 61, .98) 0%, rgba(18, 27, 82, .98) 100%);
+    color: #f5f7ff;
+    font-weight: 800;
+    font-size: 1.08rem;
+    line-height: 1.22;
+    text-align: left;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.05), var(--btn-shadow);
+  }
+  body.screen-quiz .answer .letter {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    font-size: 1.12rem;
+    font-weight: 900;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.18), 0 6px 14px rgba(0,0,0,.18);
+  }
+  body.screen-quiz .answer > span:last-child {
+    display: block;
+    overflow: visible;
+    color: #f6f8ff;
+    text-wrap: balance;
+  }
+  body.screen-quiz.long-answers .answer {
+    font-size: .96rem;
+    line-height: 1.18;
+    padding: 12px 14px;
+  }
+  body.screen-quiz.long-answers .answer .letter {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+    font-size: 1rem;
+  }
+  body.screen-quiz .answer.correct {
+    background: linear-gradient(180deg, rgba(18, 72, 52, .96) 0%, rgba(12, 53, 39, .98) 100%);
+    border-color: #47e694;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 14px 30px rgba(28, 126, 83, .26);
+  }
+  body.screen-quiz .answer.wrong {
+    background: linear-gradient(180deg, rgba(84, 24, 42, .96) 0%, rgba(61, 17, 31, .98) 100%);
+    border-color: #ff6c88;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 14px 30px rgba(129, 28, 61, .22);
+  }
+  body.screen-quiz .answer:active { transform: scale(.992); }
+
+  /* Glavni gumb nastavka */
+  body.screen-quiz #nextBtn {
+    border-width: 2px;
+    border-color: #b795ff;
+    background: linear-gradient(135deg, #8f64ff 0%, #7c5cff 35%, #5f8dff 100%);
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: .01em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.22);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.14), 0 16px 36px rgba(109, 96, 255, .34);
+  }
+}
