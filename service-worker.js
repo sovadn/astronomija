@@ -1,4 +1,4 @@
-const CACHE = "astro-kviz-v13";
+const CACHE = "astro-kviz-v14";
 const ASSETS = [
   "./",
   "./index.html",
@@ -7,7 +7,8 @@ const ASSETS = [
   "./icon.svg",
   "./mobile-v9.css",
   "./mobile-v9.js",
-  "./mobile-v13.css"
+  "./mobile-v13.css",
+  "./mobile-v14.css"
 ];
 
 self.addEventListener("install", event => {
@@ -27,16 +28,19 @@ self.addEventListener("activate", event => {
 });
 
 function injectMobileAssets(html) {
-  html = html.replace(/<link rel="stylesheet" href="mobile-v13\.css\?v=\d+">/g, "");
+  html = html.replace(/<link rel="stylesheet" href="mobile-v14\.css\?v=\d+">/g, "");
 
   if (!html.includes("mobile-v9.css")) {
-    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v9.css?v=13"></head>');
+    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v9.css?v=14"></head>');
   }
   if (!html.includes("mobile-v13.css")) {
-    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v13.css?v=13"></head>');
+    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v13.css?v=14"></head>');
+  }
+  if (!html.includes("mobile-v14.css")) {
+    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v14.css?v=14"></head>');
   }
   if (!html.includes("mobile-v9.js")) {
-    html = html.replace("</body>", '<script src="mobile-v9.js?v=13"></script></body>');
+    html = html.replace("</body>", '<script src="mobile-v9.js?v=14"></script></body>');
   }
   return html;
 }
