@@ -2,8 +2,122 @@
   "use strict";
   const byId = id => document.getElementById(id);
   const quiz = byId("quiz");
-  if (!quiz || byId("quizTabs")) return;
+  const setup = byId("setup");
+  if (!quiz || !setup || byId("quizTabs")) return;
 
+  /* ============ početni ekran: Misija / Napredak ============ */
+  const setupTabs = document.createElement("div");
+  setupTabs.id = "setupTabs";
+  setupTabs.className = "setup-tabs";
+  setupTabs.setAttribute("role", "tablist");
+  setupTabs.setAttribute("aria-label", "Misija i napredak");
+  setupTabs.innerHTML = `
+    <button id="missionTab" class="setup-tab active" role="tab" aria-selected="true" aria-controls="missionPane">🚀 Misija</button>
+    <button id="progressTab" class="setup-tab" role="tab" aria-selected="false" aria-controls="progressPane">🏅 Napredak</button>`;
+
+  const missionPane = document.createElement("div");
+  missionPane.id = "missionPane";
+  missionPane.className = "setup-pane mission-pane";
+  missionPane.setAttribute("role", "tabpanel");
+  missionPane.setAttribute("aria-labelledby", "missionTab");
+
+  const progressPane = document.createElement("div");
+  progressPane.id = "progressPane";
+  progressPane.className = "setup-pane progress-pane hidden";
+  progressPane.setAttribute("role", "tabpanel");
+  progressPane.setAttribute("aria-labelledby", "progressTab");
+
+  const bubble = setup.querySelector(".bubble");
+  const setupHeading = setup.querySelector("h2");
+  const setupGrid = setup.querySelector(".grid");
+  const speedSwitch = setup.querySelector(".switch");
+  const startActions = setup.querySelector(".start-actions");
+  const stats = byId("stats");
+  const shelfTitle = setup.querySelector(".shelf-title");
+  const badges = byId("badges");
+  const resetStats = byId("resetStatsBtn");
+
+  setup.prepend(setupTabs);
+  setupTabs.after(missionPane, progressPane);
+  missionPane.append(bubble, setupHeading, setupGrid);
+
+  const countSelect = byId("count");
+  const topicSelect = byId("topic");
+  const difficultySelect = byId("difficulty");
+  const levelSelect = byId("level");
+  const countWrap = countSelect.closest("div");
+  const topicWrap = topicSelect.closest("div");
+  const difficultyWrap = difficultySelect.closest("div");
+  const levelWrap = levelSelect.closest("div");
+
+  countSelect.value = "10";
+  countSelect.classList.add("source-select-hidden");
+  const countChoices = document.createElement("div");
+  countChoices.className = "count-choices";
+  countChoices.setAttribute("role", "group");
+  countChoices.setAttribute("aria-label", "Broj pitanja");
+  [
+    ["10", "10"],
+    ["20", "20"],
+    ["30", "30"],
+    ["all", "Sva"]
+  ].forEach(([value, label]) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "count-choice";
+    button.dataset.value = value;
+    button.textContent = label;
+    button.setAttribute("aria-pressed", value === "10" ? "true" : "false");
+    if (value === "10") button.classList.add("active");
+    button.addEventListener("click", () => {
+      countSelect.value = value;
+      countChoices.querySelectorAll(".count-choice").forEach(item => {
+        const active = item.dataset.value === value;
+        item.classList.toggle("active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+    });
+    countChoices.appendChild(button);
+  });
+  countWrap.appendChild(countChoices);
+
+  const advancedToggle = document.createElement("button");
+  advancedToggle.type = "button";
+  advancedToggle.className = "advanced-toggle";
+  advancedToggle.setAttribute("aria-expanded", "false");
+  advancedToggle.innerHTML = `<span>⚙️ Dodatni filteri</span><span class="chev">⌄</span>`;
+
+  const advancedPanel = document.createElement("div");
+  advancedPanel.className = "advanced-panel hidden";
+  advancedPanel.append(difficultyWrap, levelWrap, speedSwitch);
+  missionPane.append(advancedToggle, advancedPanel, startActions);
+
+  advancedToggle.addEventListener("click", () => {
+    const open = advancedPanel.classList.toggle("hidden") === false;
+    advancedToggle.classList.toggle("open", open);
+    advancedToggle.setAttribute("aria-expanded", String(open));
+  });
+
+  const progressActions = document.createElement("div");
+  progressActions.className = "progress-actions";
+  progressActions.appendChild(resetStats);
+  progressPane.append(stats, shelfTitle, badges, progressActions);
+
+  function activateSetupTab(name, focus = false) {
+    const showMission = name === "mission";
+    missionPane.classList.toggle("hidden", !showMission);
+    progressPane.classList.toggle("hidden", showMission);
+    byId("missionTab").classList.toggle("active", showMission);
+    byId("progressTab").classList.toggle("active", !showMission);
+    byId("missionTab").setAttribute("aria-selected", String(showMission));
+    byId("progressTab").setAttribute("aria-selected", String(!showMission));
+    if (focus) (showMission ? byId("missionTab") : byId("progressTab")).focus();
+    window.scrollTo(0, 0);
+  }
+  byId("missionTab").addEventListener("click", () => activateSetupTab("mission"));
+  byId("progressTab").addEventListener("click", () => activateSetupTab("progress"));
+
+  /* ============ kviz: Pitanje / Objašnjenje ============ */
   const topbar = quiz.querySelector(".topbar");
   const exit = byId("exitBtn");
   if (topbar && exit) topbar.prepend(exit);
@@ -83,7 +197,7 @@
     }
     const selectedText = q.answers[selectedIndex];
     if (selectedIndex === q.correct) {
-      summary.innerHTML = `<span class="ok">Tvoj odgovor je točan ✓</span><span><b>${selectedText}</b></span>`;
+      summary.innerHTML = `<span class="ok">Točno: <b>${selectedText}</b> ✓</span>`;
     } else {
       summary.innerHTML = `<span class="no">Tvoj odgovor: <b>${selectedText}</b></span><span>Točan odgovor: <b>${correctText}</b></span>`;
     }
@@ -139,15 +253,19 @@
     window.scrollTo(0, 0);
   };
 
-  byId("againBtn").addEventListener("click", () => setScreen("setup"));
+  byId("againBtn").addEventListener("click", () => {
+    setScreen("setup");
+    activateSetupTab("mission");
+  });
   byId("exitBtn").addEventListener("click", () => {
-    if (byId("quiz").classList.contains("hidden")) setScreen("setup");
+    if (byId("quiz").classList.contains("hidden")) {
+      setScreen("setup");
+      activateSetupTab("mission");
+    }
   });
   byId("retryWrongBtn").addEventListener("click", () => setScreen("quiz"));
 
-  const countSelect = byId("count");
-  if (countSelect) countSelect.value = "10";
-
   setScreen(byId("quiz").classList.contains("hidden") ? "setup" : "quiz");
+  activateSetupTab("mission");
   activateTab("question");
 })();
