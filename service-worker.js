@@ -1,4 +1,4 @@
-const CACHE = "astro-kviz-v16";
+const CACHE = "astro-kviz-v17";
 const ASSETS = [
   "./",
   "./index.html",
@@ -12,7 +12,9 @@ const ASSETS = [
   "./mobile-v15.css",
   "./mobile-v15.js",
   "./mobile-v15-fix.js",
-  "./mobile-v16.css"
+  "./mobile-v16.css",
+  "./mobile-v17.css",
+  "./mobile-v17.js"
 ];
 
 self.addEventListener("install", event => {
@@ -31,7 +33,7 @@ self.addEventListener("activate", event => {
   })());
 });
 
-const ASSET_VERSION = "16";
+const ASSET_VERSION = "17";
 
 function injectMobileAssets(html) {
   if (!html.includes("mobile-v9.css")) {
@@ -49,6 +51,9 @@ function injectMobileAssets(html) {
   if (!html.includes("mobile-v16.css")) {
     html = html.replace("</head>", `<link rel="stylesheet" href="mobile-v16.css?v=${ASSET_VERSION}"></head>`);
   }
+  if (!html.includes("mobile-v17.css")) {
+    html = html.replace("</head>", `<link rel="stylesheet" href="mobile-v17.css?v=${ASSET_VERSION}"></head>`);
+  }
   if (!html.includes("mobile-v9.js")) {
     html = html.replace("</body>", `<script src="mobile-v9.js?v=${ASSET_VERSION}"></script></body>`);
   }
@@ -57,6 +62,9 @@ function injectMobileAssets(html) {
   }
   if (!html.includes("mobile-v15-fix.js")) {
     html = html.replace("</body>", `<script src="mobile-v15-fix.js?v=${ASSET_VERSION}"></script></body>`);
+  }
+  if (!html.includes("mobile-v17.js")) {
+    html = html.replace("</body>", `<script src="mobile-v17.js?v=${ASSET_VERSION}"></script></body>`);
   }
   return html;
 }
