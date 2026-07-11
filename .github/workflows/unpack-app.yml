@@ -18,9 +18,9 @@ jobs:
       - name: Unpack application
         shell: bash
         run: |
-          cat .astro-package.part-* | base64 --decode > astronomy-app.zip
+          base64 --decode .astro-package.b64 > astronomy-app.zip
           unzip -o astronomy-app.zip
-          rm -f .astro-package.part-* .astro-ready astronomy-app.zip
+          rm -f .astro-package.b64 .astro-package.part-* .astro-ready astronomy-app.zip
           touch .nojekyll
 
       - name: Commit application files
