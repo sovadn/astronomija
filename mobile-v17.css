@@ -75,8 +75,8 @@
      uklopi CIJELI crtež unutra — rezanje je nemoguće u svim preglednicima */
   body.screen-quiz .lesson-visual.qimage svg {
     width: 100% !important;
-    height: 240px !important;
-    height: 30dvh !important;
+    height: 280px !important;
+    height: 35dvh !important;
     max-width: none !important;
     max-height: none !important;
     display: block;
@@ -85,8 +85,8 @@
     width: auto !important;
     height: auto !important;
     max-width: 100% !important;
-    max-height: 240px;
-    max-height: 30dvh !important;
+    max-height: 280px;
+    max-height: 35dvh !important;
     display: block;
     margin: 0 auto;
   }
@@ -122,12 +122,12 @@
     body.screen-quiz.long-answers .answer { min-height: 62px; }
     body.screen-quiz .lesson-block p { font-size: .94rem; }
     body.screen-quiz .lesson-visual.qimage svg {
-      height: 180px !important;
-      height: 23dvh !important;
+      height: 210px !important;
+      height: 28dvh !important;
     }
     body.screen-quiz .lesson-visual.qimage img {
-      max-height: 180px;
-      max-height: 23dvh !important;
+      max-height: 210px;
+      max-height: 28dvh !important;
     }
     body.screen-quiz .question-pane .qimage svg {
       height: 160px !important;

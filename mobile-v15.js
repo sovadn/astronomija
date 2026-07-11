@@ -252,10 +252,10 @@
         <p>${q.explanation}</p>
       </section>
       ${lessonVisual(q)}
-      <section class="bonus-fact">
+      ${(q.feedbackImage || q.image) ? "" : `<section class="bonus-fact">
         <span class="bonus-icon">${icon("spark")}</span>
         <span><strong>Bonus činjenica</strong>${bonusFor(q)}</span>
-      </section>`;
+      </section>`}`;
 
     if (isCorrect) launchStarBurst();
     const next = byId("nextBtn");
