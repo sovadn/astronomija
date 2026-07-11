@@ -49,12 +49,18 @@
   }
   body.screen-quiz .bonus-fact strong { font-size: .72rem; }
 
-  /* Vizual (zviježđe/planet) upija višak visine da ekran ne zjapi prazan */
+  /* Vizual (zviježđe/planet) centriran u višku prostora — bez mijenjanja
+     display modela jer .qimage svg ovisi o flexu iz bazne CSS */
   body.screen-quiz .feedback .lesson-visual {
-    flex: 1 1 auto;
-    display: grid;
-    place-items: center;
-    min-height: 120px;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    min-height: 96px;
+  }
+  body.screen-quiz .lesson-visual.qimage svg,
+  body.screen-quiz .lesson-visual.qimage img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
   }
   body.screen-quiz .lesson-visual.qimage { max-height: 34dvh; }
   body.screen-quiz .lesson-visual.qimage svg,

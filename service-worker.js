@@ -1,4 +1,4 @@
-const CACHE = "astro-kviz-v17";
+const CACHE = "astro-kviz-v18";
 const ASSETS = [
   "./",
   "./index.html",
@@ -14,7 +14,8 @@ const ASSETS = [
   "./mobile-v15-fix.js",
   "./mobile-v16.css",
   "./mobile-v17.css",
-  "./mobile-v17.js"
+  "./mobile-v17.js",
+  "./mobile-v18.js"
 ];
 
 self.addEventListener("install", event => {
@@ -33,7 +34,7 @@ self.addEventListener("activate", event => {
   })());
 });
 
-const ASSET_VERSION = "17";
+const ASSET_VERSION = "18";
 
 function injectMobileAssets(html) {
   if (!html.includes("mobile-v9.css")) {
@@ -65,6 +66,9 @@ function injectMobileAssets(html) {
   }
   if (!html.includes("mobile-v17.js")) {
     html = html.replace("</body>", `<script src="mobile-v17.js?v=${ASSET_VERSION}"></script></body>`);
+  }
+  if (!html.includes("mobile-v18.js")) {
+    html = html.replace("</body>", `<script src="mobile-v18.js?v=${ASSET_VERSION}"></script></body>`);
   }
   return html;
 }
