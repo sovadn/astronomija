@@ -1,0 +1,87 @@
+/* Astro kviz v16 — završno vizualno poliranje
+   Nadograđuje v15 bez mijenjanja strukture: glađi prijelazi kod
+   otkrivanja odgovora, jasniji fokus za tipkovnicu i pristupačnost,
+   te sitne mikrointerakcije. */
+
+@media (max-width: 700px) {
+  /* ---------- glađe otkrivanje točnog/netočnog ---------- */
+  body.screen-quiz .answer {
+    transition:
+      background-color .28s ease,
+      border-color .28s ease,
+      box-shadow .28s ease,
+      transform .12s ease,
+      opacity .28s ease;
+    will-change: transform;
+  }
+  body.screen-quiz .answer.correct,
+  body.screen-quiz .answer.wrong {
+    animation: answerReveal .34s ease both;
+  }
+  @keyframes answerReveal {
+    0%   { transform: scale(.985); }
+    55%  { transform: scale(1.012); }
+    100% { transform: scale(1); }
+  }
+
+  /* Nakon odgovora zatamni netočne opcije koje korisnik nije dirao,
+     da pozornost ostane na točnom (i eventualno odabranom) odgovoru. */
+  body.screen-quiz.answered-state .answer:not(.correct):not(.wrong) {
+    opacity: .5;
+  }
+
+  /* Suptilan pritisak samo dok se još može odgovarati. */
+  body.screen-quiz:not(.answered-state) .answer:active {
+    transform: scale(.985);
+  }
+
+  /* ---------- pristupačan fokus za tipkovnicu ---------- */
+  body.screen-quiz .answer:focus-visible,
+  body.screen-setup .setup-tab:focus-visible,
+  body.screen-quiz .quiz-tab:focus-visible,
+  body.screen-setup .count-choice:focus-visible,
+  .primary:focus-visible,
+  .iconbtn:focus-visible,
+  #resetStatsBtn:focus-visible {
+    outline: 3px solid #8fb4ff;
+    outline-offset: 2px;
+  }
+  /* Ukloni fokus-obrub kod klika mišem/dodirom, zadrži za tipkovnicu. */
+  body.screen-quiz .answer:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* ---------- meki ulaz objašnjenja ---------- */
+  body.screen-quiz .explanation-pane:not(.hidden) .answer-summary {
+    animation: lessonIn .3s ease both;
+  }
+  body.screen-quiz .explanation-pane:not(.hidden) .feedback {
+    animation: lessonIn .3s ease .06s both;
+  }
+  @keyframes lessonIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  /* ---------- živahniji glavni gumb (nježno) ---------- */
+  body.screen-setup #startBtn:active,
+  body.screen-quiz #nextBtn:active,
+  body.screen-result #againBtn:active {
+    transform: translateY(1px) scale(.99);
+  }
+
+  /* ---------- raketa na traci napretka ostaje glatka ---------- */
+  body.screen-quiz #progressBar {
+    transition: width .45s cubic-bezier(.4, 0, .2, 1);
+  }
+}
+
+/* Poštuj korisnike koji su isključili animacije. */
+@media (prefers-reduced-motion: reduce) {
+  body.screen-quiz .answer.correct,
+  body.screen-quiz .answer.wrong,
+  body.screen-quiz .explanation-pane:not(.hidden) .answer-summary,
+  body.screen-quiz .explanation-pane:not(.hidden) .feedback {
+    animation: none !important;
+  }
+}
