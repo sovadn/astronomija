@@ -1,4 +1,4 @@
-const CACHE = "astro-kviz-v10";
+const CACHE = "astro-kviz-v11";
 const ASSETS = [
   "./",
   "./index.html",
@@ -28,10 +28,10 @@ self.addEventListener("activate", event => {
 
 function injectMobileAssets(html) {
   if (!html.includes("mobile-v9.css")) {
-    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v9.css?v=10"></head>');
+    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v9.css?v=11"></head>');
   }
   if (!html.includes("mobile-v9.js")) {
-    html = html.replace("</body>", '<script src="mobile-v9.js?v=10"></script></body>');
+    html = html.replace("</body>", '<script src="mobile-v9.js?v=11"></script></body>');
   }
   return html;
 }
