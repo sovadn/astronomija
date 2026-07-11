@@ -1,0 +1,7364 @@
+[
+  {
+    "id": "Q0001",
+    "question": "Najsjajnija zvijezda u zviježđu Labuda je:",
+    "answers": [
+      "Albireo",
+      "Deneb",
+      "Denebola",
+      "Sirijus"
+    ],
+    "correct": 1,
+    "explanation": "Deneb je najsjajnija zvijezda zviježđa Labuda.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2001,
+    "level": "državno",
+    "source": "drzavno_2001.pdf",
+    "page": 1,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          105,
+          10,
+          6
+        ],
+        [
+          98,
+          58,
+          5
+        ],
+        [
+          88,
+          132,
+          4.5
+        ],
+        [
+          30,
+          36,
+          4.5
+        ],
+        [
+          168,
+          84,
+          4.5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "highlight": 0,
+      "labels": [
+        [
+          0,
+          "Deneb"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0002",
+    "question": "Kolika je geografska širina mjesta na Zemljinu ekvatoru?",
+    "answers": [
+      "0°",
+      "45°",
+      "90°",
+      "180°"
+    ],
+    "correct": 0,
+    "explanation": "Ekvator je početna paralela i ima geografsku širinu 0°.",
+    "topic": "Zemlja i koordinate",
+    "difficulty": "lako",
+    "year": 2001,
+    "level": "državno",
+    "source": "drzavno_2001.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0003",
+    "question": "Koji je raspored tijela za vrijeme potpune pomrčine Mjeseca?",
+    "answers": [
+      "Zemlja je između Sunca i Mjeseca",
+      "Sunce je između Zemlje i Mjeseca",
+      "Mjesec je između Sunca i Zemlje",
+      "Tijela tvore trokut"
+    ],
+    "correct": 0,
+    "explanation": "Mjesec ulazi u Zemljinu sjenu pa je Zemlja između Sunca i Mjeseca.",
+    "topic": "Mjesec i pomrčine",
+    "difficulty": "srednje",
+    "year": 2001,
+    "level": "državno",
+    "source": "drzavno_2001.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0004",
+    "question": "Koja je od navedenih zvijezda najmanja?",
+    "answers": [
+      "Antares",
+      "Aldebaran",
+      "Arktur",
+      "Sunce"
+    ],
+    "correct": 3,
+    "explanation": "Sunce je manje od navedenih divovskih zvijezda.",
+    "topic": "Zvijezde",
+    "difficulty": "srednje",
+    "year": 2001,
+    "level": "državno",
+    "source": "drzavno_2001.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0005",
+    "question": "Temperatura Sunčevih pjega u odnosu na okolnu fotosferu je:",
+    "answers": [
+      "viša",
+      "jednaka",
+      "niža",
+      "jednaka temperaturi jezgre"
+    ],
+    "correct": 2,
+    "explanation": "Sunčeve pjege su hladnija područja fotosfere pa izgledaju tamnije.",
+    "topic": "Sunce",
+    "difficulty": "lako",
+    "year": 2001,
+    "level": "državno",
+    "source": "drzavno_2001.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0006",
+    "question": "Koji planeti mogu biti i u gornjoj i u donjoj konjunkciji?",
+    "answers": [
+      "Zemlja i Mars",
+      "Merkur i Venera",
+      "Jupiter i Saturn",
+      "Uran i Neptun"
+    ],
+    "correct": 1,
+    "explanation": "Samo unutarnji planeti Merkur i Venera mogu se naći između Zemlje i Sunca.",
+    "topic": "Položaji planeta",
+    "difficulty": "srednje",
+    "year": 2001,
+    "level": "državno",
+    "source": "drzavno_2001.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0007",
+    "question": "Kako se zove točka na nebeskoj sferi okomito iznad promatrača?",
+    "answers": [
+      "Nadir",
+      "Zenit",
+      "Pol",
+      "Ekliptika"
+    ],
+    "correct": 1,
+    "explanation": "Zenit je točka točno iznad glave promatrača.",
+    "topic": "Nebeska sfera",
+    "difficulty": "lako",
+    "year": 2001,
+    "level": "državno",
+    "source": "drzavno_2001.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0008",
+    "question": "Koja još vrsta pomrčine Sunca postoji osim djelomične i potpune?",
+    "answers": [
+      "Prstenasta",
+      "Kvadratna",
+      "Plava",
+      "Dnevna"
+    ],
+    "correct": 0,
+    "explanation": "Kod prstenaste pomrčine Mjesec ne prekrije cijelu Sunčevu ploču.",
+    "topic": "Mjesec i pomrčine",
+    "difficulty": "lako",
+    "year": 2001,
+    "level": "državno",
+    "source": "drzavno_2001.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0009",
+    "question": "Ako je Venera 0,7 AJ od Sunca, a Zemlja 1 AJ, kolika je njihova najmanja udaljenost?",
+    "answers": [
+      "0,3 AJ",
+      "0,7 AJ",
+      "1,0 AJ",
+      "1,7 AJ"
+    ],
+    "correct": 0,
+    "explanation": "Kad su na istoj strani Sunca, udaljenosti se oduzimaju: 1 − 0,7 = 0,3 AJ.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2001,
+    "level": "državno",
+    "source": "drzavno_2001.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0010",
+    "question": "Koliko približno treba svjetlosti od Sunca do Venere na udaljenosti 108 200 000 km?",
+    "answers": [
+      "oko 2 minute",
+      "oko 6 minuta",
+      "oko 12 minuta",
+      "oko 60 minuta"
+    ],
+    "correct": 1,
+    "explanation": "Vrijeme je udaljenost podijeljena brzinom svjetlosti: približno 361 s, odnosno 6 minuta.",
+    "topic": "Računski zadaci",
+    "difficulty": "teško",
+    "year": 2001,
+    "level": "državno",
+    "source": "drzavno_2001.pdf",
+    "page": 3,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0011",
+    "question": "Zemlja je smještena:",
+    "answers": [
+      "u Mliječnoj stazi",
+      "unutar Venerine staze",
+      "izvan Sunčeva sustava",
+      "izvan Marsove staze"
+    ],
+    "correct": 0,
+    "explanation": "Zemlja i Sunčev sustav nalaze se u galaksiji Mliječnoj stazi.",
+    "topic": "Galaksije",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0012",
+    "question": "Koji se od navedenih objekata može prividno gibati retrogradno?",
+    "answers": [
+      "Sunce",
+      "Mars",
+      "Mjesec",
+      "Andromedina galaktika"
+    ],
+    "correct": 1,
+    "explanation": "Vanjski planeti poput Marsa mogu prividno krenuti unatrag zbog relativnog gibanja Zemlje i planeta.",
+    "topic": "Položaji planeta",
+    "difficulty": "srednje",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0013",
+    "question": "Koji je najmanji od navedenih planeta?",
+    "answers": [
+      "Zemlja",
+      "Merkur",
+      "Saturn",
+      "Uran"
+    ],
+    "correct": 1,
+    "explanation": "Merkur je najmanji planet Sunčeva sustava.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0014",
+    "question": "Najveći Saturnov satelit je:",
+    "answers": [
+      "Titan",
+      "Fobos",
+      "Ganimed",
+      "Haron"
+    ],
+    "correct": 0,
+    "explanation": "Titan je najveći Saturnov prirodni satelit.",
+    "topic": "Sateliti",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0015",
+    "question": "Koje je od navedenih zviježđa cirkumpolarno iz Hrvatske?",
+    "answers": [
+      "Cefej",
+      "Labud",
+      "Strijelac",
+      "Orion"
+    ],
+    "correct": 0,
+    "explanation": "Cefej se iz Hrvatske vidi tijekom cijele godine i ne zalazi.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 1,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          22,
+          96,
+          4.5
+        ],
+        [
+          104,
+          100,
+          4.5
+        ],
+        [
+          118,
+          42,
+          5
+        ],
+        [
+          64,
+          8,
+          4.5
+        ],
+        [
+          12,
+          36,
+          4.5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0016",
+    "question": "Kako se zove okretanje tijela oko vlastite osi?",
+    "answers": [
+      "Revolucija",
+      "Rotacija",
+      "Precesija",
+      "Paralaksa"
+    ],
+    "correct": 1,
+    "explanation": "Okretanje oko osi naziva se rotacija.",
+    "topic": "Gibanja",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0017",
+    "question": "Kako se zove kruženje jednog tijela oko drugoga?",
+    "answers": [
+      "Rotacija",
+      "Revolucija",
+      "Refrakcija",
+      "Kulminacija"
+    ],
+    "correct": 1,
+    "explanation": "Kruženje oko drugog tijela naziva se revolucija.",
+    "topic": "Gibanja",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0018",
+    "question": "Drugo ime za planetoid je:",
+    "answers": [
+      "meteorit",
+      "asteroid",
+      "komet",
+      "satelit"
+    ],
+    "correct": 1,
+    "explanation": "Planetoid i asteroid upotrebljavaju se kao nazivi za malo stjenovito tijelo koje kruži oko Sunca.",
+    "topic": "Mala tijela",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0019",
+    "question": "Ako je Venera 0,7 AJ od Sunca, kolika je njezina najveća udaljenost od Zemlje?",
+    "answers": [
+      "0,3 AJ",
+      "0,7 AJ",
+      "1,0 AJ",
+      "1,7 AJ"
+    ],
+    "correct": 3,
+    "explanation": "Kad su na suprotnim stranama Sunca, udaljenosti se zbrajaju: 1 + 0,7 = 1,7 AJ.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0020",
+    "question": "Kroz koji grad prolazi početni meridijan?",
+    "answers": [
+      "Zagreb",
+      "London",
+      "Madrid",
+      "New York"
+    ],
+    "correct": 1,
+    "explanation": "Početni meridijan prolazi kroz Greenwich u Londonu.",
+    "topic": "Zemlja i koordinate",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0021",
+    "question": "Koji od navedenih objekata ima najveći promjer?",
+    "answers": [
+      "Jupiter",
+      "Saturnov prsten",
+      "Mjesec",
+      "Pluton"
+    ],
+    "correct": 1,
+    "explanation": "Vanjski promjer Saturnova sustava prstenova veći je od Jupiterova promjera.",
+    "topic": "Planeti",
+    "difficulty": "teško",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 1,
+    "status": "za provjeru"
+  },
+  {
+    "id": "Q0022",
+    "question": "Koji je uljez među Europom, Kalistom, Idom i Iom?",
+    "answers": [
+      "Europa",
+      "Kalisto",
+      "Ida",
+      "Io"
+    ],
+    "correct": 2,
+    "explanation": "Europa, Kalisto i Io su Jupiterovi sateliti, a Ida je asteroid.",
+    "topic": "Sateliti",
+    "difficulty": "srednje",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0023",
+    "question": "Oko kojeg planeta kruži Enceladus?",
+    "answers": [
+      "Zemlje",
+      "Marsa",
+      "Jupitera",
+      "Saturna"
+    ],
+    "correct": 3,
+    "explanation": "Enceladus je Saturnov satelit.",
+    "topic": "Sateliti",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0024",
+    "question": "Drugi po veličini planet Sunčeva sustava je:",
+    "answers": [
+      "Jupiter",
+      "Saturn",
+      "Uran",
+      "Neptun"
+    ],
+    "correct": 1,
+    "explanation": "Saturn je drugi najveći planet, odmah iza Jupitera.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0025",
+    "question": "Koji je planet po veličini najsličniji Zemlji?",
+    "answers": [
+      "Mars",
+      "Venera",
+      "Merkur",
+      "Neptun"
+    ],
+    "correct": 1,
+    "explanation": "Venera ima promjer vrlo sličan Zemljinu.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0026",
+    "question": "Kojem zviježđu pripada zvijezda Altair?",
+    "answers": [
+      "Labudu",
+      "Orlu",
+      "Liri",
+      "Pegazu"
+    ],
+    "correct": 1,
+    "explanation": "Altair je najsjajnija zvijezda zviježđa Orao.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 1,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          100,
+          18,
+          6.5
+        ],
+        [
+          84,
+          8,
+          4
+        ],
+        [
+          114,
+          30,
+          4
+        ],
+        [
+          88,
+          62,
+          4.5
+        ],
+        [
+          30,
+          50,
+          4.5
+        ],
+        [
+          148,
+          80,
+          4
+        ],
+        [
+          72,
+          115,
+          4.5
+        ]
+      ],
+      "lines": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "highlight": 0,
+      "labels": [
+        [
+          0,
+          "Altair",
+          -70,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0027",
+    "question": "Koji planeti nemaju prirodne satelite?",
+    "answers": [
+      "Merkur i Venera",
+      "Zemlja i Mars",
+      "Mars i Jupiter",
+      "Uran i Neptun"
+    ],
+    "correct": 0,
+    "explanation": "Merkur i Venera jedini su planeti bez prirodnih satelita.",
+    "topic": "Sateliti",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0028",
+    "question": "Na koje se tijelo spustila misija Apollo 11?",
+    "answers": [
+      "Mars",
+      "Mjesec",
+      "Veneru",
+      "asteroid"
+    ],
+    "correct": 1,
+    "explanation": "Apollo 11 doveo je prve ljude na Mjesec.",
+    "topic": "Povijest astronautike",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0029",
+    "question": "Kada je tijekom dana visina Sunca približno najveća?",
+    "answers": [
+      "pri izlasku",
+      "u podne",
+      "poslijepodne",
+      "pri zalasku"
+    ],
+    "correct": 1,
+    "explanation": "Sunce kulminira oko mjesnog podneva.",
+    "topic": "Sunce i opažanje",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0030",
+    "question": "Kako nazivamo područje između staza Marsa i Jupitera?",
+    "answers": [
+      "Kuiperov pojas",
+      "Asteroidni pojas",
+      "Oortov oblak",
+      "Zodijak"
+    ],
+    "correct": 1,
+    "explanation": "Glavni asteroidni pojas nalazi se između Marsa i Jupitera.",
+    "topic": "Mala tijela",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0031",
+    "question": "Koliki put prijeđe Zemlja za 50 s pri brzini 30 km/s?",
+    "answers": [
+      "600 km",
+      "1 500 km",
+      "15 000 km",
+      "150 000 km"
+    ],
+    "correct": 1,
+    "explanation": "s = v × t = 30 × 50 = 1 500 km.",
+    "topic": "Računski zadaci",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0032",
+    "question": "Kako se zove točka na nebeskoj sferi suprotna zenitu?",
+    "answers": [
+      "Nadir",
+      "Pol",
+      "Ekvator",
+      "Afel"
+    ],
+    "correct": 0,
+    "explanation": "Nadir je točka točno ispod promatrača.",
+    "topic": "Nebeska sfera",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "državno",
+    "source": "drzavno_2005.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0033",
+    "question": "Oko kojeg planeta kruži Titan?",
+    "answers": [
+      "Jupitera",
+      "Saturna",
+      "Urana",
+      "Neptuna"
+    ],
+    "correct": 1,
+    "explanation": "Titan je najveći Saturnov satelit.",
+    "topic": "Sateliti",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "državno",
+    "source": "drzavno_2005.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0034",
+    "question": "Kod kojeg je planeta Galileo otkrio četiri velika satelita?",
+    "answers": [
+      "Marsa",
+      "Jupitera",
+      "Saturna",
+      "Urana"
+    ],
+    "correct": 1,
+    "explanation": "Galileo je otkrio Io, Europu, Ganimed i Kalisto oko Jupitera.",
+    "topic": "Povijest astronomije",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "državno",
+    "source": "drzavno_2005.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0035",
+    "question": "U kojem se zviježđu nalazi Algol?",
+    "answers": [
+      "Perzej",
+      "Orion",
+      "Lav",
+      "Bik"
+    ],
+    "correct": 0,
+    "explanation": "Algol, poznat i kao Vražja zvijezda, nalazi se u Perzeju.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2005,
+    "level": "državno",
+    "source": "drzavno_2005.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0036",
+    "question": "Tko je otkrio Uran?",
+    "answers": [
+      "Galileo Galilei",
+      "William Herschel",
+      "Isaac Newton",
+      "Nikola Kopernik"
+    ],
+    "correct": 1,
+    "explanation": "William Herschel otkrio je Uran 1781. godine.",
+    "topic": "Povijest astronomije",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "državno",
+    "source": "drzavno_2005.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0037",
+    "question": "Je li Danica zvijezda ili planet?",
+    "answers": [
+      "zvijezda",
+      "planet",
+      "galaksija",
+      "komet"
+    ],
+    "correct": 1,
+    "explanation": "Danica je narodni naziv za planet Veneru.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "državno",
+    "source": "drzavno_2005.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0038",
+    "question": "Koje od navedenih zviježđa nije cirkumpolarno iz Hrvatske?",
+    "answers": [
+      "Zmaj",
+      "Žirafa",
+      "Cefej",
+      "Pegaz"
+    ],
+    "correct": 3,
+    "explanation": "Pegaz izlazi i zalazi, dok su ostala navedena zviježđa cirkumpolarna ili većim dijelom cirkumpolarna.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2005,
+    "level": "državno",
+    "source": "drzavno_2005.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0039",
+    "question": "Koliki put prijeđe letjelica brzinom 10 km/s tijekom 5 040 s?",
+    "answers": [
+      "5 040 km",
+      "50 400 km",
+      "504 000 km",
+      "5 040 000 km"
+    ],
+    "correct": 1,
+    "explanation": "s = v × t = 10 × 5 040 = 50 400 km.",
+    "topic": "Računski zadaci",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "državno",
+    "source": "drzavno_2005.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0040",
+    "question": "U kojem se godišnjem dobu Orion najbolje vidi navečer iz Hrvatske?",
+    "answers": [
+      "ljeti",
+      "zimi",
+      "cijele godine jednako",
+      "samo u proljeće"
+    ],
+    "correct": 1,
+    "explanation": "Orion je tipično zviježđe zimskog neba.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 1,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          150,
+          20,
+          6
+        ],
+        [
+          55,
+          28,
+          5
+        ],
+        [
+          82,
+          72,
+          4.5
+        ],
+        [
+          100,
+          80,
+          4.5
+        ],
+        [
+          118,
+          88,
+          4.5
+        ],
+        [
+          140,
+          150,
+          4.5
+        ],
+        [
+          58,
+          158,
+          6
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0041",
+    "question": "Koliko približno dana prođe od mlađaka do prve četvrti?",
+    "answers": [
+      "3",
+      "7",
+      "14",
+      "29"
+    ],
+    "correct": 1,
+    "explanation": "Četvrtina sinodičkog mjeseca traje približno sedam dana.",
+    "topic": "Mjesec i pomrčine",
+    "difficulty": "lako",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0042",
+    "question": "Najsjajnija zvijezda noćnog neba je:",
+    "answers": [
+      "Sjevernjača",
+      "Sirijus",
+      "Rigel",
+      "Vega"
+    ],
+    "correct": 1,
+    "explanation": "Sirijus je najsjajnija zvijezda noćnog neba.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 1,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          62,
+          16,
+          7
+        ],
+        [
+          16,
+          28,
+          4.5
+        ],
+        [
+          84,
+          62,
+          4
+        ],
+        [
+          98,
+          94,
+          5
+        ],
+        [
+          72,
+          128,
+          5.5
+        ],
+        [
+          124,
+          120,
+          4.5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "highlight": 0,
+      "labels": [
+        [
+          0,
+          "Sirijus"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0043",
+    "question": "Kako se zove teleskop kojim opažamo svemirske izvore radiovalova?",
+    "answers": [
+      "refraktor",
+      "radioteleskop",
+      "koronograf",
+      "spektroskop"
+    ],
+    "correct": 1,
+    "explanation": "Radioteleskop prima radiovalove iz svemira.",
+    "topic": "Teleskopi",
+    "difficulty": "lako",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0044",
+    "question": "Na kojem dijelu obzora Sunce izlazi?",
+    "answers": [
+      "sjevernom",
+      "istočnom",
+      "južnom",
+      "zapadnom"
+    ],
+    "correct": 1,
+    "explanation": "Zbog Zemljine rotacije Sunce prividno izlazi na istoku.",
+    "topic": "Zemlja i opažanje",
+    "difficulty": "lako",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0045",
+    "question": "Gdje se nalazi svemirski teleskop Hubble?",
+    "answers": [
+      "u Čileu",
+      "na Kanarima",
+      "u orbiti oko Zemlje",
+      "na Mjesecu"
+    ],
+    "correct": 2,
+    "explanation": "Hubble kruži oko Zemlje iznad većeg dijela atmosfere.",
+    "topic": "Teleskopi",
+    "difficulty": "lako",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 5,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0046",
+    "question": "Na kojem se planetu nalazi Olympus Mons?",
+    "answers": [
+      "Zemlji",
+      "Marsu",
+      "Veneri",
+      "Jupiteru"
+    ],
+    "correct": 1,
+    "explanation": "Olympus Mons je golemi štitasti vulkan na Marsu.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 5,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0047",
+    "question": "Koja su dva poznata otvorena zvjezdana skupa u Biku?",
+    "answers": [
+      "Plejade i Hijade",
+      "M13 i M92",
+      "M42 i M57",
+      "M31 i M33"
+    ],
+    "correct": 0,
+    "explanation": "Plejade i Hijade dva su poznata otvorena skupa u zviježđu Bika.",
+    "topic": "Zvjezdani skupovi",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 5,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0048",
+    "question": "Kako se zove dan kada Sunce postiže najveću podnevnu visinu?",
+    "answers": [
+      "proljetni ekvinocij",
+      "ljetni suncostaj",
+      "jesenski ekvinocij",
+      "zimski suncostaj"
+    ],
+    "correct": 1,
+    "explanation": "Na ljetni suncostaj Sunce postiže najveću podnevnu visinu na sjevernoj polutki.",
+    "topic": "Godišnja doba",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 5,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0049",
+    "question": "Kako se zvao prvi čovjek koji je stupio na Mjesec?",
+    "answers": [
+      "Jurij Gagarin",
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "John Glenn"
+    ],
+    "correct": 1,
+    "explanation": "Neil Armstrong prvi je stupio na Mjesec 1969. godine.",
+    "topic": "Povijest astronautike",
+    "difficulty": "lako",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0050",
+    "question": "U koju je skupinu tijela premješten Pluton?",
+    "answers": [
+      "plinovite divove",
+      "patuljaste planete",
+      "komete",
+      "prirodne satelite"
+    ],
+    "correct": 1,
+    "explanation": "Pluton je od 2006. klasificiran kao patuljasti planet.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0051",
+    "question": "Kako zovemo kamene ili željezne gromade koje padnu na Zemlju?",
+    "answers": [
+      "meteori",
+      "meteoriti",
+      "meteoroidi",
+      "kometi"
+    ],
+    "correct": 1,
+    "explanation": "Tijelo koje preživi prolazak kroz atmosferu i padne na tlo naziva se meteorit.",
+    "topic": "Mala tijela",
+    "difficulty": "lako",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0052",
+    "question": "Koliko kilometara Zemlja prijeđe za jedan sat pri brzini 30 km/s?",
+    "answers": [
+      "1 800 km",
+      "30 000 km",
+      "108 000 km",
+      "1 080 000 km"
+    ],
+    "correct": 2,
+    "explanation": "Jedan sat ima 3 600 s, pa je put 30 × 3 600 = 108 000 km.",
+    "topic": "Računski zadaci",
+    "difficulty": "lako",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0053",
+    "question": "Na kojoj se strani uspravnog štapa nalazi sjena u odnosu na Sunce?",
+    "answers": [
+      "na istoj strani",
+      "na suprotnoj strani",
+      "uvijek sjeverno",
+      "uvijek južno"
+    ],
+    "correct": 1,
+    "explanation": "Sjena pada na stranu suprotnu od izvora svjetlosti.",
+    "topic": "Opažanje",
+    "difficulty": "lako",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 3,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0054",
+    "question": "Kako se naziva vrlo sjajan meteor?",
+    "answers": [
+      "bolid",
+      "komet",
+      "planetoid",
+      "korona"
+    ],
+    "correct": 0,
+    "explanation": "Vrlo sjajan meteor naziva se bolid.",
+    "topic": "Mala tijela",
+    "difficulty": "lako",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 4,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0055",
+    "question": "Koja se dva dijela nalaze u glavi kometa?",
+    "answers": [
+      "koma i jezgra",
+      "rep i proturep",
+      "jezgra i prsten",
+      "koma i krater"
+    ],
+    "correct": 0,
+    "explanation": "Glavu kometa čine čvrsta jezgra i plinovita koma.",
+    "topic": "Mala tijela",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 4,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0056",
+    "question": "Koja se posljednja misija s ljudskom posadom spustila na Mjesec?",
+    "answers": [
+      "Apollo 11",
+      "Apollo 13",
+      "Apollo 17",
+      "Luna 4"
+    ],
+    "correct": 2,
+    "explanation": "Apollo 17 bila je posljednja misija programa Apollo koja je sletjela na Mjesec.",
+    "topic": "Povijest astronautike",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 4,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0057",
+    "question": "Zašto zvijezde prividno izlaze na istoku i zalaze na zapadu?",
+    "answers": [
+      "Zemlja se vrti od zapada prema istoku",
+      "Zemlja se vrti od istoka prema zapadu",
+      "zvijezde kruže oko Zemlje",
+      "Sunce ih povlači"
+    ],
+    "correct": 0,
+    "explanation": "Zemljina rotacija od zapada prema istoku stvara suprotno prividno gibanje neba.",
+    "topic": "Zemlja i opažanje",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 5,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0058",
+    "question": "Koji su planeti po fizičkim svojstvima slični Jupiteru?",
+    "answers": [
+      "Merkur, Venera i Zemlja",
+      "Saturn, Uran i Neptun",
+      "Mars, Zemlja i Venera",
+      "samo Saturn"
+    ],
+    "correct": 1,
+    "explanation": "Jupiter, Saturn, Uran i Neptun vanjski su divovski planeti.",
+    "topic": "Planeti",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 5,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0059",
+    "question": "U kojem se smjeru Zemlja okreće oko svoje osi?",
+    "answers": [
+      "od istoka prema zapadu",
+      "od zapada prema istoku",
+      "od sjevera prema jugu",
+      "od juga prema sjeveru"
+    ],
+    "correct": 1,
+    "explanation": "Zemlja rotira od zapada prema istoku.",
+    "topic": "Gibanja",
+    "difficulty": "lako",
+    "year": 2016,
+    "level": "školsko",
+    "source": "5 r_Rjesenja_Astronomija_Skolsko.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0060",
+    "question": "Koliko približno traje siderički mjesec?",
+    "answers": [
+      "7,5 dana",
+      "27,3 dana",
+      "29,5 dana",
+      "365 dana"
+    ],
+    "correct": 1,
+    "explanation": "Siderički mjesec traje približno 27,3 dana.",
+    "topic": "Mjesec",
+    "difficulty": "srednje",
+    "year": 2016,
+    "level": "školsko",
+    "source": "5 r_Rjesenja_Astronomija_Skolsko.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0061",
+    "question": "Najsjajnija zvijezda u Orionu je:",
+    "answers": [
+      "Betelgez",
+      "Bellatrix",
+      "Saiph",
+      "Rigel"
+    ],
+    "correct": 3,
+    "explanation": "Rigel je prividno najsjajnija zvijezda Oriona.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2016,
+    "level": "školsko",
+    "source": "5 r_Rjesenja_Astronomija_Skolsko.pdf",
+    "page": 1,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          150,
+          20,
+          6
+        ],
+        [
+          55,
+          28,
+          5
+        ],
+        [
+          82,
+          72,
+          4.5
+        ],
+        [
+          100,
+          80,
+          4.5
+        ],
+        [
+          118,
+          88,
+          4.5
+        ],
+        [
+          140,
+          150,
+          4.5
+        ],
+        [
+          58,
+          158,
+          6
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "highlight": 6,
+      "labels": [
+        [
+          6,
+          "Rigel"
+        ],
+        [
+          0,
+          "Betelgeuse",
+          -70,
+          -12
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0062",
+    "question": "Koje su koordinate horizontskog koordinatnog sustava?",
+    "answers": [
+      "visina i azimut",
+      "rektascenzija i deklinacija",
+      "duljina i širina",
+      "satni kut i deklinacija"
+    ],
+    "correct": 0,
+    "explanation": "Položaj na lokalnom nebu opisuje se visinom i azimutom.",
+    "topic": "Nebeske koordinate",
+    "difficulty": "srednje",
+    "year": 2016,
+    "level": "školsko",
+    "source": "5 r_Rjesenja_Astronomija_Skolsko.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0063",
+    "question": "Kako se zove položaj Zemlje najbliži Suncu?",
+    "answers": [
+      "afel",
+      "perihel",
+      "apogej",
+      "perigej"
+    ],
+    "correct": 1,
+    "explanation": "Perihel je točka Zemljine putanje najbliža Suncu.",
+    "topic": "Putanje",
+    "difficulty": "lako",
+    "year": 2016,
+    "level": "školsko",
+    "source": "5 r_Rjesenja_Astronomija_Skolsko.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0064",
+    "question": "Kako se zove položaj Zemlje najdalji od Sunca?",
+    "answers": [
+      "afel",
+      "perihel",
+      "apogej",
+      "perigej"
+    ],
+    "correct": 0,
+    "explanation": "Afel je točka putanje najdalja od Sunca.",
+    "topic": "Putanje",
+    "difficulty": "lako",
+    "year": 2016,
+    "level": "školsko",
+    "source": "5 r_Rjesenja_Astronomija_Skolsko.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0065",
+    "question": "Koje zviježđe ne pripada zimskom nebu iz Hrvatske?",
+    "answers": [
+      "Bik",
+      "Škorpion",
+      "Blizanci",
+      "Kočijaš"
+    ],
+    "correct": 1,
+    "explanation": "Škorpion je tipično ljetno zviježđe.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2016,
+    "level": "županijsko",
+    "source": "5 r_Rjesenja_Astronomija_zupanijsko.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0066",
+    "question": "Charles Messier sastavio je poznati katalog:",
+    "answers": [
+      "maglica i drugih dubokosvemirskih objekata",
+      "kometa",
+      "samo zvijezda",
+      "meteora"
+    ],
+    "correct": 0,
+    "explanation": "Messierov katalog sadrži maglice, skupove i galaksije koje su se mogle zamijeniti s kometima.",
+    "topic": "Povijest astronomije",
+    "difficulty": "srednje",
+    "year": 2016,
+    "level": "županijsko",
+    "source": "5 r_Rjesenja_Astronomija_zupanijsko.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0067",
+    "question": "Na južnom geografskom polu sve su vodoravne strane svijeta usmjerene prema:",
+    "answers": [
+      "istoku",
+      "zapadu",
+      "jugu",
+      "sjeveru"
+    ],
+    "correct": 3,
+    "explanation": "Sa samog južnog pola svaki smjer po površini vodi prema sjeveru.",
+    "topic": "Zemlja i koordinate",
+    "difficulty": "teško",
+    "year": 2016,
+    "level": "županijsko",
+    "source": "5 r_Rjesenja_Astronomija_zupanijsko.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0068",
+    "question": "Dan i noć približno jednako traju za:",
+    "answers": [
+      "ekvinocija",
+      "solsticija",
+      "afela",
+      "perihela"
+    ],
+    "correct": 0,
+    "explanation": "Za ravnodnevnice dan i noć traju približno jednako.",
+    "topic": "Godišnja doba",
+    "difficulty": "lako",
+    "year": 2016,
+    "level": "županijsko",
+    "source": "5 r_Rjesenja_Astronomija_zupanijsko.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0069",
+    "question": "Kako se naziva prividna godišnja staza Sunca po nebu?",
+    "answers": [
+      "ekliptika",
+      "ekvator",
+      "meridijan",
+      "horizont"
+    ],
+    "correct": 0,
+    "explanation": "Ekliptika je prividna godišnja putanja Sunca među zvijezdama.",
+    "topic": "Nebeska sfera",
+    "difficulty": "srednje",
+    "year": 2016,
+    "level": "županijsko",
+    "source": "5 r_Rjesenja_Astronomija_zupanijsko.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0070",
+    "question": "Koje je od navedenih zviježđa cirkumpolarno iz Hrvatske?",
+    "answers": [
+      "Delfin",
+      "Mali medvjed",
+      "Veliki pas",
+      "Zec"
+    ],
+    "correct": 1,
+    "explanation": "Mali medvjed nalazi se blizu sjevernog nebeskog pola i ne zalazi iz Hrvatske.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2017,
+    "level": "školsko",
+    "source": "5 razred_rjesenja_astronomija_skolsko 2017.pdf",
+    "page": 2,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          12,
+          20,
+          5.5
+        ],
+        [
+          50,
+          30,
+          4.5
+        ],
+        [
+          86,
+          40,
+          4.5
+        ],
+        [
+          120,
+          52,
+          4.5
+        ],
+        [
+          118,
+          90,
+          4.5
+        ],
+        [
+          172,
+          102,
+          5
+        ],
+        [
+          178,
+          60,
+          5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "highlight": 0,
+      "labels": [
+        [
+          0,
+          "Sjevernjača",
+          -2,
+          -14
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0071",
+    "question": "Vrijeme jedne Zemljine rotacije u odnosu na vrijeme revolucije je:",
+    "answers": [
+      "jednako",
+      "kraće",
+      "dulje",
+      "nepoznato"
+    ],
+    "correct": 1,
+    "explanation": "Rotacija traje približno jedan dan, a revolucija približno godinu dana.",
+    "topic": "Gibanja",
+    "difficulty": "lako",
+    "year": 2017,
+    "level": "školsko",
+    "source": "5 razred_rjesenja_astronomija_skolsko 2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0072",
+    "question": "Koje je boje Mjesec tijekom potpune pomrčine Mjeseca?",
+    "answers": [
+      "bijele",
+      "crne",
+      "pepeljasto crvene",
+      "žute"
+    ],
+    "correct": 2,
+    "explanation": "Zemljina atmosfera prelama crvenu svjetlost u Zemljinu sjenu.",
+    "topic": "Mjesec i pomrčine",
+    "difficulty": "lako",
+    "year": 2017,
+    "level": "školsko",
+    "source": "5 razred_rjesenja_astronomija_skolsko 2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0073",
+    "question": "Koordinate ekvatorijalnog koordinatnog sustava su:",
+    "answers": [
+      "visina i azimut",
+      "rektascenzija i deklinacija",
+      "duljina i širina",
+      "zenit i nadir"
+    ],
+    "correct": 1,
+    "explanation": "Ekvatorijalni sustav koristi rektascenziju i deklinaciju.",
+    "topic": "Nebeske koordinate",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "školsko",
+    "source": "5 razred_rjesenja_astronomija_skolsko 2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0074",
+    "question": "Kako se zove položaj Mjeseca najdalji od Zemlje?",
+    "answers": [
+      "perigej",
+      "apogej",
+      "perihel",
+      "afel"
+    ],
+    "correct": 1,
+    "explanation": "Apogej je točka Mjesečeve putanje najdalja od Zemlje.",
+    "topic": "Putanje",
+    "difficulty": "lako",
+    "year": 2017,
+    "level": "školsko",
+    "source": "5 razred_rjesenja_astronomija_skolsko 2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0075",
+    "question": "Poredaj objekte od najvećeg prema najmanjem.",
+    "answers": [
+      "Sunce, Neptun, Zemlja, Titan, Ceres",
+      "Sunce, Zemlja, Neptun, Titan, Ceres",
+      "Neptun, Sunce, Zemlja, Ceres, Titan",
+      "Sunce, Neptun, Titan, Zemlja, Ceres"
+    ],
+    "correct": 0,
+    "explanation": "Po promjeru vrijedi: Sunce > Neptun > Zemlja > Titan > Ceres.",
+    "topic": "Veličine tijela",
+    "difficulty": "teško",
+    "year": 2017,
+    "level": "školsko",
+    "source": "5 razred_rjesenja_astronomija_skolsko 2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0076",
+    "question": "Koliko sjajnih zvijezda čini Orionov pojas?",
+    "answers": [
+      "dvije",
+      "tri",
+      "četiri",
+      "sedam"
+    ],
+    "correct": 1,
+    "explanation": "Orionov pojas čine Alnitak, Alnilam i Mintaka.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2017,
+    "level": "školsko",
+    "source": "5 razred_rjesenja_astronomija_skolsko 2017.pdf",
+    "page": 4,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          150,
+          20,
+          6
+        ],
+        [
+          55,
+          28,
+          5
+        ],
+        [
+          82,
+          72,
+          4.5
+        ],
+        [
+          100,
+          80,
+          4.5
+        ],
+        [
+          118,
+          88,
+          4.5
+        ],
+        [
+          140,
+          150,
+          4.5
+        ],
+        [
+          58,
+          158,
+          6
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "highlight": [
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        [
+          3,
+          "Orionov pojas",
+          -42,
+          32
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0077",
+    "question": "Koliki je nagib Zemljine osi prema okomici na ravninu putanje?",
+    "answers": [
+      "23,5°",
+      "25,3°",
+      "35,2°",
+      "32,5°"
+    ],
+    "correct": 0,
+    "explanation": "Zemljina os nagnuta je oko 23,5° od okomice na ravninu putanje.",
+    "topic": "Zemlja",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "5 razred_rjeτenja_ºupanijsko_astronomija 2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0078",
+    "question": "Visina nebeskog pola jednaka je:",
+    "answers": [
+      "geografskoj širini",
+      "geografskoj duljini",
+      "nadmorskoj visini",
+      "zenitnoj daljini"
+    ],
+    "correct": 0,
+    "explanation": "Visina nebeskog pola nad horizontom jednaka je geografskoj širini promatrača.",
+    "topic": "Nebeske koordinate",
+    "difficulty": "teško",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "5 razred_rjeτenja_ºupanijsko_astronomija 2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0079",
+    "question": "Koji planet najviše odbija Sunčevu svjetlost?",
+    "answers": [
+      "Jupiter",
+      "Zemlja",
+      "Pluton",
+      "Venera"
+    ],
+    "correct": 3,
+    "explanation": "Venera ima vrlo visok albedo zbog gustih oblaka.",
+    "topic": "Planeti",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "5 razred_rjeτenja_ºupanijsko_astronomija 2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0080",
+    "question": "Koliko planeta Sunčeva sustava ima prirodne satelite?",
+    "answers": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct": 2,
+    "explanation": "Prirodne satelite imaju Zemlja, Mars, Jupiter, Saturn, Uran i Neptun.",
+    "topic": "Sateliti",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "5 razred_rjeτenja_ºupanijsko_astronomija 2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0081",
+    "question": "Koje tijelo osim Mjeseca značajno doprinosi plimi i oseci na Zemlji?",
+    "answers": [
+      "Venera",
+      "Sunce",
+      "Jupiter",
+      "Mars"
+    ],
+    "correct": 1,
+    "explanation": "Sunčeva gravitacija također stvara plimne sile.",
+    "topic": "Zemlja i Mjesec",
+    "difficulty": "lako",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "5 razred_rjeτenja_ºupanijsko_astronomija 2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0082",
+    "question": "Kako se zove točka Mjesečeve putanje najbliža Zemlji?",
+    "answers": [
+      "apogej",
+      "perigej",
+      "perihel",
+      "afel"
+    ],
+    "correct": 1,
+    "explanation": "Perigej je najbliža točka Mjesečeve putanje Zemlji.",
+    "topic": "Putanje",
+    "difficulty": "lako",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "5 razred_rjeτenja_ºupanijsko_astronomija 2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0083",
+    "question": "Kako se zove točka putanje oko Sunca najdalja od Sunca?",
+    "answers": [
+      "apogej",
+      "perihel",
+      "afel",
+      "perigej"
+    ],
+    "correct": 2,
+    "explanation": "Afel je najudaljenija točka heliocentrične putanje.",
+    "topic": "Putanje",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "školsko",
+    "source": "rjesenje-5-sk.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0084",
+    "question": "Fobos i Deimos prirodni su sateliti:",
+    "answers": [
+      "Venere",
+      "Marsa",
+      "Merkura",
+      "Urana"
+    ],
+    "correct": 1,
+    "explanation": "Mars ima dva mala satelita, Fobos i Deimos.",
+    "topic": "Sateliti",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "školsko",
+    "source": "rjesenje-5-sk.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0085",
+    "question": "U kojoj fazi Mjeseca može nastati pomrčina Mjeseca?",
+    "answers": [
+      "mlađak",
+      "prva četvrt",
+      "uštap",
+      "zadnja četvrt"
+    ],
+    "correct": 2,
+    "explanation": "Pomrčina Mjeseca moguća je samo kada je Mjesec nasuprot Suncu, u fazi uštapa.",
+    "topic": "Mjesec i pomrčine",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "školsko",
+    "source": "rjesenje-5-sk.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0086",
+    "question": "Kako se zove zvijezda najbliža sjevernom nebeskom polu?",
+    "answers": [
+      "Sirijus",
+      "Sjevernjača",
+      "Vega",
+      "Arktur"
+    ],
+    "correct": 1,
+    "explanation": "Sjevernjača se nalazi vrlo blizu sjevernog nebeskog pola.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "školsko",
+    "source": "rjesenje-5-sk.pdf",
+    "page": 3,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          12,
+          20,
+          5.5
+        ],
+        [
+          50,
+          30,
+          4.5
+        ],
+        [
+          86,
+          40,
+          4.5
+        ],
+        [
+          120,
+          52,
+          4.5
+        ],
+        [
+          118,
+          90,
+          4.5
+        ],
+        [
+          172,
+          102,
+          5
+        ],
+        [
+          178,
+          60,
+          5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "highlight": 0,
+      "labels": [
+        [
+          0,
+          "Sjevernjača",
+          -2,
+          -14
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0087",
+    "question": "U kojem se zviježđu nalazi Sjevernjača?",
+    "answers": [
+      "Veliki medvjed",
+      "Mali medvjed",
+      "Kasiopeja",
+      "Cefej"
+    ],
+    "correct": 1,
+    "explanation": "Sjevernjača je na kraju repa Malog medvjeda.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "školsko",
+    "source": "rjesenje-5-sk.pdf",
+    "page": 3,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          12,
+          20,
+          5.5
+        ],
+        [
+          50,
+          30,
+          4.5
+        ],
+        [
+          86,
+          40,
+          4.5
+        ],
+        [
+          120,
+          52,
+          4.5
+        ],
+        [
+          118,
+          90,
+          4.5
+        ],
+        [
+          172,
+          102,
+          5
+        ],
+        [
+          178,
+          60,
+          5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "highlight": 0,
+      "labels": [
+        [
+          0,
+          "Sjevernjača",
+          -2,
+          -14
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0088",
+    "question": "Tko je otkrio četiri velika Jupiterova satelita?",
+    "answers": [
+      "Johannes Kepler",
+      "Galileo Galilei",
+      "Isaac Newton",
+      "Edwin Hubble"
+    ],
+    "correct": 1,
+    "explanation": "Galileo je 1610. teleskopom opažao četiri velika Jupiterova satelita.",
+    "topic": "Povijest astronomije",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "školsko",
+    "source": "rjesenje-5-sk.pdf",
+    "page": 3,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0089",
+    "question": "Koja je misija 1969. dovela prve ljude na Mjesec?",
+    "answers": [
+      "Apollo 8",
+      "Apollo 11",
+      "Apollo 13",
+      "Voyager 1"
+    ],
+    "correct": 1,
+    "explanation": "Apollo 11 sletio je na Mjesec 20. srpnja 1969.",
+    "topic": "Povijest astronautike",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "školsko",
+    "source": "rjesenje-5-sk.pdf",
+    "page": 4,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0090",
+    "question": "Kako se zove gibanje Zemlje oko vlastite osi?",
+    "answers": [
+      "revolucija",
+      "rotacija",
+      "precesija",
+      "nutacija"
+    ],
+    "correct": 1,
+    "explanation": "Gibanje oko vlastite osi naziva se rotacija.",
+    "topic": "Gibanja",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "školsko",
+    "source": "rjesenje-5-sk.pdf",
+    "page": 4,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0091",
+    "question": "Kako se zove zviježđe prikazano na slici?",
+    "answers": [
+      "Kasiopeja",
+      "Veliki medvjed",
+      "Labud",
+      "Orion"
+    ],
+    "correct": 0,
+    "explanation": "Pet najsjajnijih zvijezda Kasiopeje tvori prepoznatljiv oblik slova W (ili M). Kasiopeja je cirkumpolarno zviježđe pa se iz Hrvatske vidi tijekom cijele godine.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 2,
+    "status": "spremno",
+    "image": {
+      "type": "constellation",
+      "stars": [
+        [
+          10,
+          25,
+          5
+        ],
+        [
+          55,
+          75,
+          5.5
+        ],
+        [
+          100,
+          35,
+          6
+        ],
+        [
+          145,
+          80,
+          5
+        ],
+        [
+          190,
+          30,
+          4.5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0092",
+    "question": "Skupina zvijezda na slici zove se Velika kola. Kojem zviježđu ona pripada?",
+    "answers": [
+      "Veliki medvjed",
+      "Mali medvjed",
+      "Kasiopeja",
+      "Pegaz"
+    ],
+    "correct": 0,
+    "explanation": "Velika kola najuočljiviji su dio (asterizam) zviježđa Veliki medvjed. Pomoću dviju stražnjih zvijezda 'kola' lako pronalazimo Sjevernjaču.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 2,
+    "status": "spremno",
+    "image": {
+      "type": "constellation",
+      "stars": [
+        [
+          10,
+          58,
+          5
+        ],
+        [
+          52,
+          40,
+          5
+        ],
+        [
+          92,
+          32,
+          5
+        ],
+        [
+          132,
+          30,
+          4.5
+        ],
+        [
+          186,
+          18,
+          5.5
+        ],
+        [
+          192,
+          66,
+          5
+        ],
+        [
+          140,
+          70,
+          5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ]
+    },
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          10,
+          58,
+          5
+        ],
+        [
+          52,
+          40,
+          5
+        ],
+        [
+          92,
+          32,
+          5
+        ],
+        [
+          132,
+          30,
+          4.5
+        ],
+        [
+          186,
+          18,
+          5.5
+        ],
+        [
+          192,
+          66,
+          5
+        ],
+        [
+          140,
+          70,
+          5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "highlight": [
+        4,
+        5
+      ],
+      "labels": [
+        [
+          4,
+          "Dubhe",
+          4,
+          -10
+        ],
+        [
+          5,
+          "Merak",
+          8,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0093",
+    "question": "Kako se zove zviježđe prikazano na slici, čije zvijezde tvore veliki križ na nebu?",
+    "answers": [
+      "Labud",
+      "Orao",
+      "Lira",
+      "Kasiopeja"
+    ],
+    "correct": 0,
+    "explanation": "Zvijezde Labuda tvore Sjeverni križ. Najsjajnija zvijezda Labuda je Deneb — na slici je na vrhu križa, a Albireo je na dnu.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 2,
+    "status": "spremno",
+    "image": {
+      "type": "constellation",
+      "stars": [
+        [
+          105,
+          10,
+          6
+        ],
+        [
+          98,
+          58,
+          5
+        ],
+        [
+          88,
+          132,
+          4.5
+        ],
+        [
+          30,
+          36,
+          4.5
+        ],
+        [
+          168,
+          84,
+          4.5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          105,
+          10,
+          6
+        ],
+        [
+          98,
+          58,
+          5
+        ],
+        [
+          88,
+          132,
+          4.5
+        ],
+        [
+          30,
+          36,
+          4.5
+        ],
+        [
+          168,
+          84,
+          4.5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "highlight": 0,
+      "labels": [
+        [
+          0,
+          "Deneb"
+        ],
+        [
+          2,
+          "Albireo",
+          -18,
+          20
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0094",
+    "question": "Koje je zviježđe prikazano na slici?",
+    "answers": [
+      "Orion",
+      "Blizanci",
+      "Bik",
+      "Škorpion"
+    ],
+    "correct": 0,
+    "explanation": "Orion prepoznajemo po trima zvijezdama u nizu — Orionovu pojasu. Najsjajnije su mu zvijezde crvenkasti Betelgeuse (gore lijevo) i plavkasti Rigel (dolje desno).",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 2,
+    "status": "spremno",
+    "image": {
+      "type": "constellation",
+      "stars": [
+        [
+          150,
+          20,
+          6
+        ],
+        [
+          55,
+          28,
+          5
+        ],
+        [
+          82,
+          72,
+          4.5
+        ],
+        [
+          100,
+          80,
+          4.5
+        ],
+        [
+          118,
+          88,
+          4.5
+        ],
+        [
+          140,
+          150,
+          4.5
+        ],
+        [
+          58,
+          158,
+          6
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          150,
+          20,
+          6
+        ],
+        [
+          55,
+          28,
+          5
+        ],
+        [
+          82,
+          72,
+          4.5
+        ],
+        [
+          100,
+          80,
+          4.5
+        ],
+        [
+          118,
+          88,
+          4.5
+        ],
+        [
+          140,
+          150,
+          4.5
+        ],
+        [
+          58,
+          158,
+          6
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "labels": [
+        [
+          0,
+          "Betelgeuse",
+          -70,
+          -12
+        ],
+        [
+          6,
+          "Rigel"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0095",
+    "question": "Na kraju 'repa' zviježđa na slici nalazi se zvijezda Sjevernjača. Koje je to zviježđe?",
+    "answers": [
+      "Mali medvjed",
+      "Veliki medvjed",
+      "Zmaj",
+      "Kasiopeja"
+    ],
+    "correct": 0,
+    "explanation": "Sjevernjača (Polaris) najsjajnija je zvijezda Malog medvjeda, nalazi se na kraju njegova repa i pokazuje smjer sjevera.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 2,
+    "status": "spremno",
+    "image": {
+      "type": "constellation",
+      "stars": [
+        [
+          12,
+          20,
+          5.5
+        ],
+        [
+          50,
+          30,
+          4.5
+        ],
+        [
+          86,
+          40,
+          4.5
+        ],
+        [
+          120,
+          52,
+          4.5
+        ],
+        [
+          118,
+          90,
+          4.5
+        ],
+        [
+          172,
+          102,
+          5
+        ],
+        [
+          178,
+          60,
+          5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ]
+    },
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          12,
+          20,
+          5.5
+        ],
+        [
+          50,
+          30,
+          4.5
+        ],
+        [
+          86,
+          40,
+          4.5
+        ],
+        [
+          120,
+          52,
+          4.5
+        ],
+        [
+          118,
+          90,
+          4.5
+        ],
+        [
+          172,
+          102,
+          5
+        ],
+        [
+          178,
+          60,
+          5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "highlight": 0,
+      "labels": [
+        [
+          0,
+          "Sjevernjača",
+          -2,
+          -14
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0096",
+    "question": "Koji je planet Sunčeva sustava označen na slici?",
+    "answers": [
+      "Saturn",
+      "Jupiter",
+      "Uran",
+      "Venera"
+    ],
+    "correct": 0,
+    "explanation": "Označeni planet ima velike prstenove — to je Saturn, šesti planet od Sunca. Prstenovi su građeni od komadića leda i stijena.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 2,
+    "status": "spremno",
+    "image": {
+      "type": "solar",
+      "highlight": 5
+    }
+  },
+  {
+    "id": "Q0097",
+    "question": "Koji je planet Sunčeva sustava označen na slici?",
+    "answers": [
+      "Mars",
+      "Merkur",
+      "Venera",
+      "Jupiter"
+    ],
+    "correct": 0,
+    "explanation": "Označen je četvrti planet od Sunca — Mars, poznat kao Crveni planet zbog željezova oksida (hrđe) na površini.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 2,
+    "status": "spremno",
+    "image": {
+      "type": "solar",
+      "highlight": 3
+    }
+  },
+  {
+    "id": "Q0098",
+    "question": "Koji je planet Sunčeva sustava označen na slici?",
+    "answers": [
+      "Neptun",
+      "Uran",
+      "Zemlja",
+      "Saturn"
+    ],
+    "correct": 0,
+    "explanation": "Označen je osmi, najudaljeniji planet od Sunca — Neptun, plavi ledeni div.",
+    "topic": "Planeti",
+    "difficulty": "srednje",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 2,
+    "status": "spremno",
+    "image": {
+      "type": "solar",
+      "highlight": 7
+    }
+  },
+  {
+    "id": "Q0099",
+    "question": "Koliko planeta ima Sunčev sustav?",
+    "answers": [
+      "8",
+      "9",
+      "7",
+      "6"
+    ],
+    "correct": 0,
+    "explanation": "Sunčev sustav ima 8 planeta: Merkur, Venera, Zemlja, Mars, Jupiter, Saturn, Uran i Neptun. Pluton je od 2006. patuljasti planet.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0100",
+    "question": "Zvijezde nastaju iz:",
+    "answers": [
+      "oblaka plina i prašine",
+      "crnih rupa",
+      "kometa",
+      "galaksija"
+    ],
+    "correct": 0,
+    "explanation": "Zvijezde nastaju sažimanjem golemih hladnih oblaka plina (uglavnom vodika) i prašine — takve oblake zovemo maglicama.",
+    "topic": "Zvijezde",
+    "difficulty": "lako",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0101",
+    "question": "Znanstvenik koji promatra i istražuje svemir zove se:",
+    "answers": [
+      "astrofizičar",
+      "astrolog",
+      "gastroenterolog",
+      "astromehaničar"
+    ],
+    "correct": 0,
+    "explanation": "Svemir istražuju astronomi i astrofizičari. Astrolog se bavi horoskopima — a to nije znanost!",
+    "topic": "Opažanje",
+    "difficulty": "lako",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0102",
+    "question": "Koja je zvijezda najbliža Zemlji?",
+    "answers": [
+      "Sunce",
+      "Proxima Centauri",
+      "Sirijus",
+      "Sjevernjača"
+    ],
+    "correct": 0,
+    "explanation": "Sunce je zvijezda — i to nama daleko najbliža! Prva sljedeća je Proxima Centauri, udaljena više od 4 svjetlosne godine.",
+    "topic": "Zvijezde",
+    "difficulty": "lako",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0103",
+    "question": "Kakvog je oblika naša galaktika Mliječna staza?",
+    "answers": [
+      "spiralnog",
+      "eliptičnog",
+      "nepravilnog",
+      "prstenastog"
+    ],
+    "correct": 0,
+    "explanation": "Mliječna staza je spiralna galaksija: iz središta se pružaju zavojiti krakovi, a u jednom od njih je i naše Sunce.",
+    "topic": "Galaksije",
+    "difficulty": "lako",
+    "year": 2013,
+    "level": "školsko",
+    "source": "skolsko_2013.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0104",
+    "question": "Kojem nebu (gledano iz Hrvatske) pripada zviježđe Perzej?",
+    "answers": [
+      "zimskom",
+      "ljetnom",
+      "proljetnom",
+      "ne vidi se iz Hrvatske"
+    ],
+    "correct": 0,
+    "explanation": "Perzej se navečer najbolje vidi zimi, visoko na nebu u blizini Kasiopeje.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2013,
+    "level": "školsko",
+    "source": "skolsko_2013.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0105",
+    "question": "Koje zviježđe NE pripada jesenskom nebu promatrano iz Hrvatske?",
+    "answers": [
+      "Blizanci",
+      "Kit",
+      "Pegaz",
+      "Ne postoje zviježđa jesenskog neba"
+    ],
+    "correct": 0,
+    "explanation": "Pegaz i Kit obilježavaju jesensko nebo, a Blizanci su zviježđe zimskog neba.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "zupanijsko_2017.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0106",
+    "question": "Proljetni trokut NE čini zvijezda:",
+    "answers": [
+      "Rigel",
+      "Arktur",
+      "Denebola",
+      "Spika"
+    ],
+    "correct": 0,
+    "explanation": "Proljetni trokut čine Arktur, Spika i Denebola. Rigel je sjajna zvijezda Oriona — kralja zimskog neba.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "teško",
+    "year": 2013,
+    "level": "županijsko",
+    "source": "zupanijsko_2013.pdf",
+    "page": 1,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          150,
+          20,
+          6
+        ],
+        [
+          55,
+          28,
+          5
+        ],
+        [
+          82,
+          72,
+          4.5
+        ],
+        [
+          100,
+          80,
+          4.5
+        ],
+        [
+          118,
+          88,
+          4.5
+        ],
+        [
+          140,
+          150,
+          4.5
+        ],
+        [
+          58,
+          158,
+          6
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "highlight": 6,
+      "labels": [
+        [
+          6,
+          "Rigel"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0107",
+    "question": "Najsjajnije zvijezde na nebu pretežno su koje boje?",
+    "answers": [
+      "plavobijele",
+      "narančastocrvene",
+      "žute",
+      "zelene"
+    ],
+    "correct": 0,
+    "explanation": "Boja zvijezde otkriva njezinu temperaturu: najvrelije zvijezde sjaje plavobijelo, a hladnije crvenkasto.",
+    "topic": "Zvijezde",
+    "difficulty": "srednje",
+    "year": 2013,
+    "level": "županijsko",
+    "source": "zupanijsko_2013.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0108",
+    "question": "Sirijus je najsjajnija zvijezda kojeg zviježđa?",
+    "answers": [
+      "Velikog psa",
+      "Malog psa",
+      "Oriona",
+      "Labuda"
+    ],
+    "correct": 0,
+    "explanation": "Sirijus, najsjajnija zvijezda noćnog neba, predvodi zviježđe Veliki pas koje na nebu prati lovca Oriona.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "zupanijsko_2017.pdf",
+    "page": 2,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          62,
+          16,
+          7
+        ],
+        [
+          16,
+          28,
+          4.5
+        ],
+        [
+          84,
+          62,
+          4
+        ],
+        [
+          98,
+          94,
+          5
+        ],
+        [
+          72,
+          128,
+          5.5
+        ],
+        [
+          124,
+          120,
+          4.5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "highlight": 0,
+      "labels": [
+        [
+          0,
+          "Sirijus"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0109",
+    "question": "Vega je najsjajnija zvijezda kojeg zviježđa?",
+    "answers": [
+      "Lire",
+      "Orla",
+      "Labuda",
+      "Blizanaca"
+    ],
+    "correct": 0,
+    "explanation": "Vega je najsjajnija zvijezda malog zviježđa Lire i jedna od najsjajnijih zvijezda ljetnog neba.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "zupanijsko_2017.pdf",
+    "page": 2,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          30,
+          14,
+          6.5
+        ],
+        [
+          52,
+          34,
+          4
+        ],
+        [
+          88,
+          40,
+          4
+        ],
+        [
+          86,
+          90,
+          4.5
+        ],
+        [
+          48,
+          84,
+          4.5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "highlight": 0,
+      "labels": [
+        [
+          0,
+          "Vega"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0110",
+    "question": "Aldebaran je najsjajnija zvijezda kojeg zviježđa?",
+    "answers": [
+      "Bika",
+      "Ovna",
+      "Blizanaca",
+      "Lava"
+    ],
+    "correct": 0,
+    "explanation": "Narančasti Aldebaran je sjajno 'oko' Bika, smješteno uz zvjezdani skup Hijade.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "zupanijsko_2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0111",
+    "question": "Poluks je najsjajnija zvijezda kojeg zviježđa?",
+    "answers": [
+      "Blizanaca",
+      "Bika",
+      "Raka",
+      "Djevice"
+    ],
+    "correct": 0,
+    "explanation": "Poluks i Kastor dvije su najsjajnije zvijezde Blizanaca — Poluks je od njih sjajniji.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "zupanijsko_2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0112",
+    "question": "Zvijezda Dubhe nalazi se u zviježđu:",
+    "answers": [
+      "Veliki medvjed",
+      "Mali medvjed",
+      "Kasiopeja",
+      "Zmaj"
+    ],
+    "correct": 0,
+    "explanation": "Dubhe je prednja zvijezda Velikih kola u Velikom medvjedu — zajedno s Merakom pokazuje prema Sjevernjači.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "zupanijsko_2017.pdf",
+    "page": 2,
+    "status": "spremno",
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          10,
+          58,
+          5
+        ],
+        [
+          52,
+          40,
+          5
+        ],
+        [
+          92,
+          32,
+          5
+        ],
+        [
+          132,
+          30,
+          4.5
+        ],
+        [
+          186,
+          18,
+          5.5
+        ],
+        [
+          192,
+          66,
+          5
+        ],
+        [
+          140,
+          70,
+          5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "highlight": 4,
+      "labels": [
+        [
+          4,
+          "Dubhe",
+          4,
+          -10
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0113",
+    "question": "Koliko je zviježđa zodijaka na nebeskoj sferi?",
+    "answers": [
+      "13",
+      "12",
+      "11",
+      "14"
+    ],
+    "correct": 0,
+    "explanation": "Sunčeva prividna staza (ekliptika) prolazi kroz 13 zviježđa — uz 12 poznatih znakova tu je i Zmijonosac.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "zupanijsko_2017.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0114",
+    "question": "Koje zviježđe zodijaka NE pripada tradicionalnim 12 horoskopskim znakovima?",
+    "answers": [
+      "Zmijonosac",
+      "Vaga",
+      "Vodenjak",
+      "Strijelac"
+    ],
+    "correct": 0,
+    "explanation": "Ekliptika prolazi i kroz Zmijonosca (Ophiuchus), pa zviježđa zodijaka ima 13, iako horoskop koristi samo 12.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "teško",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0115",
+    "question": "Kako se zove zviježđe prikazano na slici?",
+    "answers": [
+      "Kit",
+      "Cefej",
+      "Pegaz",
+      "Vodenjak"
+    ],
+    "correct": 0,
+    "explanation": "Ovo je Kit (Cetus), veliko zviježđe jesenskog neba. U 'vratu' Kita nalazi se Mira — najpoznatija promjenjiva zvijezda, koja polako mijenja svoj sjaj.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "teško",
+    "year": 2013,
+    "level": "županijsko",
+    "source": "zupanijsko_2013.pdf",
+    "page": 2,
+    "status": "spremno",
+    "image": {
+      "type": "constellation",
+      "stars": [
+        [
+          28,
+          20,
+          4.5
+        ],
+        [
+          56,
+          10,
+          4
+        ],
+        [
+          78,
+          26,
+          4
+        ],
+        [
+          66,
+          50,
+          4
+        ],
+        [
+          36,
+          52,
+          4
+        ],
+        [
+          76,
+          72,
+          5.5
+        ],
+        [
+          98,
+          94,
+          4
+        ],
+        [
+          86,
+          126,
+          4
+        ],
+        [
+          66,
+          148,
+          4.5
+        ],
+        [
+          128,
+          86,
+          4
+        ],
+        [
+          196,
+          76,
+          5
+        ],
+        [
+          168,
+          128,
+          4.5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          9
+        ]
+      ]
+    },
+    "feedbackImage": {
+      "type": "constellation",
+      "stars": [
+        [
+          28,
+          20,
+          4.5
+        ],
+        [
+          56,
+          10,
+          4
+        ],
+        [
+          78,
+          26,
+          4
+        ],
+        [
+          66,
+          50,
+          4
+        ],
+        [
+          36,
+          52,
+          4
+        ],
+        [
+          76,
+          72,
+          5.5
+        ],
+        [
+          98,
+          94,
+          4
+        ],
+        [
+          86,
+          126,
+          4
+        ],
+        [
+          66,
+          148,
+          4.5
+        ],
+        [
+          128,
+          86,
+          4
+        ],
+        [
+          196,
+          76,
+          5
+        ],
+        [
+          168,
+          128,
+          4.5
+        ]
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "highlight": 5,
+      "labels": [
+        [
+          5,
+          "Mira"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q0116",
+    "question": "Planeti Sunčevog sustava koji se nalaze između Marsa i Urana su:",
+    "answers": [
+      "Jupiter i Saturn",
+      "Jupiter i Neptun",
+      "Zemlja i Saturn",
+      "Venera i Jupiter"
+    ],
+    "correct": 0,
+    "explanation": "Redoslijed planeta glasi: Merkur, Venera, Zemlja, Mars, Jupiter, Saturn, Uran, Neptun — između Marsa i Urana su Jupiter i Saturn.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0117",
+    "question": "Koji od navedenih planeta ima putanju najsličniju kružnici?",
+    "answers": [
+      "Venera",
+      "Merkur",
+      "Mars",
+      "Pluton"
+    ],
+    "correct": 0,
+    "explanation": "Venerina putanja ima najmanji ekscentricitet od svih planeta — gotovo je savršena kružnica.",
+    "topic": "Putanje",
+    "difficulty": "teško",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0118",
+    "question": "Koji je od navedenih planeta po veličini najsličniji Jupiteru?",
+    "answers": [
+      "Neptun",
+      "Mars",
+      "Merkur",
+      "Venera"
+    ],
+    "correct": 0,
+    "explanation": "Od ponuđenih je Jupiteru veličinom najbliži Neptun — i on je plinoviti div, iako je Jupiter gotovo tri puta širi.",
+    "topic": "Planeti",
+    "difficulty": "srednje",
+    "year": 2013,
+    "level": "školsko",
+    "source": "skolsko_2013.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0119",
+    "question": "Io je prirodni satelit kojeg planeta?",
+    "answers": [
+      "Jupitera",
+      "Saturna",
+      "Marsa",
+      "Urana"
+    ],
+    "correct": 0,
+    "explanation": "Io je jedan od četiriju velikih Jupiterovih satelita koje je otkrio Galileo — poznat je po brojnim aktivnim vulkanima.",
+    "topic": "Sateliti",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "školsko",
+    "source": "skolsko_2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0120",
+    "question": "Triton je prirodni satelit kojeg planeta?",
+    "answers": [
+      "Neptuna",
+      "Urana",
+      "Saturna",
+      "Jupitera"
+    ],
+    "correct": 0,
+    "explanation": "Triton je najveći Neptunov satelit — neobičan je jer kruži u smjeru suprotnom od Neptunove vrtnje.",
+    "topic": "Sateliti",
+    "difficulty": "srednje",
+    "year": 2017,
+    "level": "školsko",
+    "source": "skolsko_2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0121",
+    "question": "Titania je prirodni satelit kojeg planeta?",
+    "answers": [
+      "Urana",
+      "Saturna",
+      "Neptuna",
+      "Jupitera"
+    ],
+    "correct": 0,
+    "explanation": "Titania je najveći Uranov satelit. Uranovi sateliti nose imena likova iz Shakespeareovih djela.",
+    "topic": "Sateliti",
+    "difficulty": "teško",
+    "year": 2016,
+    "level": "županijsko",
+    "source": "zupanijsko_2016.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0122",
+    "question": "Nakon faze mlađaka (mladog Mjeseca) slijedi:",
+    "answers": [
+      "prva četvrt",
+      "puni Mjesec",
+      "posljednja četvrt",
+      "pepeljasti Mjesec"
+    ],
+    "correct": 0,
+    "explanation": "Mjesečeve faze idu redom: mlađak → prva četvrt → uštap (puni Mjesec) → posljednja četvrt, pa opet mlađak.",
+    "topic": "Mjesec",
+    "difficulty": "lako",
+    "year": 2012,
+    "level": "školsko",
+    "source": "skolsko_2012.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0123",
+    "question": "Vrijeme između dviju istih uzastopnih Mjesečevih faza naziva se:",
+    "answers": [
+      "sinodički mjesec",
+      "siderički mjesec",
+      "kalendarski mjesec",
+      "akademski mjesec"
+    ],
+    "correct": 0,
+    "explanation": "Sinodički mjesec (npr. od uštapa do uštapa) traje oko 29,5 dana — dulje od sideričkog, jer se u međuvremenu i Zemlja pomakne oko Sunca.",
+    "topic": "Mjesec",
+    "difficulty": "teško",
+    "year": 2013,
+    "level": "županijsko",
+    "source": "zupanijsko_2013.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0124",
+    "question": "Nakon ljetnog suncostaja na sjevernoj polutki dani postaju:",
+    "answers": [
+      "kraći, a noći dulje",
+      "dulji, a noći kraće",
+      "jednaki noćima",
+      "ne mijenjaju se"
+    ],
+    "correct": 0,
+    "explanation": "Ljetni suncostaj je najdulji dan u godini; nakon njega dani se postupno skraćuju, a noći produljuju.",
+    "topic": "Godišnja doba",
+    "difficulty": "lako",
+    "year": 2012,
+    "level": "školsko",
+    "source": "skolsko_2012.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0125",
+    "question": "Gdje Sunce prividno izlazi na dan ljetnog suncostaja?",
+    "answers": [
+      "na sjeveroistoku",
+      "točno na istoku",
+      "na jugoistoku",
+      "na sjeveru"
+    ],
+    "correct": 0,
+    "explanation": "Točno na istoku Sunce izlazi samo za ekvinocija. Ljeti izlazi sjevernije — na sjeveroistoku, a zimi na jugoistoku.",
+    "topic": "Sunce i opažanje",
+    "difficulty": "srednje",
+    "year": 2016,
+    "level": "školsko",
+    "source": "skolsko_2016.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0126",
+    "question": "Najdulja noć u godini na sjevernoj polutki je:",
+    "answers": [
+      "21. prosinca",
+      "21. lipnja",
+      "21. ožujka",
+      "4. siječnja"
+    ],
+    "correct": 0,
+    "explanation": "21. prosinca je zimski suncostaj — najkraći dan i najdulja noć na sjevernoj polutki.",
+    "topic": "Godišnja doba",
+    "difficulty": "lako",
+    "year": 2016,
+    "level": "županijsko",
+    "source": "zupanijsko_2016.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0127",
+    "question": "Kada je ljeto u Australiji, Zemlja je u svojoj orbiti:",
+    "answers": [
+      "najbliže Suncu",
+      "najdalje od Sunca",
+      "na srednjoj udaljenosti",
+      "izvan ekliptike"
+    ],
+    "correct": 0,
+    "explanation": "Ljeto u Australiji je početkom siječnja, kada je Zemlja u perihelu — najbliže Suncu. Godišnja doba ne ovise o udaljenosti, nego o nagibu Zemljine osi!",
+    "topic": "Godišnja doba",
+    "difficulty": "srednje",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0128",
+    "question": "Kako se još naziva sjeverna obratnica?",
+    "answers": [
+      "Rakova obratnica",
+      "Jarčeva obratnica",
+      "Bikova obratnica",
+      "Lavlja obratnica"
+    ],
+    "correct": 0,
+    "explanation": "Sjeverna obratnica zove se Rakova, a južna Jarčeva — po zviježđima u kojima je Sunce nekoć bilo za suncostaja.",
+    "topic": "Zemlja i koordinate",
+    "difficulty": "srednje",
+    "year": 2016,
+    "level": "županijsko",
+    "source": "zupanijsko_2016.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0129",
+    "question": "Može li se Merkur, gledano sa Zemlje, naći u opoziciji?",
+    "answers": [
+      "Ne, jer je unutarnji planet",
+      "Da, svake godine",
+      "Da, ali samo noću",
+      "Samo za vrijeme pomrčine"
+    ],
+    "correct": 0,
+    "explanation": "U opoziciji je planet nasuprot Suncu, a unutarnji planeti (Merkur i Venera) uvijek su blizu Sunca — mogu biti samo u donjoj ili gornjoj konjunkciji.",
+    "topic": "Položaji planeta",
+    "difficulty": "teško",
+    "year": 2017,
+    "level": "županijsko",
+    "source": "zupanijsko_2017.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0130",
+    "question": "Zvijezda je 25° iznad horizonta. Kolika je njezina zenitna daljina?",
+    "answers": [
+      "65°",
+      "25°",
+      "115°",
+      "90°"
+    ],
+    "correct": 0,
+    "explanation": "Zenitna daljina i visina zajedno čine 90°: 90° − 25° = 65°.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0131",
+    "question": "Saturn je od Sunca udaljen 9,5 AJ. Koliko je udaljen od Zemlje kada je u opoziciji?",
+    "answers": [
+      "8,5 AJ",
+      "10,5 AJ",
+      "9,5 AJ",
+      "19 AJ"
+    ],
+    "correct": 0,
+    "explanation": "U opoziciji je Zemlja između Sunca i Saturna: 9,5 − 1 = 8,5 AJ. U konjunkciji bi bilo 9,5 + 1 = 10,5 AJ.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2013,
+    "level": "županijsko",
+    "source": "zupanijsko_2013.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0132",
+    "question": "Zemlja je od Sunca udaljena oko 150 mil. km, a Merkur oko 58 mil. km. Kolika je najveća moguća udaljenost Zemlje i Merkura?",
+    "answers": [
+      "oko 208 mil. km",
+      "oko 92 mil. km",
+      "oko 150 mil. km",
+      "oko 58 mil. km"
+    ],
+    "correct": 0,
+    "explanation": "Najudaljeniji su kada su na suprotnim stranama Sunca (gornja konjunkcija): 150 + 58 = 208 milijuna km.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2016,
+    "level": "školsko",
+    "source": "skolsko_2016.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0133",
+    "question": "Uran je od Sunca udaljen 19,2 AJ, a Zemlja 1 AJ. Kolika je najmanja udaljenost Zemlje od Urana?",
+    "answers": [
+      "18,2 AJ",
+      "20,2 AJ",
+      "19,2 AJ",
+      "21,2 AJ"
+    ],
+    "correct": 0,
+    "explanation": "Najbliži su kada su na istoj strani Sunca: 19,2 − 1 = 18,2 AJ, što je oko 2,73 milijarde kilometara.",
+    "topic": "Računski zadaci",
+    "difficulty": "teško",
+    "year": 2026,
+    "level": "državno",
+    "source": "drzavno_2026.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0134",
+    "question": "Planet Gliese-581d obiđe zvijezdu za 66 dana. Dok planet Gliese-581b napravi jedan puni obilazak, planet d prijeđe pola orbite. Koliko traje obilazak planeta b?",
+    "answers": [
+      "33 dana",
+      "132 dana",
+      "66 dana",
+      "22 dana"
+    ],
+    "correct": 0,
+    "explanation": "Pola orbite planeta d traje 66 : 2 = 33 dana — toliko traje puni obilazak planeta b. Kraći period znači da je planet b bliže zvijezdi.",
+    "topic": "Računski zadaci",
+    "difficulty": "teško",
+    "year": 2026,
+    "level": "državno",
+    "source": "drzavno_2026.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0135",
+    "question": "Svjetlosti od Sunca do Merkura (0,39 AJ) treba 190 s. Koliko približno treba do Venere (0,72 AJ)?",
+    "answers": [
+      "oko 351 s (5 min 51 s)",
+      "oko 103 s",
+      "točno 190 s",
+      "oko 500 s"
+    ],
+    "correct": 0,
+    "explanation": "Vrijeme raste s udaljenošću: 190 s · (0,72 : 0,39) ≈ 351 s, tj. oko 5 minuta i 51 sekundu.",
+    "topic": "Računski zadaci",
+    "difficulty": "teško",
+    "year": 2026,
+    "level": "državno",
+    "source": "drzavno_2026.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0136",
+    "question": "Štap dug 1 m stoji uspravno. Kolika je duljina njegove sjene kada je Sunce na visini od 45°?",
+    "answers": [
+      "1 m",
+      "0,5 m",
+      "2 m",
+      "0 m"
+    ],
+    "correct": 0,
+    "explanation": "Kada je Sunce na visini 45°, sjena je jednaka visini štapa — 1 m. Kada je Sunce u zenitu (90°), sjene gotovo nema.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2013,
+    "level": "županijsko",
+    "source": "zupanijsko_2013.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0137",
+    "question": "U Sankt-Peterburgu (30° istočno) je 22 sata. Koliko je sati u Los Angelesu (120° zapadno)?",
+    "answers": [
+      "12 sati",
+      "10 sati",
+      "8 sati",
+      "16 sati"
+    ],
+    "correct": 0,
+    "explanation": "Razlika je 150° : 15° = 10 vremenskih zona. Prema zapadu je ranije: 22 − 10 = 12 sati.",
+    "topic": "Računski zadaci",
+    "difficulty": "teško",
+    "year": 2016,
+    "level": "školsko",
+    "source": "skolsko_2016.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0138",
+    "question": "Koliko najviše dana može imati razdoblje od deset uzastopnih godina?",
+    "answers": [
+      "3653",
+      "3650",
+      "3652",
+      "3660"
+    ],
+    "correct": 0,
+    "explanation": "10 · 365 = 3650 dana, a u deset godina stanu dvije ili tri prijestupne godine — najviše je dakle 3650 + 3 = 3653 dana.",
+    "topic": "Kalendar",
+    "difficulty": "teško",
+    "year": 2013,
+    "level": "školsko",
+    "source": "skolsko_2013.pdf",
+    "page": 2,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0139",
+    "question": "Koja je od navedenih godina prijestupna?",
+    "answers": [
+      "2020.",
+      "2019.",
+      "2021.",
+      "2017."
+    ],
+    "correct": 0,
+    "explanation": "Prijestupne su godine djeljive s 4 (npr. 2020.), a godine stoljeća samo ako su djeljive s 400.",
+    "topic": "Kalendar",
+    "difficulty": "lako",
+    "year": 2016,
+    "level": "županijsko",
+    "source": "zupanijsko_2016.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0140",
+    "question": "Koji astronaut NIJE bio član posade Apolla 11?",
+    "answers": [
+      "Virgil Grissom",
+      "Neil Armstrong",
+      "Edwin Aldrin",
+      "Michael Collins"
+    ],
+    "correct": 0,
+    "explanation": "Posadu Apolla 11 činili su Armstrong, Aldrin i Collins. Virgil 'Gus' Grissom tragično je poginuo u požaru Apolla 1.",
+    "topic": "Povijest astronautike",
+    "difficulty": "teško",
+    "year": 2013,
+    "level": "županijsko",
+    "source": "zupanijsko_2013.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0141",
+    "question": "Prvi hrvatski umjetni satelit, lansiran u prosincu 2024., zove se:",
+    "answers": [
+      "CroCube",
+      "CroSat",
+      "Nikola Tesla 1",
+      "Zagreb-1"
+    ],
+    "correct": 0,
+    "explanation": "CroCube je prvi hrvatski satelit — malen poput kutije (CubeSat), lansiran u prosincu 2024., snima Zemlju iz orbite.",
+    "topic": "Povijest astronautike",
+    "difficulty": "srednje",
+    "year": 2025,
+    "level": "školsko",
+    "source": "skolsko_2025.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0142",
+    "question": "Prvi umjetni satelit lansiran u Zemljinu orbitu bio je:",
+    "answers": [
+      "Sputnjik 1",
+      "Vostok 1",
+      "Apollo 1",
+      "Mariner 1"
+    ],
+    "correct": 0,
+    "explanation": "Sputnjik 1 lansiran je 1957. godine i označio je početak svemirskog doba.",
+    "topic": "Povijest astronautike",
+    "difficulty": "lako",
+    "year": 2012,
+    "level": "školsko",
+    "source": "skolsko_2012.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "id": "Q0143",
+    "question": "Sjaj najslabijih zvijezda koje se još mogu vidjeti golim okom nazivamo:",
+    "answers": [
+      "granična zvjezdana magnituda",
+      "apsolutna magnituda",
+      "luminozitet",
+      "albedo"
+    ],
+    "correct": 0,
+    "explanation": "Golim okom na tamnom nebu vidimo zvijezde do otprilike 6. magnitude — taj sjaj zovemo granična zvjezdana magnituda.",
+    "topic": "Opažanje",
+    "difficulty": "teško",
+    "year": 2016,
+    "level": "županijsko",
+    "source": "zupanijsko_2016.pdf",
+    "page": 1,
+    "status": "spremno"
+  },
+  {
+    "question": "Koja je najsjajnija zvijezda u zviježđu Veliki pas?",
+    "answers": [
+      "Mizar",
+      "Alkor",
+      "Sirijus",
+      "Arktur"
+    ],
+    "correct": 2,
+    "explanation": "Sirijus je najsjajnija zvijezda noćnog neba i pripada zviježđu Veliki pas.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2001,
+    "level": "županijsko",
+    "source": "zupanijsko_2001.pdf",
+    "page": 9,
+    "status": "spremno",
+    "id": "Q0144"
+  },
+  {
+    "question": "Kako se nazivaju dvije točke u kojima se sijeku nebeski ekvator i ekliptika?",
+    "answers": [
+      "Zenit i nadir",
+      "Proljetna i jesenska točka",
+      "Sjeverni i južni pol",
+      "Perihel i afel"
+    ],
+    "correct": 1,
+    "explanation": "Sjecišta nebeskog ekvatora i ekliptike jesu proljetna i jesenska točka.",
+    "topic": "Nebeska sfera",
+    "difficulty": "teško",
+    "year": 2001,
+    "level": "županijsko",
+    "source": "zupanijsko_2001.pdf",
+    "page": 9,
+    "status": "spremno",
+    "id": "Q0145"
+  },
+  {
+    "question": "Koja je najveća među navedenim zvijezdama?",
+    "answers": [
+      "Sunce",
+      "Kapela",
+      "Sirijus",
+      "Antares"
+    ],
+    "correct": 3,
+    "explanation": "Antares je crveni superdiv i mnogo je veći od Sunca, Kapele i Sirijusa.",
+    "topic": "Zvijezde",
+    "difficulty": "srednje",
+    "year": 2001,
+    "level": "županijsko",
+    "source": "zupanijsko_2001.pdf",
+    "page": 9,
+    "status": "spremno",
+    "id": "Q0146"
+  },
+  {
+    "question": "Kolika je približna temperatura Sunčeve vidljive površine?",
+    "answers": [
+      "oko 580 K",
+      "oko 5 800 K",
+      "oko 58 000 K",
+      "oko 5,8 milijuna K"
+    ],
+    "correct": 1,
+    "explanation": "Fotosfera Sunca ima temperaturu približno 5 800 K.",
+    "topic": "Sunce",
+    "difficulty": "lako",
+    "year": 2001,
+    "level": "županijsko",
+    "source": "zupanijsko_2001.pdf",
+    "page": 9,
+    "status": "spremno",
+    "id": "Q0147"
+  },
+  {
+    "question": "Koji planeti, gledano sa Zemlje, mogu prividno prijeći preko Sunčeva diska?",
+    "answers": [
+      "Merkur i Venera",
+      "Zemlja i Mars",
+      "Jupiter i Saturn",
+      "Uran i Neptun"
+    ],
+    "correct": 0,
+    "explanation": "Samo su Merkur i Venera bliže Suncu od Zemlje pa mogu proći između Zemlje i Sunca.",
+    "topic": "Položaji planeta",
+    "difficulty": "srednje",
+    "year": 2001,
+    "level": "županijsko",
+    "source": "zupanijsko_2001.pdf",
+    "page": 9,
+    "status": "spremno",
+    "id": "Q0148"
+  },
+  {
+    "question": "Kako se zvao prvi čovjek koji je obletio Zemlju u svemirskoj letjelici?",
+    "answers": [
+      "Neil Armstrong",
+      "Jurij Gagarin",
+      "John Glenn",
+      "Buzz Aldrin"
+    ],
+    "correct": 1,
+    "explanation": "Jurij Gagarin obletio je Zemlju u letjelici Vostok 1 1961. godine.",
+    "topic": "Povijest astronautike",
+    "difficulty": "lako",
+    "year": 2001,
+    "level": "županijsko",
+    "source": "zupanijsko_2001.pdf",
+    "page": 9,
+    "status": "spremno",
+    "id": "Q0149"
+  },
+  {
+    "question": "Koja je zvijezda najbliža Suncu?",
+    "answers": [
+      "Sirijus",
+      "Proksima Centauri",
+      "Sjevernjača",
+      "Vega"
+    ],
+    "correct": 1,
+    "explanation": "Proksima Centauri najbliža je poznata zvijezda Suncu, udaljena oko 4,24 svjetlosne godine.",
+    "topic": "Zvijezde",
+    "difficulty": "lako",
+    "year": 2001,
+    "level": "županijsko",
+    "source": "zupanijsko_2001.pdf",
+    "page": 9,
+    "status": "spremno",
+    "id": "Q0150"
+  },
+  {
+    "question": "Radiosignalu treba 10 sekundi da stigne od rakete do Zemlje. Koliko je raketa udaljena ako signal putuje 300 000 km/s?",
+    "answers": [
+      "300 000 km",
+      "3 000 000 km",
+      "30 000 000 km",
+      "30 000 km"
+    ],
+    "correct": 1,
+    "explanation": "Udaljenost je brzina puta vrijeme: 300 000 × 10 = 3 000 000 km.",
+    "topic": "Računski zadaci",
+    "difficulty": "lako",
+    "year": 2001,
+    "level": "županijsko",
+    "source": "zupanijsko_2001.pdf",
+    "page": 10,
+    "status": "spremno",
+    "id": "Q0151"
+  },
+  {
+    "question": "Kada se Zemlja najsporije giba oko Sunca?",
+    "answers": [
+      "Kada je najbliže Suncu",
+      "Kada je najdalje od Sunca",
+      "Za vrijeme svakog ekvinocija",
+      "Uvijek se giba istom brzinom"
+    ],
+    "correct": 1,
+    "explanation": "Prema Keplerovu drugom zakonu Zemlja se najsporije giba u afelu, najdalje od Sunca.",
+    "topic": "Gibanja",
+    "difficulty": "srednje",
+    "year": 2002,
+    "level": "županijsko",
+    "source": "zupanijsko_2002.pdf",
+    "page": 12,
+    "status": "spremno",
+    "id": "Q0152"
+  },
+  {
+    "question": "Koja od navedenih letjelica nije posjetila Mjesec?",
+    "answers": [
+      "Apollo 14",
+      "Clementine",
+      "Luna 9",
+      "Space Shuttle"
+    ],
+    "correct": 3,
+    "explanation": "Space Shuttle letio je samo u Zemljinoj orbiti i nije posjetio Mjesec.",
+    "topic": "Povijest astronautike",
+    "difficulty": "srednje",
+    "year": 2002,
+    "level": "županijsko",
+    "source": "zupanijsko_2002.pdf",
+    "page": 12,
+    "status": "spremno",
+    "id": "Q0153"
+  },
+  {
+    "question": "Koliki dio Mjesečeva vidljivog diska vidimo osvijetljen u fazi prve četvrti?",
+    "answers": [
+      "četvrtinu",
+      "polovicu",
+      "tri četvrtine",
+      "cijeli disk"
+    ],
+    "correct": 1,
+    "explanation": "U prvoj četvrti sa Zemlje vidimo osvijetljenu polovicu Mjesečeva diska.",
+    "topic": "Mjesec",
+    "difficulty": "lako",
+    "year": 2002,
+    "level": "županijsko",
+    "source": "zupanijsko_2002.pdf",
+    "page": 12,
+    "status": "spremno",
+    "id": "Q0154"
+  },
+  {
+    "question": "Koji od navedenih satelita ne pripada Jupiteru?",
+    "answers": [
+      "Io",
+      "Titan",
+      "Amalteja",
+      "Kalisto"
+    ],
+    "correct": 1,
+    "explanation": "Titan je Saturnov satelit; Io, Amalteja i Kalisto kruže oko Jupitera.",
+    "topic": "Sateliti",
+    "difficulty": "srednje",
+    "year": 2002,
+    "level": "županijsko",
+    "source": "zupanijsko_2002.pdf",
+    "page": 12,
+    "status": "spremno",
+    "id": "Q0155"
+  },
+  {
+    "question": "Koje je godišnje doba u Hrvatskoj kada je Zemlja najbliža Suncu?",
+    "answers": [
+      "Proljeće",
+      "Ljeto",
+      "Jesen",
+      "Zima"
+    ],
+    "correct": 3,
+    "explanation": "Zemlja prolazi perihelom početkom siječnja, kada je na sjevernoj polutki zima.",
+    "topic": "Godišnja doba",
+    "difficulty": "srednje",
+    "year": 2002,
+    "level": "županijsko",
+    "source": "zupanijsko_2002.pdf",
+    "page": 12,
+    "status": "spremno",
+    "id": "Q0156"
+  },
+  {
+    "question": "Kako se naziva svjetleća pojava nastala kada meteoroid uleti u atmosferu i izgori?",
+    "answers": [
+      "Asteroid",
+      "Meteor",
+      "Meteorit",
+      "Komet"
+    ],
+    "correct": 1,
+    "explanation": "Svjetleća pojava u atmosferi zove se meteor. Ostatak koji padne na tlo zove se meteorit.",
+    "topic": "Mala tijela",
+    "difficulty": "lako",
+    "year": 2002,
+    "level": "županijsko",
+    "source": "zupanijsko_2002.pdf",
+    "page": 13,
+    "status": "spremno",
+    "id": "Q0157"
+  },
+  {
+    "question": "Koje tri zvijezde čine Ljetni trokut?",
+    "answers": [
+      "Vega, Deneb i Altair",
+      "Sirijus, Rigel i Betelgez",
+      "Arktur, Spika i Regul",
+      "Kapela, Aldebaran i Poluks"
+    ],
+    "correct": 0,
+    "explanation": "Ljetni trokut čine Vega u Liri, Deneb u Labudu i Altair u Orlu.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2002,
+    "level": "županijsko",
+    "source": "zupanijsko_2002.pdf",
+    "page": 14,
+    "status": "spremno",
+    "id": "Q0158"
+  },
+  {
+    "question": "U kojim se zviježđima nalaze zvijezde Ljetnog trokuta?",
+    "answers": [
+      "Lira, Labud i Orao",
+      "Orion, Bik i Veliki pas",
+      "Lav, Djevica i Volar",
+      "Perzej, Andromeda i Pegaz"
+    ],
+    "correct": 0,
+    "explanation": "Vega je u Liri, Deneb u Labudu, a Altair u Orlu.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2002,
+    "level": "županijsko",
+    "source": "zupanijsko_2002.pdf",
+    "page": 14,
+    "status": "spremno",
+    "id": "Q0159"
+  },
+  {
+    "question": "Zemlja se oko Sunca giba sporije od kojeg planeta?",
+    "answers": [
+      "Venere",
+      "Marsa",
+      "Jupitera",
+      "Neptuna"
+    ],
+    "correct": 0,
+    "explanation": "Planeti bliži Suncu gibaju se brže; Venera se giba brže od Zemlje.",
+    "topic": "Gibanja",
+    "difficulty": "srednje",
+    "year": 2003,
+    "level": "županijsko",
+    "source": "zupanijsko_2003.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0160"
+  },
+  {
+    "question": "Čime se bavi astrognozija?",
+    "answers": [
+      "Mjerenjem udaljenosti do Mjeseca",
+      "Snalaženjem na noćnom nebu",
+      "Proučavanjem Sunčeve jezgre",
+      "Izradom svemirskih letjelica"
+    ],
+    "correct": 1,
+    "explanation": "Astrognozija je praktično poznavanje zvjezdanog neba i snalaženje među zviježđima.",
+    "topic": "Opažanje",
+    "difficulty": "srednje",
+    "year": 2003,
+    "level": "županijsko",
+    "source": "zupanijsko_2003.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0161"
+  },
+  {
+    "question": "Koji planet možemo vidjeti teleskopom, ali ga u pravilu ne vidimo golim okom?",
+    "answers": [
+      "Veneru",
+      "Mars",
+      "Uran",
+      "Jupiter"
+    ],
+    "correct": 2,
+    "explanation": "Uran je na granici vidljivosti golim okom, ali se pouzdano opaža teleskopom ili dvogledom.",
+    "topic": "Planeti",
+    "difficulty": "srednje",
+    "year": 2003,
+    "level": "županijsko",
+    "source": "zupanijsko_2003.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0162"
+  },
+  {
+    "question": "Koji je najveći Neptunov prirodni satelit?",
+    "answers": [
+      "Titan",
+      "Kalisto",
+      "Ganimed",
+      "Triton"
+    ],
+    "correct": 3,
+    "explanation": "Triton je najveći Neptunov satelit.",
+    "topic": "Sateliti",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "županijsko",
+    "source": "zupanijsko_2003.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0163"
+  },
+  {
+    "question": "Koje je od navedenih zviježđa zodijačko?",
+    "answers": [
+      "Jarac",
+      "Labud",
+      "Lisica",
+      "Gušterica"
+    ],
+    "correct": 0,
+    "explanation": "Jarac se nalazi uz ekliptiku i pripada zodijačkim zviježđima.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "županijsko",
+    "source": "zupanijsko_2003.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0164"
+  },
+  {
+    "question": "Je li Zemlja ljeti u Hrvatskoj malo bliže ili malo dalje od Sunca nego zimi?",
+    "answers": [
+      "Bliže",
+      "Dalje",
+      "Jednako daleko",
+      "Udaljenost se mijenja samo tijekom dana"
+    ],
+    "correct": 1,
+    "explanation": "Zemlja je početkom srpnja u afelu, pa je tijekom našeg ljeta malo dalje od Sunca nego zimi.",
+    "topic": "Godišnja doba",
+    "difficulty": "srednje",
+    "year": 2003,
+    "level": "županijsko",
+    "source": "zupanijsko_2003.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0165"
+  },
+  {
+    "question": "Koliko traje srednji Sunčev dan na Zemlji?",
+    "answers": [
+      "12 sati",
+      "23 sata",
+      "24 sata",
+      "25 sati"
+    ],
+    "correct": 2,
+    "explanation": "Srednji Sunčev dan definiran je kao 24 sata.",
+    "topic": "Vrijeme",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "županijsko",
+    "source": "zupanijsko_2003.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0166"
+  },
+  {
+    "question": "Kako se zovu dvije osnovne leće astronomskog refraktora?",
+    "answers": [
+      "Prizma i rešetka",
+      "Objektiv i okular",
+      "Zrcalo i filter",
+      "Stativ i tražilo"
+    ],
+    "correct": 1,
+    "explanation": "Objektiv skuplja svjetlost, a kroz okular promatramo povećanu sliku.",
+    "topic": "Teleskopi",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "županijsko",
+    "source": "zupanijsko_2003.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0167"
+  },
+  {
+    "question": "Kako nazivamo zvijezde koje za određenog promatrača nikada ne izlaze iznad horizonta?",
+    "answers": [
+      "Cirkumpolarne",
+      "Anticirkumpolarne",
+      "Zodijačke",
+      "Promjenjive"
+    ],
+    "correct": 1,
+    "explanation": "Anticirkumpolarne zvijezde stalno su ispod horizonta promatrača.",
+    "topic": "Nebeska sfera",
+    "difficulty": "teško",
+    "year": 2003,
+    "level": "županijsko",
+    "source": "zupanijsko_2003.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0168"
+  },
+  {
+    "question": "Koje je drugo ime za zvijezdu repaticu?",
+    "answers": [
+      "Meteor",
+      "Komet",
+      "Asteroid",
+      "Meteorit"
+    ],
+    "correct": 1,
+    "explanation": "Zvijezda repatica narodni je naziv za komet.",
+    "topic": "Mala tijela",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "županijsko",
+    "source": "zupanijsko_2003.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0169"
+  },
+  {
+    "question": "Koji je od navedenih satelita Uranov?",
+    "answers": [
+      "Titan",
+      "Fobos",
+      "Triton",
+      "Miranda"
+    ],
+    "correct": 3,
+    "explanation": "Miranda je jedan od većih Uranovih satelita.",
+    "topic": "Sateliti",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "županijsko",
+    "source": "zupanijsko_2004.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0170"
+  },
+  {
+    "question": "Koji je uljez među Vestom, Ceresom, Idom i Kalistom?",
+    "answers": [
+      "Vesta",
+      "Ceres",
+      "Ida",
+      "Kalisto"
+    ],
+    "correct": 3,
+    "explanation": "Vesta, Ceres i Ida mala su tijela Sunčeva sustava, a Kalisto je Jupiterov satelit.",
+    "topic": "Mala tijela",
+    "difficulty": "srednje",
+    "year": 2004,
+    "level": "županijsko",
+    "source": "zupanijsko_2004.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0171"
+  },
+  {
+    "question": "Koliki dio cijelog Mjeseca Sunce osvjetljava u fazi mlađaka?",
+    "answers": [
+      "Ništa",
+      "Četvrtinu",
+      "Polovicu",
+      "Cijeli Mjesec"
+    ],
+    "correct": 2,
+    "explanation": "Sunce uvijek osvjetljava približno polovicu Mjeseca; za mlađaka je osvijetljena polovica okrenuta od Zemlje.",
+    "topic": "Mjesec",
+    "difficulty": "srednje",
+    "year": 2004,
+    "level": "županijsko",
+    "source": "zupanijsko_2004.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0172"
+  },
+  {
+    "question": "Koja je tvrdnja o planetoidima točna?",
+    "answers": [
+      "To su zvijezde padalice",
+      "To su mala stjenovita ili metalna tijela Sunčeva sustava",
+      "To su isključivo ledena tijela s repom",
+      "To su mali prirodni sateliti"
+    ],
+    "correct": 1,
+    "explanation": "Planetoidi ili asteroidi uglavnom su mala stjenovita ili metalna tijela koja kruže oko Sunca.",
+    "topic": "Mala tijela",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "županijsko",
+    "source": "zupanijsko_2004.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0173"
+  },
+  {
+    "question": "Što je ravnina ekliptike?",
+    "answers": [
+      "Ravnina Mjesečeve putanje oko Zemlje",
+      "Ravnina Zemljine putanje oko Sunca",
+      "Ravnina Sunčeva ekvatora",
+      "Ravnina horizonta"
+    ],
+    "correct": 1,
+    "explanation": "Ekliptika na nebu odgovara ravnini Zemljine putanje oko Sunca.",
+    "topic": "Nebeska sfera",
+    "difficulty": "srednje",
+    "year": 2004,
+    "level": "županijsko",
+    "source": "zupanijsko_2004.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0174"
+  },
+  {
+    "question": "Na kojim planetima među navedenima postoje polarne kape?",
+    "answers": [
+      "Zemlji i Marsu",
+      "Merkuru i Veneri",
+      "Jupiteru i Saturnu",
+      "Uranu i Neptunu"
+    ],
+    "correct": 0,
+    "explanation": "Zemlja i Mars imaju jasno izražene polarne kape.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "županijsko",
+    "source": "zupanijsko_2004.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0175"
+  },
+  {
+    "question": "Kako se zove otvoreni zvjezdani skup M45 u zviježđu Bika?",
+    "answers": [
+      "Hijade",
+      "Plejade ili Vlašići",
+      "Jaslice",
+      "Omega Centauri"
+    ],
+    "correct": 1,
+    "explanation": "M45 je skup Plejade, u hrvatskoj tradiciji poznat i kao Vlašići.",
+    "topic": "Zvjezdani skupovi",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "županijsko",
+    "source": "zupanijsko_2004.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0176"
+  },
+  {
+    "question": "Na kojem je mjestu na Zemlji sjeverni nebeski pol točno u zenitu?",
+    "answers": [
+      "Na ekvatoru",
+      "Na sjevernom geografskom polu",
+      "Na južnom geografskom polu",
+      "Na Rakovoj obratnici"
+    ],
+    "correct": 1,
+    "explanation": "Na sjevernom geografskom polu sjeverni nebeski pol nalazi se u zenitu.",
+    "topic": "Zemlja i koordinate",
+    "difficulty": "srednje",
+    "year": 2004,
+    "level": "županijsko",
+    "source": "zupanijsko_2004.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0177"
+  },
+  {
+    "question": "Što opažamo kada meteoroid uleti velikom brzinom u Zemljinu atmosferu?",
+    "answers": [
+      "Meteor",
+      "Komet",
+      "Pomrčinu",
+      "Polarnu svjetlost"
+    ],
+    "correct": 0,
+    "explanation": "Užareni trag meteoroida u atmosferi zove se meteor.",
+    "topic": "Mala tijela",
+    "difficulty": "lako",
+    "year": 2004,
+    "level": "županijsko",
+    "source": "zupanijsko_2004.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0178"
+  },
+  {
+    "question": "Koji je planet 2004. godine prividno prošao preko Sunčeva diska?",
+    "answers": [
+      "Merkur",
+      "Venera",
+      "Mars",
+      "Jupiter"
+    ],
+    "correct": 1,
+    "explanation": "Tranzit Venere preko Sunca dogodio se 8. lipnja 2004.",
+    "topic": "Povijest astronomije",
+    "difficulty": "srednje",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0179"
+  },
+  {
+    "question": "Tko je prvi sustavno upotrijebio teleskop za astronomska promatranja?",
+    "answers": [
+      "Nikola Kopernik",
+      "Galileo Galilei",
+      "Johannes Kepler",
+      "Edwin Hubble"
+    ],
+    "correct": 1,
+    "explanation": "Galileo Galilei 1609. usmjerio je poboljšani teleskop prema nebu i zabilježio važna otkrića.",
+    "topic": "Povijest astronomije",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0180"
+  },
+  {
+    "question": "Kako se zove mjerna jedinica jednaka srednjoj udaljenosti Zemlje od Sunca?",
+    "answers": [
+      "Svjetlosna godina",
+      "Parsek",
+      "Astronomska jedinica",
+      "Nebeski stupanj"
+    ],
+    "correct": 2,
+    "explanation": "Jedna astronomska jedinica iznosi približno 149,6 milijuna kilometara.",
+    "topic": "Udaljenosti",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0181"
+  },
+  {
+    "question": "Koji predjeli pokrivaju veći dio Mjesečeve površine?",
+    "answers": [
+      "Tamna mora",
+      "Svijetli brdoviti predjeli",
+      "Oceani tekuće vode",
+      "Ledene ravnice"
+    ],
+    "correct": 1,
+    "explanation": "Svijetla Mjesečeva gorja ili brdoviti predjeli zauzimaju veći dio njegove površine.",
+    "topic": "Mjesec",
+    "difficulty": "srednje",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0182"
+  },
+  {
+    "question": "Kako se zvao američki program koji je doveo prve ljude na Mjesec?",
+    "answers": [
+      "Gemini",
+      "Ranger",
+      "Apollo",
+      "Voyager"
+    ],
+    "correct": 2,
+    "explanation": "Prva ljudska slijetanja na Mjesec izvedena su u programu Apollo.",
+    "topic": "Povijest astronautike",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0183"
+  },
+  {
+    "question": "Koji se planet nalazi između Merkura i Zemlje?",
+    "answers": [
+      "Mars",
+      "Venera",
+      "Jupiter",
+      "Uran"
+    ],
+    "correct": 1,
+    "explanation": "Redoslijed unutarnjih planeta je Merkur, Venera, Zemlja i Mars.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 6,
+    "status": "spremno",
+    "id": "Q0184"
+  },
+  {
+    "question": "Kolika je približna temperatura Sunčeve površine?",
+    "answers": [
+      "600 K",
+      "6 000 K",
+      "60 000 K",
+      "600 000 K"
+    ],
+    "correct": 1,
+    "explanation": "Sunčeva fotosfera ima temperaturu približno 5 800 do 6 000 K.",
+    "topic": "Sunce",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 6,
+    "status": "spremno",
+    "id": "Q0185"
+  },
+  {
+    "question": "Kako se zvala prva životinja koja je obišla Zemlju u orbiti?",
+    "answers": [
+      "Lajka",
+      "Belka",
+      "Ham",
+      "Felicette"
+    ],
+    "correct": 0,
+    "explanation": "Pas Lajka bio je prva životinja koja je obišla Zemlju u orbiti, u Sputnjiku 2.",
+    "topic": "Povijest astronautike",
+    "difficulty": "srednje",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 6,
+    "status": "spremno",
+    "id": "Q0186"
+  },
+  {
+    "question": "Po kojem je hrvatskom znanstveniku nazvan krater na Mjesecu?",
+    "answers": [
+      "Ruđeru Boškoviću",
+      "Faustu Vrančiću",
+      "Nikoli Tesli",
+      "Andriji Štamparu"
+    ],
+    "correct": 0,
+    "explanation": "Na Mjesecu postoji krater Boscovich, nazvan po Ruđeru Boškoviću.",
+    "topic": "Povijest astronomije",
+    "difficulty": "srednje",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 6,
+    "status": "spremno",
+    "id": "Q0187"
+  },
+  {
+    "question": "Što je Velika Andromedina maglica M31?",
+    "answers": [
+      "Oblak plina u Mliječnoj stazi",
+      "Galaksija slična Mliječnoj stazi",
+      "Ostatak supernove",
+      "Kuglasti skup"
+    ],
+    "correct": 1,
+    "explanation": "M31 je velika spiralna galaksija, najbliža velika susjedna galaksija Mliječnoj stazi.",
+    "topic": "Galaksije",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 6,
+    "status": "spremno",
+    "id": "Q0188"
+  },
+  {
+    "question": "Koliki put Zemlja prijeđe za jedan dan ako se giba brzinom 30 km/s?",
+    "answers": [
+      "259 200 km",
+      "2 592 000 km",
+      "25 920 000 km",
+      "86 400 km"
+    ],
+    "correct": 1,
+    "explanation": "Jedan dan ima 86 400 sekundi, pa je put 30 × 86 400 = 2 592 000 km.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 7,
+    "status": "spremno",
+    "id": "Q0189"
+  },
+  {
+    "question": "Koje zviježđe svojim najsjajnijim zvijezdama nalikuje slovu W ili M?",
+    "answers": [
+      "Orion",
+      "Kasiopeja",
+      "Lav",
+      "Lira"
+    ],
+    "correct": 1,
+    "explanation": "Pet sjajnih zvijezda Kasiopeje tvori prepoznatljiv oblik slova W ili M.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 8,
+    "status": "spremno",
+    "id": "Q0190"
+  },
+  {
+    "question": "Koje dvije zvijezde Velikih kola služe kao pokazivači prema Sjevernjači?",
+    "answers": [
+      "Mizar i Alkor",
+      "Merak i Dubhe",
+      "Aliot i Megrez",
+      "Alkaid i Mizar"
+    ],
+    "correct": 1,
+    "explanation": "Pravac od Meraka preko Dubhea vodi prema Sjevernjači.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 8,
+    "status": "spremno",
+    "id": "Q0191"
+  },
+  {
+    "question": "Kako se zove poznata dvojna zvijezda u Velikim kolima?",
+    "answers": [
+      "Mizar",
+      "Rigel",
+      "Vega",
+      "Kapela"
+    ],
+    "correct": 0,
+    "explanation": "Mizar i njegov slabiji pratilac Alkor čine poznati optički par vidljiv golim okom.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2005,
+    "level": "županijsko",
+    "source": "zupanijsko_2005.pdf",
+    "page": 8,
+    "status": "spremno",
+    "id": "Q0192"
+  },
+  {
+    "question": "Koja je zvijezda prividno sjajnija?",
+    "answers": [
+      "Sjevernjača",
+      "Rigel",
+      "Jednako su sjajne",
+      "Ne može se usporediti"
+    ],
+    "correct": 1,
+    "explanation": "Rigel je približno nulte magnitude, dok je Sjevernjača oko druge magnitude.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0193"
+  },
+  {
+    "question": "Kakav je približan oblik Zemlje?",
+    "answers": [
+      "Savršena kugla",
+      "Kugla spljoštena na polovima",
+      "Kugla spljoštena na ekvatoru",
+      "Ravni disk"
+    ],
+    "correct": 1,
+    "explanation": "Zemlja je blago spljoštena na polovima i ispupčena na ekvatoru.",
+    "topic": "Zemlja",
+    "difficulty": "lako",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0194"
+  },
+  {
+    "question": "U kojoj je Mjesečevoj fazi Mjesec najbliži Suncu?",
+    "answers": [
+      "Za mlađaka",
+      "Za prve četvrti",
+      "Za uštapa",
+      "Za zadnje četvrti"
+    ],
+    "correct": 0,
+    "explanation": "Za mlađaka Mjesec se nalazi približno između Zemlje i Sunca, pa je tada Suncu najbliži.",
+    "topic": "Mjesec",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0195"
+  },
+  {
+    "question": "Kojeg je datuma započelo 21. stoljeće?",
+    "answers": [
+      "1. siječnja 2000.",
+      "1. siječnja 2001.",
+      "31. prosinca 2000.",
+      "1. siječnja 2002."
+    ],
+    "correct": 1,
+    "explanation": "Budući da nije postojala nulta godina, 21. stoljeće započelo je 1. siječnja 2001.",
+    "topic": "Kalendar",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0196"
+  },
+  {
+    "question": "Kako se zajedničkim imenom zovu zviježđa kroz koja Sunce prividno prolazi tijekom godine?",
+    "answers": [
+      "Cirkumpolarna zviježđa",
+      "Zodijak",
+      "Ljetni trokut",
+      "Veliki zimski šesterokut"
+    ],
+    "correct": 1,
+    "explanation": "Pojas zviježđa uz ekliptiku naziva se zodijak.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0197"
+  },
+  {
+    "question": "Koje su dvije najsjajnije zvijezde zviježđa Lava?",
+    "answers": [
+      "Regul i Denebola",
+      "Kastor i Poluks",
+      "Vega i Deneb",
+      "Betelgez i Rigel"
+    ],
+    "correct": 0,
+    "explanation": "Regul i Denebola dvije su najuočljivije zvijezde Lava.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "županijsko",
+    "source": "zupanijsko_2006.pdf",
+    "page": 6,
+    "status": "spremno",
+    "id": "Q0198"
+  },
+  {
+    "question": "Kroz koje od navedenih zviježđa ne prolazi pojas Mliječne staze?",
+    "answers": [
+      "Zmaj",
+      "Kočijaš",
+      "Labud",
+      "Kasiopeja"
+    ],
+    "correct": 0,
+    "explanation": "Mliječna staza prolazi kroz Kočijaša, Labuda i Kasiopeju, ali ne kroz Zmaja.",
+    "topic": "Galaksije",
+    "difficulty": "teško",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0199"
+  },
+  {
+    "question": "Koje tri zvijezde čine Proljetni trokut?",
+    "answers": [
+      "Spika, Arktur i Regul",
+      "Vega, Deneb i Altair",
+      "Sirijus, Betelgez i Prokion",
+      "Kapela, Aldebaran i Rigel"
+    ],
+    "correct": 0,
+    "explanation": "Proljetni trokut najčešće čine Arktur, Spika i Regul.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0200"
+  },
+  {
+    "question": "Po kojoj su dvojici hrvatskih znanstvenika nazvani krateri na Mjesecu?",
+    "answers": [
+      "Mohorovičiću i Boškoviću",
+      "Tesli i Prelogu",
+      "Vrančiću i Penkali",
+      "Getaldiću i Ružički"
+    ],
+    "correct": 0,
+    "explanation": "Na Mjesecu postoje krateri Mohorovičić i Boscovich.",
+    "topic": "Povijest astronomije",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0201"
+  },
+  {
+    "question": "Može li Sunce iz Hrvatske ikada biti točno u zenitu?",
+    "answers": [
+      "Da, svakog ljeta",
+      "Da, za ekvinocija",
+      "Ne može",
+      "Samo u Zagrebu"
+    ],
+    "correct": 2,
+    "explanation": "Hrvatska leži izvan tropskog pojasa, pa Sunce ondje nikada ne prolazi kroz zenit.",
+    "topic": "Zemlja i koordinate",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0202"
+  },
+  {
+    "question": "Je li strana Mjeseca koju ne vidimo sa Zemlje uvijek tamna?",
+    "answers": [
+      "Da",
+      "Ne",
+      "Samo tijekom zime",
+      "Samo za mlađaka"
+    ],
+    "correct": 1,
+    "explanation": "Daleka strana Mjeseca prima Sunčevu svjetlost jednako kao i nama vidljiva strana.",
+    "topic": "Mjesec",
+    "difficulty": "lako",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0203"
+  },
+  {
+    "question": "Kako se zove optički instrument s dva objektiva i dva okulara kojim gledamo s oba oka?",
+    "answers": [
+      "Refraktor",
+      "Dvogled ili binokular",
+      "Spektroskop",
+      "Koronograf"
+    ],
+    "correct": 1,
+    "explanation": "Dvogled ima dva optička sustava, po jedan za svako oko.",
+    "topic": "Teleskopi",
+    "difficulty": "lako",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0204"
+  },
+  {
+    "question": "U kojem se zviježđu nalaze Mintaka, Alnilam, Alnitak i Betelgez?",
+    "answers": [
+      "Biku",
+      "Orionu",
+      "Blizancima",
+      "Velikom psu"
+    ],
+    "correct": 1,
+    "explanation": "Mintaka, Alnilam i Alnitak čine Orionov pojas, a Betelgez je također u Orionu.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2007,
+    "level": "županijsko",
+    "source": "zupanijsko_2007.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0205"
+  },
+  {
+    "question": "Kolika je visina zenita iznad horizonta?",
+    "answers": [
+      "45°",
+      "75°",
+      "90°",
+      "180°"
+    ],
+    "correct": 2,
+    "explanation": "Zenit je točka točno iznad promatrača pa mu je visina 90°.",
+    "topic": "Nebeske koordinate",
+    "difficulty": "lako",
+    "year": 2008,
+    "level": "županijsko",
+    "source": "zupanijsko_2008.pdf",
+    "page": 21,
+    "status": "spremno",
+    "id": "Q0206"
+  },
+  {
+    "question": "Koji je planet najudaljeniji od Sunca?",
+    "answers": [
+      "Uran",
+      "Saturn",
+      "Neptun",
+      "Jupiter"
+    ],
+    "correct": 2,
+    "explanation": "Neptun je osmi i najudaljeniji planet Sunčeva sustava.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2008,
+    "level": "županijsko",
+    "source": "zupanijsko_2008.pdf",
+    "page": 22,
+    "status": "spremno",
+    "id": "Q0207"
+  },
+  {
+    "question": "Od kakvog je materijala poznati meteorit koji je 1751. pao kod Hrašćine?",
+    "answers": [
+      "Ledenog",
+      "Željeznog",
+      "Ugljičnog",
+      "Staklenog"
+    ],
+    "correct": 1,
+    "explanation": "Hrašćinski meteorit poznati je željezni meteorit.",
+    "topic": "Mala tijela",
+    "difficulty": "srednje",
+    "year": 2008,
+    "level": "županijsko",
+    "source": "zupanijsko_2008.pdf",
+    "page": 22,
+    "status": "spremno",
+    "id": "Q0208"
+  },
+  {
+    "question": "U kojoj se fazi nalazi Mjesec za vrijeme pomrčine Sunca?",
+    "answers": [
+      "Mlađak",
+      "Prva četvrt",
+      "Uštap",
+      "Zadnja četvrt"
+    ],
+    "correct": 0,
+    "explanation": "Pomrčina Sunca moguća je samo za mlađaka, kada je Mjesec između Zemlje i Sunca.",
+    "topic": "Mjesec i pomrčine",
+    "difficulty": "lako",
+    "year": 2008,
+    "level": "županijsko",
+    "source": "zupanijsko_2008.pdf",
+    "page": 22,
+    "status": "spremno",
+    "id": "Q0209"
+  },
+  {
+    "question": "Promatrač je na geografskoj širini 43° sjeverno. Kolika mu je kutna udaljenost do sjevernog pola po meridijanu?",
+    "answers": [
+      "43°",
+      "47°",
+      "90°",
+      "133°"
+    ],
+    "correct": 1,
+    "explanation": "Od sjevernog pola udaljen je 90° − 43° = 47°.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2008,
+    "level": "županijsko",
+    "source": "zupanijsko_2008.pdf",
+    "page": 23,
+    "status": "spremno",
+    "id": "Q0210"
+  },
+  {
+    "question": "Promatrač je na geografskoj širini 43° sjeverno. Kolika mu je kutna udaljenost do južnog pola po meridijanu?",
+    "answers": [
+      "47°",
+      "90°",
+      "133°",
+      "137°"
+    ],
+    "correct": 2,
+    "explanation": "Do južnog pola kutna udaljenost iznosi 90° + 43° = 133°.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2008,
+    "level": "županijsko",
+    "source": "zupanijsko_2008.pdf",
+    "page": 23,
+    "status": "spremno",
+    "id": "Q0211"
+  },
+  {
+    "question": "Zašto planete možemo vidjeti na nebu?",
+    "answers": [
+      "Zato što proizvode vlastitu vidljivu svjetlost",
+      "Zato što odbijaju Sunčevu svjetlost",
+      "Zato što su svi užareni",
+      "Zato što svijetle samo noću"
+    ],
+    "correct": 1,
+    "explanation": "Planeti su vidljivi uglavnom zato što odbijaju Sunčevu svjetlost.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2008,
+    "level": "državno",
+    "source": "drzavno_2008.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0212"
+  },
+  {
+    "question": "Koliko službeno priznatih zviježđa postoji na nebu?",
+    "answers": [
+      "48",
+      "72",
+      "88",
+      "100"
+    ],
+    "correct": 2,
+    "explanation": "Međunarodna astronomska unija službeno priznaje 88 zviježđa.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2008,
+    "level": "državno",
+    "source": "drzavno_2008.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0213"
+  },
+  {
+    "question": "Koji približni meridijan prolazi kroz Zagreb?",
+    "answers": [
+      "0°",
+      "16° istočno",
+      "45° istočno",
+      "90° zapadno"
+    ],
+    "correct": 1,
+    "explanation": "Zagreb se nalazi približno na 16. meridijanu istočne geografske duljine.",
+    "topic": "Zemlja i koordinate",
+    "difficulty": "srednje",
+    "year": 2008,
+    "level": "državno",
+    "source": "drzavno_2008.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0214"
+  },
+  {
+    "question": "Koji su unutarnji ili terestrički planeti Sunčeva sustava?",
+    "answers": [
+      "Merkur, Venera, Zemlja i Mars",
+      "Jupiter, Saturn, Uran i Neptun",
+      "Merkur, Zemlja, Jupiter i Saturn",
+      "Venera, Mars, Uran i Neptun"
+    ],
+    "correct": 0,
+    "explanation": "Unutarnji planeti su Merkur, Venera, Zemlja i Mars.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2008,
+    "level": "državno",
+    "source": "drzavno_2008.pdf",
+    "page": 20,
+    "status": "spremno",
+    "id": "Q0215"
+  },
+  {
+    "question": "Dječak na Zemlji teži 300 N. Kolika bi mu približno bila težina na Mjesecu?",
+    "answers": [
+      "50 N",
+      "100 N",
+      "300 N",
+      "1 800 N"
+    ],
+    "correct": 0,
+    "explanation": "Mjesečeva gravitacija približno je šest puta slabija, pa je 300 ÷ 6 = 50 N.",
+    "topic": "Računski zadaci",
+    "difficulty": "lako",
+    "year": 2008,
+    "level": "državno",
+    "source": "drzavno_2008.pdf",
+    "page": 20,
+    "status": "spremno",
+    "id": "Q0216"
+  },
+  {
+    "question": "Oko kojeg planeta kruži satelit Mimas?",
+    "answers": [
+      "Marsa",
+      "Jupitera",
+      "Saturna",
+      "Neptuna"
+    ],
+    "correct": 2,
+    "explanation": "Mimas je mali ledeni Saturnov satelit.",
+    "topic": "Sateliti",
+    "difficulty": "srednje",
+    "year": 2008,
+    "level": "državno",
+    "source": "drzavno_2008.pdf",
+    "page": 21,
+    "status": "spremno",
+    "id": "Q0217"
+  },
+  {
+    "question": "U kojem se zviježđu nalazi zvijezda Kapela?",
+    "answers": [
+      "Kočijašu",
+      "Djevici",
+      "Velikom psu",
+      "Orionu"
+    ],
+    "correct": 0,
+    "explanation": "Kapela je najsjajnija zvijezda zviježđa Kočijaš.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2008,
+    "level": "državno",
+    "source": "drzavno_2008.pdf",
+    "page": 21,
+    "status": "spremno",
+    "id": "Q0218"
+  },
+  {
+    "question": "U kojem se zviježđu nalazi zvijezda Spika?",
+    "answers": [
+      "Djevici",
+      "Lavu",
+      "Biku",
+      "Labudu"
+    ],
+    "correct": 0,
+    "explanation": "Spika je najsjajnija zvijezda zviježđa Djevica.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2008,
+    "level": "državno",
+    "source": "drzavno_2008.pdf",
+    "page": 21,
+    "status": "spremno",
+    "id": "Q0219"
+  },
+  {
+    "question": "Ima li Mjesec gustu i trajnu atmosferu poput Zemljine?",
+    "answers": [
+      "Da",
+      "Ne",
+      "Samo na tamnoj strani",
+      "Samo za uštapa"
+    ],
+    "correct": 1,
+    "explanation": "Mjesec nema gustu atmosferu; okružuje ga samo iznimno rijetka egzosfera.",
+    "topic": "Mjesec",
+    "difficulty": "lako",
+    "year": 2008,
+    "level": "školsko",
+    "source": "skolsko_2008.pdf",
+    "page": 16,
+    "status": "spremno",
+    "id": "Q0220"
+  },
+  {
+    "question": "Koje je godine lansiran prvi umjetni Zemljin satelit?",
+    "answers": [
+      "1945.",
+      "1957.",
+      "1961.",
+      "1969."
+    ],
+    "correct": 1,
+    "explanation": "Sputnjik 1 lansiran je 1957. godine.",
+    "topic": "Povijest astronautike",
+    "difficulty": "lako",
+    "year": 2008,
+    "level": "školsko",
+    "source": "skolsko_2008.pdf",
+    "page": 16,
+    "status": "spremno",
+    "id": "Q0221"
+  },
+  {
+    "question": "Kako se tradicionalno nazivaju tri zvijezde Orionova pojasa?",
+    "answers": [
+      "Kosci",
+      "Vlašići",
+      "Jaslice",
+      "Velika kola"
+    ],
+    "correct": 0,
+    "explanation": "Tri zvijezde Orionova pojasa u hrvatskoj se tradiciji nazivaju Kosci.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2008,
+    "level": "školsko",
+    "source": "skolsko_2008.pdf",
+    "page": 16,
+    "status": "spremno",
+    "id": "Q0222"
+  },
+  {
+    "question": "Koliko bi raketi brzine 150 000 km/s trebalo za put od Zemlje do Sunca dug 150 000 000 km?",
+    "answers": [
+      "100 sekundi",
+      "500 sekundi",
+      "1 000 sekundi",
+      "10 000 sekundi"
+    ],
+    "correct": 2,
+    "explanation": "Vrijeme je put podijeljen brzinom: 150 000 000 ÷ 150 000 = 1 000 s.",
+    "topic": "Računski zadaci",
+    "difficulty": "lako",
+    "year": 2008,
+    "level": "školsko",
+    "source": "skolsko_2008.pdf",
+    "page": 16,
+    "status": "spremno",
+    "id": "Q0223"
+  },
+  {
+    "question": "Koliko sekundi ima obična godina od 365 dana?",
+    "answers": [
+      "3 153 600",
+      "31 536 000",
+      "315 360 000",
+      "86 400"
+    ],
+    "correct": 1,
+    "explanation": "365 × 24 × 60 × 60 = 31 536 000 sekundi.",
+    "topic": "Kalendar",
+    "difficulty": "srednje",
+    "year": 2008,
+    "level": "školsko",
+    "source": "skolsko_2008.pdf",
+    "page": 17,
+    "status": "spremno",
+    "id": "Q0224"
+  },
+  {
+    "question": "Je li Kasiopeja cirkumpolarno zviježđe gledano iz Hrvatske?",
+    "answers": [
+      "Da",
+      "Ne",
+      "Samo ljeti",
+      "Samo zimi"
+    ],
+    "correct": 0,
+    "explanation": "Kasiopeja iz Hrvatske ne zalazi i pripada cirkumpolarnim zviježđima.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2008,
+    "level": "školsko",
+    "source": "skolsko_2008.pdf",
+    "page": 17,
+    "status": "spremno",
+    "id": "Q0225"
+  },
+  {
+    "question": "Koja Mjesečeva faza slijedi nakon uštapa?",
+    "answers": [
+      "Mlađak",
+      "Prva četvrt",
+      "Zadnja četvrt",
+      "Uštap ponovno"
+    ],
+    "correct": 2,
+    "explanation": "Nakon punog Mjeseca osvijetljeni dio počinje se smanjivati prema zadnjoj četvrti.",
+    "topic": "Mjesec",
+    "difficulty": "lako",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 1,
+    "status": "spremno",
+    "id": "Q0226"
+  },
+  {
+    "question": "Koji se planet može najviše udaljiti od Urana?",
+    "answers": [
+      "Saturn",
+      "Neptun",
+      "Jupiter",
+      "Mars"
+    ],
+    "correct": 1,
+    "explanation": "Neptun je izvan Uranove putanje, pa se pri suprotnom položaju može od njega najviše udaljiti.",
+    "topic": "Planeti",
+    "difficulty": "srednje",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 2,
+    "status": "spremno",
+    "id": "Q0227"
+  },
+  {
+    "question": "Koja su dva planeta neposredni susjedi Jupitera po redoslijedu od Sunca?",
+    "answers": [
+      "Zemlja i Mars",
+      "Mars i Saturn",
+      "Saturn i Uran",
+      "Venera i Mars"
+    ],
+    "correct": 1,
+    "explanation": "Redoslijed je Mars, Jupiter, Saturn.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 2,
+    "status": "spremno",
+    "id": "Q0228"
+  },
+  {
+    "question": "Što se događa s duljinom dana na sjevernoj polutki nakon zimskog suncostaja?",
+    "answers": [
+      "Dani postaju dulji",
+      "Dani postaju kraći",
+      "Duljina dana se ne mijenja",
+      "Dan odmah traje 24 sata"
+    ],
+    "correct": 0,
+    "explanation": "Nakon zimskog suncostaja dnevni luk Sunca postupno se produljuje.",
+    "topic": "Godišnja doba",
+    "difficulty": "lako",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 2,
+    "status": "spremno",
+    "id": "Q0229"
+  },
+  {
+    "question": "Jupiter je 5,2 AJ od Sunca, a Zemlja 1 AJ. Kolika je njihova najveća udaljenost u konjunkciji?",
+    "answers": [
+      "4,2 AJ",
+      "5,2 AJ",
+      "6,2 AJ",
+      "7,2 AJ"
+    ],
+    "correct": 2,
+    "explanation": "U konjunkciji su na suprotnim stranama Sunca, pa se udaljenosti zbrajaju: 5,2 + 1 = 6,2 AJ.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0230"
+  },
+  {
+    "question": "Koliko približno putuje svjetlost od Jupitera do Zemlje kada su udaljeni 6,2 AJ, ako za 1 AJ treba 500 sekundi?",
+    "answers": [
+      "8 min 20 s",
+      "41 min 40 s",
+      "51 min 40 s",
+      "62 min"
+    ],
+    "correct": 2,
+    "explanation": "6,2 × 500 = 3 100 sekundi, odnosno 51 minuta i 40 sekundi.",
+    "topic": "Računski zadaci",
+    "difficulty": "teško",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0231"
+  },
+  {
+    "question": "Koliko dana imaju 18 kalendarskih godina ako su četiri prijestupne?",
+    "answers": [
+      "6 570",
+      "6 574",
+      "6 575",
+      "6 588"
+    ],
+    "correct": 1,
+    "explanation": "Četrnaest običnih godina i četiri prijestupne daju 14×365 + 4×366 = 6 574 dana.",
+    "topic": "Kalendar",
+    "difficulty": "teško",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0232"
+  },
+  {
+    "question": "Može li razdoblje od 18 kalendarskih godina obuhvatiti pet prijestupnih godina?",
+    "answers": [
+      "Da",
+      "Ne",
+      "Samo na južnoj polutki",
+      "Samo prije 1900."
+    ],
+    "correct": 0,
+    "explanation": "Može, primjerice ako interval obuhvati pet godina djeljivih s četiri i nijedna nije iznimka stoljetnog pravila.",
+    "topic": "Kalendar",
+    "difficulty": "teško",
+    "year": 2012,
+    "level": "županijsko",
+    "source": "zupanijsko_2012.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0233"
+  },
+  {
+    "question": "Kolika je sjena uspravnog štapa kada je Sunce točno u zenitu?",
+    "answers": [
+      "Jednaka duljini štapa",
+      "Dvostruko dulja",
+      "0 cm",
+      "Beskonačno duga"
+    ],
+    "correct": 2,
+    "explanation": "Sunčeve zrake tada padaju okomito pa štap nema vodoravnu sjenu.",
+    "topic": "Opažanje",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "školsko",
+    "source": "rjesenje-5-sk.pdf",
+    "page": 6,
+    "status": "spremno",
+    "id": "Q0234"
+  },
+  {
+    "question": "Koliko zvijezda čini asterizam Velika kola?",
+    "answers": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2,
+    "explanation": "Velika kola čini sedam sjajnih zvijezda.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "školsko",
+    "source": "rjesenje-5-sk.pdf",
+    "page": 7,
+    "status": "spremno",
+    "id": "Q0235"
+  },
+  {
+    "question": "Koja je zvijezda Velikih kola bliža smjeru prema Sjevernjači?",
+    "answers": [
+      "Dubhe",
+      "Mizar",
+      "Alkaid",
+      "Megrez"
+    ],
+    "correct": 0,
+    "explanation": "Dubhe je gornja od dviju zvijezda pokazivačica i bliža je Sjevernjači.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "teško",
+    "year": 2018,
+    "level": "školsko",
+    "source": "rjesenje-5-sk.pdf",
+    "page": 7,
+    "status": "spremno",
+    "id": "Q0236"
+  },
+  {
+    "question": "Kako se naziva razdoblje izmjene Mjesečevih faza gledano u odnosu na Sunce?",
+    "answers": [
+      "Siderički mjesec",
+      "Sinodički mjesec",
+      "Siderička godina",
+      "Sunčev dan"
+    ],
+    "correct": 1,
+    "explanation": "Sinodički mjesec traje približno 29,5 dana, od jedne faze do ponavljanja iste faze.",
+    "topic": "Mjesec",
+    "difficulty": "srednje",
+    "year": 2018,
+    "level": "županijsko",
+    "source": "rjesenje-5-zup.pdf",
+    "page": 2,
+    "status": "spremno",
+    "id": "Q0237"
+  },
+  {
+    "question": "Kolika je visina sjevernog nebeskog pola za promatrača na Zemljinu ekvatoru?",
+    "answers": [
+      "0°",
+      "23,5°",
+      "45°",
+      "90°"
+    ],
+    "correct": 0,
+    "explanation": "Visina nebeskog pola jednaka je geografskoj širini, a ekvator ima širinu 0°.",
+    "topic": "Nebeske koordinate",
+    "difficulty": "srednje",
+    "year": 2018,
+    "level": "županijsko",
+    "source": "rjesenje-5-zup.pdf",
+    "page": 2,
+    "status": "spremno",
+    "id": "Q0238"
+  },
+  {
+    "question": "Kako nazivamo hladna tijela koja pri približavanju Suncu razvijaju komu i rep?",
+    "answers": [
+      "Meteori",
+      "Kometi",
+      "Planeti",
+      "Meteoriti"
+    ],
+    "correct": 1,
+    "explanation": "Kometi se zagrijavanjem oslobađaju plinova i prašine te razvijaju komu i rep.",
+    "topic": "Mala tijela",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "županijsko",
+    "source": "rjesenje-5-zup.pdf",
+    "page": 2,
+    "status": "spremno",
+    "id": "Q0239"
+  },
+  {
+    "question": "Koje je godišnje doba na južnoj polutki kada je na sjevernoj polutki zimski suncostaj?",
+    "answers": [
+      "Jesen",
+      "Zima",
+      "Proljeće",
+      "Ljeto"
+    ],
+    "correct": 3,
+    "explanation": "Godišnja doba na dvjema polutkama su suprotna.",
+    "topic": "Godišnja doba",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "županijsko",
+    "source": "rjesenje-5-zup.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0240"
+  },
+  {
+    "question": "Koji je najveći prirodni satelit Sunčeva sustava?",
+    "answers": [
+      "Miranda",
+      "Ganimed",
+      "Europa",
+      "Fobos"
+    ],
+    "correct": 1,
+    "explanation": "Ganimed, Jupiterov satelit, veći je čak i od planeta Merkura.",
+    "topic": "Sateliti",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "županijsko",
+    "source": "rjesenje-5-zup.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0241"
+  },
+  {
+    "question": "Kako se zove granica između osvijetljenog i neosvijetljenog dijela nebeskog tijela?",
+    "answers": [
+      "Terminator ili sumračnica",
+      "Ekliptika",
+      "Meridijan",
+      "Korona"
+    ],
+    "correct": 0,
+    "explanation": "Granica dana i noći na tijelu naziva se terminator ili sumračnica.",
+    "topic": "Opažanje",
+    "difficulty": "srednje",
+    "year": 2018,
+    "level": "županijsko",
+    "source": "rjesenje-5-zup.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0242"
+  },
+  {
+    "question": "Kako se zove golemo područje ledenih tijela i kometa daleko iza Neptunove putanje?",
+    "answers": [
+      "Asteroidni pojas",
+      "Oortov oblak",
+      "Van Allenovi pojasevi",
+      "Zodijak"
+    ],
+    "correct": 1,
+    "explanation": "Oortov oblak zamišljeno je vrlo udaljeno spremište kometa oko Sunčeva sustava.",
+    "topic": "Mala tijela",
+    "difficulty": "srednje",
+    "year": 2018,
+    "level": "županijsko",
+    "source": "rjesenje-5-zup.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0243"
+  },
+  {
+    "question": "Koji je glavni uzrok vrlo visoke površinske temperature Venere?",
+    "answers": [
+      "Slabo magnetsko polje",
+      "Snažan učinak staklenika",
+      "Brza rotacija",
+      "Blizina Jupitera"
+    ],
+    "correct": 1,
+    "explanation": "Gusta atmosfera bogata ugljikovim dioksidom izaziva snažan staklenički učinak.",
+    "topic": "Planeti",
+    "difficulty": "srednje",
+    "year": 2018,
+    "level": "županijsko",
+    "source": "rjesenje-5-zup.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0244"
+  },
+  {
+    "question": "Promatrač je na 44° sjeverne geografske širine. Kolika mu je kutna udaljenost do sjevernog pola?",
+    "answers": [
+      "44°",
+      "46°",
+      "90°",
+      "134°"
+    ],
+    "correct": 1,
+    "explanation": "Udaljenost do sjevernog pola je 90° − 44° = 46°.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2018,
+    "level": "županijsko",
+    "source": "rjesenje-5-zup.pdf",
+    "page": 7,
+    "status": "spremno",
+    "id": "Q0245"
+  },
+  {
+    "question": "Promatrač je na 44° sjeverne geografske širine. Kolika mu je kutna udaljenost do južnog pola?",
+    "answers": [
+      "46°",
+      "90°",
+      "134°",
+      "136°"
+    ],
+    "correct": 2,
+    "explanation": "Udaljenost do južnog pola je 90° + 44° = 134°.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2018,
+    "level": "županijsko",
+    "source": "rjesenje-5-zup.pdf",
+    "page": 7,
+    "status": "spremno",
+    "id": "Q0246"
+  },
+  {
+    "question": "Svjetlosti od Sunca do Zemlje treba 8 min 20 s. Koliko bi približno trebalo do Jupitera udaljenog pet puta više?",
+    "answers": [
+      "16 min 40 s",
+      "25 min",
+      "41 min 40 s",
+      "50 min"
+    ],
+    "correct": 2,
+    "explanation": "8 min 20 s je 500 s; pet puta toliko je 2 500 s, odnosno 41 min 40 s.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2018,
+    "level": "državno",
+    "source": "rjesenje-5-drz.pdf",
+    "page": 2,
+    "status": "spremno",
+    "id": "Q0247"
+  },
+  {
+    "question": "Kako se zove pomrčina Mjeseca pri kojoj samo dio Mjeseca ulazi u Zemljinu sjenu?",
+    "answers": [
+      "Prstenasta",
+      "Djelomična ili parcijalna",
+      "Potpuna Sunčeva",
+      "Hibridna"
+    ],
+    "correct": 1,
+    "explanation": "Ako samo dio Mjesečeve površine uđe u Zemljinu sjenu, riječ je o djelomičnoj pomrčini Mjeseca.",
+    "topic": "Mjesec i pomrčine",
+    "difficulty": "lako",
+    "year": 2018,
+    "level": "državno",
+    "source": "rjesenje-5-drz.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0248"
+  },
+  {
+    "question": "Koji je ispravan poredak planeta po promjeru od najmanjeg prema najvećem?",
+    "answers": [
+      "Merkur, Mars, Venera, Zemlja, Neptun, Uran, Saturn, Jupiter",
+      "Mars, Merkur, Venera, Zemlja, Uran, Neptun, Saturn, Jupiter",
+      "Merkur, Venera, Mars, Zemlja, Neptun, Uran, Jupiter, Saturn",
+      "Merkur, Mars, Zemlja, Venera, Uran, Neptun, Saturn, Jupiter"
+    ],
+    "correct": 0,
+    "explanation": "Po promjeru redoslijed je Merkur, Mars, Venera, Zemlja, Neptun, Uran, Saturn i Jupiter.",
+    "topic": "Planeti",
+    "difficulty": "teško",
+    "year": 2018,
+    "level": "državno",
+    "source": "rjesenje-5-drz.pdf",
+    "page": 4,
+    "status": "spremno",
+    "id": "Q0249"
+  },
+  {
+    "question": "Koji niz sadrži šest zvijezda Velikog zimskog šesterokuta?",
+    "answers": [
+      "Kapela, Aldebaran, Rigel, Sirijus, Prokion i Poluks",
+      "Vega, Deneb, Altair, Arktur, Spika i Regul",
+      "Dubhe, Merak, Mizar, Alkor, Megrez i Alkaid",
+      "Betelgez, Antares, Denebola, Sjevernjača, Spika i Vega"
+    ],
+    "correct": 0,
+    "explanation": "Veliki zimski šesterokut čine Kapela, Aldebaran, Rigel, Sirijus, Prokion i Poluks ili Kastor.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "teško",
+    "year": 2018,
+    "level": "državno",
+    "source": "rjesenje-5-drz.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0250"
+  },
+  {
+    "question": "U kojem se zviježđu nalazi zvijezda Prokion?",
+    "answers": [
+      "Malom psu",
+      "Velikom psu",
+      "Orionu",
+      "Blizancima"
+    ],
+    "correct": 0,
+    "explanation": "Prokion je najsjajnija zvijezda zviježđa Mali pas i jedan vrh Velikog zimskog šesterokuta.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2018,
+    "level": "državno",
+    "source": "rjesenje-5-drz.pdf",
+    "page": 5,
+    "status": "spremno",
+    "id": "Q0251"
+  },
+  {
+    "question": "Koji se planet od svih planeta može najviše približiti Marsu?",
+    "answers": [
+      "Venera",
+      "Zemlja",
+      "Jupiter",
+      "Merkur"
+    ],
+    "correct": 1,
+    "explanation": "Zemljina i Marsova putanja susjedne su, pa se Zemlja može približiti Marsu više od ostalih planeta.",
+    "topic": "Planeti",
+    "difficulty": "srednje",
+    "year": 2001,
+    "level": "državno",
+    "source": "drzavno_2001.pdf",
+    "page": 1,
+    "status": "spremno",
+    "id": "Q0252"
+  },
+  {
+    "question": "Od čega su kometi uglavnom građeni?",
+    "answers": [
+      "Od leda i prašine",
+      "Od rastaljenih stijena",
+      "Od tekuće vode",
+      "Samo od plinova"
+    ],
+    "correct": 0,
+    "explanation": "Jezgra kometa sastoji se uglavnom od leda, prašine i kamenog materijala.",
+    "topic": "Mala tijela",
+    "difficulty": "lako",
+    "year": 2002,
+    "level": "državno",
+    "source": "drzavno_2002.pdf",
+    "page": 9,
+    "status": "spremno",
+    "id": "Q0253"
+  },
+  {
+    "question": "Koje je od navedenih zviježđa najmanje po površini na nebu?",
+    "answers": [
+      "Veliki medvjed",
+      "Orion",
+      "Bik",
+      "Sjeverna kruna"
+    ],
+    "correct": 3,
+    "explanation": "Sjeverna kruna zauzima znatno manju površinu neba od Velikog medvjeda, Oriona i Bika.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "teško",
+    "year": 2002,
+    "level": "državno",
+    "source": "drzavno_2002.pdf",
+    "page": 9,
+    "status": "spremno",
+    "id": "Q0254"
+  },
+  {
+    "question": "Ako se Merkur vidi navečer neposredno nakon zalaska Sunca, iznad kojeg ga horizonta treba tražiti?",
+    "answers": [
+      "Istočnog",
+      "Zapadnog",
+      "Sjevernog",
+      "Južnog"
+    ],
+    "correct": 1,
+    "explanation": "Kao večernji planet Merkur se vidi nisko iznad zapadnog horizonta nakon zalaska Sunca.",
+    "topic": "Planeti i opažanje",
+    "difficulty": "srednje",
+    "year": 2002,
+    "level": "državno",
+    "source": "drzavno_2002.pdf",
+    "page": 10,
+    "status": "spremno",
+    "id": "Q0255"
+  },
+  {
+    "question": "Na kojem je planetu zasad dokazano postojanje života?",
+    "answers": [
+      "Na Marsu",
+      "Na Veneri",
+      "Na Zemlji",
+      "Na Europi"
+    ],
+    "correct": 2,
+    "explanation": "Zemlja je zasad jedini planet na kojem je postojanje života potvrđeno.",
+    "topic": "Planeti",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 1,
+    "status": "spremno",
+    "id": "Q0256"
+  },
+  {
+    "question": "Koji Zemljin dan traje malo dulje?",
+    "answers": [
+      "Siderički dan",
+      "Sunčev ili sinodički dan",
+      "Oba traju jednako",
+      "Mjesni zvjezdani sat"
+    ],
+    "correct": 1,
+    "explanation": "Siderički dan traje oko 23 h 56 min, a srednji Sunčev dan 24 h.",
+    "topic": "Zemlja i vrijeme",
+    "difficulty": "teško",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 1,
+    "status": "spremno",
+    "id": "Q0257"
+  },
+  {
+    "question": "Je li običan dvogled koristan za opažanje noćnog neba?",
+    "answers": [
+      "Da",
+      "Ne",
+      "Samo danju",
+      "Samo za promatranje Sunca bez filtra"
+    ],
+    "correct": 0,
+    "explanation": "Dvogled je vrlo koristan za Mjesec, zvjezdane skupove i mnoge sjajnije objekte dubokog neba.",
+    "topic": "Teleskopi i opažanje",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 1,
+    "status": "spremno",
+    "id": "Q0258"
+  },
+  {
+    "question": "Kako se nazivaju tamnije mrlje koje opažamo na Sunčevoj fotosferi?",
+    "answers": [
+      "Sunčeve pjege",
+      "Mjesečeve sjene",
+      "Koronalne rupe",
+      "Zvjezdane maglice"
+    ],
+    "correct": 0,
+    "explanation": "Sunčeve pjege hladnija su i zato tamnija područja Sunčeve fotosfere.",
+    "topic": "Sunce",
+    "difficulty": "lako",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 1,
+    "status": "spremno",
+    "id": "Q0259"
+  },
+  {
+    "question": "U kojem je položaju Venera kada je njezina udaljenost od Zemlje približno najveća?",
+    "answers": [
+      "U donjoj konjunkciji",
+      "U gornjoj konjunkciji",
+      "U opoziciji",
+      "U kvadraturi"
+    ],
+    "correct": 1,
+    "explanation": "Pri gornjoj konjunkciji Venera je s druge strane Sunca u odnosu na Zemlju, pa je udaljenost najveća.",
+    "topic": "Položaji planeta",
+    "difficulty": "srednje",
+    "year": 2003,
+    "level": "državno",
+    "source": "drzavno_2003.pdf",
+    "page": 2,
+    "status": "spremno",
+    "id": "Q0260"
+  },
+  {
+    "question": "Koja je tvrdnja o ravnini ekliptike točna?",
+    "answers": [
+      "To je ravnina Zemljine putanje oko Sunca i sadrži Sunce",
+      "To je ravnina Mjesečeve putanje oko Zemlje",
+      "To je ravnina mjesnog horizonta",
+      "To je ravnina Mliječne staze"
+    ],
+    "correct": 0,
+    "explanation": "Ekliptika je ravnina Zemljine orbite oko Sunca.",
+    "topic": "Zemlja i Sunce",
+    "difficulty": "srednje",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 1,
+    "status": "spremno",
+    "id": "Q0261"
+  },
+  {
+    "question": "Koji je redoslijed tijela tijekom prividnog prolaza Venere preko Sunčeve ploče, gledano sa Zemlje?",
+    "answers": [
+      "Sunce - Venera - Zemlja",
+      "Sunce - Zemlja - Venera",
+      "Venera - Sunce - Zemlja",
+      "Zemlja - Sunce - Venera"
+    ],
+    "correct": 0,
+    "explanation": "Za tranzita se Venera nalazi između Sunca i Zemlje.",
+    "topic": "Položaji planeta",
+    "difficulty": "srednje",
+    "year": 2004,
+    "level": "državno",
+    "source": "drzavno_2004.pdf",
+    "page": 2,
+    "status": "spremno",
+    "id": "Q0262"
+  },
+  {
+    "question": "U kojem se zviježđu nalazi otvoreni zvjezdani skup Jaslice (M44)?",
+    "answers": [
+      "U Raku",
+      "U Lavu",
+      "U Biku",
+      "U Blizancima"
+    ],
+    "correct": 0,
+    "explanation": "Jaslice, poznate i kao M44, otvoreni su skup u zviježđu Raka.",
+    "topic": "Zvjezdani skupovi",
+    "difficulty": "srednje",
+    "year": 2005,
+    "level": "državno",
+    "source": "drzavno_2005.pdf",
+    "page": 3,
+    "status": "spremno",
+    "id": "Q0263"
+  },
+  {
+    "question": "U kojim su dvjema Mjesečevim fazama plimni valovi obično najveći?",
+    "answers": [
+      "U prvoj i zadnjoj četvrti",
+      "U mlađaku i uštapu",
+      "Samo u mlađaku",
+      "Samo u uštapu"
+    ],
+    "correct": 1,
+    "explanation": "Za mlađaka i uštapa Sunce, Zemlja i Mjesec približno su poravnani pa se plimne sile zbrajaju.",
+    "topic": "Zemlja i Mjesec",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0264"
+  },
+  {
+    "question": "Koji je redoslijed tijela kada je Mars u opoziciji?",
+    "answers": [
+      "Sunce - Mars - Zemlja",
+      "Sunce - Zemlja - Mars",
+      "Zemlja - Sunce - Mars",
+      "Mars - Sunce - Zemlja"
+    ],
+    "correct": 1,
+    "explanation": "U opoziciji se Zemlja nalazi približno između Sunca i vanjskog planeta.",
+    "topic": "Položaji planeta",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0265"
+  },
+  {
+    "question": "Koja su dva od navedenih objekata u Messierovu katalogu?",
+    "answers": [
+      "Vesta i Kit",
+      "Jaslice i Plejade",
+      "Vesta i Ida",
+      "Kit i Labud"
+    ],
+    "correct": 1,
+    "explanation": "Jaslice su M44, a Plejade M45. Oba su objekta u Messierovu katalogu.",
+    "topic": "Katalozi i objekti",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0266"
+  },
+  {
+    "question": "Koje je latinsko ime zviježđa Veliki pas?",
+    "answers": [
+      "Canis Major",
+      "Canis Minor",
+      "Ursa Major",
+      "Leo Major"
+    ],
+    "correct": 0,
+    "explanation": "Latinsko ime zviježđa Veliki pas je Canis Major.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0267"
+  },
+  {
+    "question": "Koje je latinsko ime zviježđa Mali medvjed?",
+    "answers": [
+      "Ursa Major",
+      "Ursa Minor",
+      "Canis Minor",
+      "Corona Borealis"
+    ],
+    "correct": 1,
+    "explanation": "Latinsko ime Malog medvjeda je Ursa Minor.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0268"
+  },
+  {
+    "question": "Koje se zviježđe naziva i Sjeverni križ?",
+    "answers": [
+      "Labud",
+      "Orao",
+      "Lira",
+      "Kasiopeja"
+    ],
+    "correct": 0,
+    "explanation": "Glavne zvijezde Labuda tvore prepoznatljiv oblik Sjevernog križa.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "lako",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0269"
+  },
+  {
+    "question": "Kojim se jednostavnim uređajem može mjeriti kutni razmak između zvijezda?",
+    "answers": [
+      "Križnom palicom ili Jakobovim štapom",
+      "Termometrom",
+      "Gnomonom bez sjene",
+      "Barometrom"
+    ],
+    "correct": 0,
+    "explanation": "Križna palica, odnosno Jakobov štap, služi za jednostavno mjerenje kutova na nebu.",
+    "topic": "Astronomski instrumenti",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0270"
+  },
+  {
+    "question": "Što su Ceres, Apolon, Ida i Višnjan?",
+    "answers": [
+      "Planetoidi ili asteroidi",
+      "Prirodni sateliti",
+      "Zvijezde",
+      "Patuljaste galaksije"
+    ],
+    "correct": 0,
+    "explanation": "Svi navedeni objekti pripadaju skupini planetoida odnosno asteroida.",
+    "topic": "Mala tijela",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0271"
+  },
+  {
+    "question": "Za koliko se stupnjeva razlikuju dvije susjedne glavne točke horizonta, primjerice sjever i istok?",
+    "answers": [
+      "45°",
+      "90°",
+      "180°",
+      "360°"
+    ],
+    "correct": 1,
+    "explanation": "Četiri glavne strane svijeta ravnomjerno dijele puni krug: 360° / 4 = 90°.",
+    "topic": "Zemlja i koordinate",
+    "difficulty": "lako",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0272"
+  },
+  {
+    "question": "Na kojim se dvama mjestima na Zemlji visina pojedine zvijezde tijekom dana ne mijenja?",
+    "answers": [
+      "Na ekvatoru i sjevernoj obratnici",
+      "Na sjevernom i južnom geografskom polu",
+      "Na početnom meridijanu",
+      "Na obratnicama"
+    ],
+    "correct": 1,
+    "explanation": "Na geografskim polovima zvijezde se prividno gibaju kružnicama paralelnima horizontu pa im visina ostaje stalna.",
+    "topic": "Nebeska sfera",
+    "difficulty": "teško",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 19,
+    "status": "spremno",
+    "id": "Q0273"
+  },
+  {
+    "question": "U zadatku je Split na 41° sjeverne širine, a jednom stupnju meridijana odgovara 111 km. Koliko je Split udaljen od Južnog pola?",
+    "answers": [
+      "5 451 km",
+      "10 989 km",
+      "14 541 km",
+      "19 980 km"
+    ],
+    "correct": 2,
+    "explanation": "Kutni razmak je 90° + 41° = 131°, pa je udaljenost 131 × 111 = 14 541 km.",
+    "topic": "Računski zadaci",
+    "difficulty": "teško",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 21,
+    "status": "spremno",
+    "id": "Q0274"
+  },
+  {
+    "question": "Putnik ide 500 km na sjever, 1000 km na istok, 1000 km na jug, 1000 km na zapad i 500 km na sjever te se vrati na početak. Gdje je početna točka prema rješenju zadatka?",
+    "answers": [
+      "Na ekvatoru",
+      "Na sjevernom polu",
+      "Na južnom polu",
+      "Na sjevernoj obratnici"
+    ],
+    "correct": 0,
+    "explanation": "U pojednostavljenom prikazu zadatka početna se točka nalazi na ekvatoru.",
+    "topic": "Zemlja i koordinate",
+    "difficulty": "teško",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 21,
+    "status": "spremno",
+    "id": "Q0275"
+  },
+  {
+    "question": "Koje su alfa-zvijezde Lire, Labuda i Orla?",
+    "answers": [
+      "Vega, Deneb i Altair",
+      "Sirijus, Rigel i Betelgez",
+      "Arktur, Spika i Denebola",
+      "Poluks, Kapela i Aldebaran"
+    ],
+    "correct": 0,
+    "explanation": "Vega je alfa Lire, Deneb alfa Labuda, a Altair alfa Orla. Zajedno čine Ljetni trokut.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "srednje",
+    "year": 2006,
+    "level": "državno",
+    "source": "drzavno_2006.pdf",
+    "page": 22,
+    "status": "spremno",
+    "id": "Q0276"
+  },
+  {
+    "question": "Koji je antički učenjak zastupao heliocentrični sustav?",
+    "answers": [
+      "Aristarh sa Samosa",
+      "Johannes Kepler",
+      "Galileo Galilei",
+      "Isaac Newton"
+    ],
+    "correct": 0,
+    "explanation": "Aristarh sa Samosa još je u antici predlagao da se Zemlja giba oko Sunca.",
+    "topic": "Povijest astronomije",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "državno",
+    "source": "drzavno_2007.pdf",
+    "page": 22,
+    "status": "spremno",
+    "id": "Q0277"
+  },
+  {
+    "question": "Može li se dogoditi da tijekom cijele kalendarske godine nigdje na Zemlji ne bude nijedne pomrčine Sunca?",
+    "answers": [
+      "Da",
+      "Ne",
+      "Samo u prijestupnoj godini",
+      "Samo kada nema uštapa"
+    ],
+    "correct": 1,
+    "explanation": "Svake se godine negdje na Zemlji dogode barem dvije pomrčine Sunca.",
+    "topic": "Mjesec i pomrčine",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "državno",
+    "source": "drzavno_2007.pdf",
+    "page": 22,
+    "status": "spremno",
+    "id": "Q0278"
+  },
+  {
+    "question": "Otprilike koliko je od Sunca udaljena najbliža druga zvijezda?",
+    "answers": [
+      "4 godine svjetlosti",
+      "40 godina svjetlosti",
+      "400 godina svjetlosti",
+      "4 000 godina svjetlosti"
+    ],
+    "correct": 0,
+    "explanation": "Proksima Centaura udaljena je približno 4,24 godine svjetlosti.",
+    "topic": "Zvijezde",
+    "difficulty": "lako",
+    "year": 2007,
+    "level": "državno",
+    "source": "drzavno_2007.pdf",
+    "page": 22,
+    "status": "spremno",
+    "id": "Q0279"
+  },
+  {
+    "question": "Koji se od navedenih planeta najsporije okreće oko svoje osi?",
+    "answers": [
+      "Venera",
+      "Mars",
+      "Merkur",
+      "Zemlja"
+    ],
+    "correct": 0,
+    "explanation": "Venerina rotacija traje oko 243 zemaljska dana, dulje nego kod ostalih navedenih planeta.",
+    "topic": "Planeti",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "državno",
+    "source": "drzavno_2007.pdf",
+    "page": 22,
+    "status": "spremno",
+    "id": "Q0280"
+  },
+  {
+    "question": "U kojem se položaju Venera, gledano sa Zemlje, ne može naći?",
+    "answers": [
+      "U donjoj konjunkciji",
+      "U gornjoj konjunkciji",
+      "U opoziciji",
+      "U zapadnoj elongaciji"
+    ],
+    "correct": 2,
+    "explanation": "Venera je unutarnji planet, pa se ne može naći nasuprot Suncu na nebu, odnosno u opoziciji.",
+    "topic": "Položaji planeta",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "državno",
+    "source": "drzavno_2007.pdf",
+    "page": 22,
+    "status": "spremno",
+    "id": "Q0281"
+  },
+  {
+    "question": "Koja je najsjajnija zvijezda sjeverne nebeske polukugle?",
+    "answers": [
+      "Arktur",
+      "Sjevernjača",
+      "Vega",
+      "Kapela"
+    ],
+    "correct": 0,
+    "explanation": "Arktur je najsjajnija zvijezda s pozitivnom deklinacijom, odnosno na sjevernoj nebeskoj polukugli.",
+    "topic": "Zviježđa i zvijezde",
+    "difficulty": "teško",
+    "year": 2007,
+    "level": "državno",
+    "source": "drzavno_2007.pdf",
+    "page": 23,
+    "status": "spremno",
+    "id": "Q0282"
+  },
+  {
+    "question": "Zemlja se giba brzinom 30 km/s, a meteoroid 40 km/s. Kolika je relativna brzina sudara ako dolaze jedan drugome ususret?",
+    "answers": [
+      "10 km/s",
+      "30 km/s",
+      "40 km/s",
+      "70 km/s"
+    ],
+    "correct": 3,
+    "explanation": "Kod čeonog susreta brzine se zbrajaju: 30 + 40 = 70 km/s.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "državno",
+    "source": "drzavno_2007.pdf",
+    "page": 24,
+    "status": "spremno",
+    "id": "Q0283"
+  },
+  {
+    "question": "Zemlja se giba brzinom 30 km/s, a meteoroid u istom smjeru 40 km/s. Kolika je relativna brzina kada meteoroid sustiže Zemlju?",
+    "answers": [
+      "10 km/s",
+      "30 km/s",
+      "70 km/s",
+      "120 km/s"
+    ],
+    "correct": 0,
+    "explanation": "Kada se gibaju u istom smjeru, brzine se oduzimaju: 40 - 30 = 10 km/s.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2007,
+    "level": "državno",
+    "source": "drzavno_2007.pdf",
+    "page": 24,
+    "status": "spremno",
+    "id": "Q0284"
+  },
+  {
+    "question": "U kojem je smjeru uvijek usmjeren rep kometa?",
+    "answers": [
+      "Prema Suncu",
+      "Od Sunca",
+      "Prema Zemlji",
+      "U smjeru gibanja kometa bez iznimke"
+    ],
+    "correct": 1,
+    "explanation": "Sunčev vjetar i zračenje guraju plin i prašinu tako da je rep kometa usmjeren od Sunca.",
+    "topic": "Mala tijela",
+    "difficulty": "lako",
+    "year": 2007,
+    "level": "državno",
+    "source": "drzavno_2007.pdf",
+    "page": 24,
+    "status": "spremno",
+    "id": "Q0285"
+  },
+  {
+    "question": "Uran je od Sunca udaljen 19,2 AJ, a Zemlja 1 AJ. Kolika je njihova najveća moguća udaljenost?",
+    "answers": [
+      "18,2 AJ",
+      "19,2 AJ",
+      "20,2 AJ",
+      "38,4 AJ"
+    ],
+    "correct": 2,
+    "explanation": "Najveća udaljenost nastaje kada su na suprotnim stranama Sunca: 19,2 + 1 = 20,2 AJ.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2026,
+    "level": "državno",
+    "source": "Astro26_DN_5rOS_rjesenja.pdf",
+    "page": 1,
+    "status": "spremno",
+    "id": "Q0286"
+  },
+  {
+    "question": "Koliko je 20,2 AJ izraženo u metrima ako je 1 AJ približno 150 milijardi metara?",
+    "answers": [
+      "3,03 × 10^9 m",
+      "3,03 × 10^10 m",
+      "3,03 × 10^11 m",
+      "3,03 × 10^12 m"
+    ],
+    "correct": 3,
+    "explanation": "20,2 × 150 000 000 000 m = 3 030 000 000 000 m = 3,03 × 10^12 m.",
+    "topic": "Računski zadaci",
+    "difficulty": "teško",
+    "year": 2026,
+    "level": "državno",
+    "source": "Astro26_DN_5rOS_rjesenja.pdf",
+    "page": 1,
+    "status": "spremno",
+    "id": "Q0287"
+  },
+  {
+    "question": "Planet Gliese-581b obiđe zvijezdu za 33 dana, a Gliese-581d za 66 dana. Koji je bliže zvijezdi?",
+    "answers": [
+      "Gliese-581b",
+      "Gliese-581d",
+      "Jednako su udaljeni",
+      "Ne može se zaključiti iz perioda"
+    ],
+    "correct": 0,
+    "explanation": "Planet s kraćim ophodnim periodom nalazi se bliže zvijezdi.",
+    "topic": "Egzoplaneti",
+    "difficulty": "srednje",
+    "year": 2026,
+    "level": "državno",
+    "source": "Astro26_DN_5rOS_rjesenja.pdf",
+    "page": 2,
+    "status": "spremno",
+    "id": "Q0288"
+  },
+  {
+    "question": "Vrijeme putovanja svjetlosti do Venere iznosi 350,77 s. Koliko je to minuta, zaokruženo na dvije decimale?",
+    "answers": [
+      "5,08 min",
+      "5,50 min",
+      "5,85 min",
+      "6,35 min"
+    ],
+    "correct": 2,
+    "explanation": "350,77 s podijeljeno sa 60 iznosi približno 5,85 minuta.",
+    "topic": "Računski zadaci",
+    "difficulty": "srednje",
+    "year": 2026,
+    "level": "državno",
+    "source": "Astro26_DN_5rOS_rjesenja.pdf",
+    "page": 2,
+    "status": "spremno",
+    "id": "Q0289"
+  }
+]

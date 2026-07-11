@@ -1,0 +1,1050 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080b24">
+  <meta name="description" content="Zabavni kviz za pripremu natjecanja iz astronomije za 5. razred">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <title>Astro kviz – 5. razred</title>
+  <style>
+    :root {
+      --bg:#080b24; --panel:#131a44; --panel2:#1a2158; --input:#0d1236;
+      --text:#f6f7ff; --muted:#a9b1e0; --border:#2c3670;
+      --cyan:#4dd8ff; --purple:#8b6bff; --pink:#ff7ac3; --yellow:#ffd93b; --orange:#ff9f43;
+      --good:#3ae374; --bad:#ff5e78;
+      --shadow:0 14px 36px rgba(3,6,28,.55);
+    }
+    * { box-sizing:border-box; }
+    html,body { height:100%; }
+    body {
+      margin:0;
+      font-family:ui-rounded,"SF Pro Rounded",-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+      background:
+        radial-gradient(circle at 15% -5%, rgba(139,107,255,.22), transparent 40%),
+        radial-gradient(circle at 95% 8%, rgba(77,216,255,.14), transparent 34%),
+        radial-gradient(circle at 50% 110%, rgba(255,122,195,.10), transparent 45%),
+        var(--bg);
+      color:var(--text); min-height:100vh; overflow-x:hidden;
+    }
+    #sky { position:fixed; inset:0; z-index:0; pointer-events:none; }
+    #confetti { position:fixed; inset:0; z-index:50; pointer-events:none; }
+    .wrap { position:relative; z-index:1; max-width:860px; margin:auto; padding:18px 16px 46px; }
+
+    /* ---------- header ---------- */
+    header { display:flex; align-items:center; gap:12px; margin-bottom:16px; flex-wrap:wrap; }
+    #mascot { flex:0 0 auto; filter:drop-shadow(0 6px 12px rgba(255,217,59,.35)); animation:floaty 3.4s ease-in-out infinite; }
+    #mascot.jump { animation:jump .6s ease; }
+    #mascot.wob { animation:wob .55s ease; }
+    .titles { min-width:0; }
+    h1 {
+      font-size:clamp(1.35rem,5vw,2rem); margin:0; letter-spacing:.3px;
+      background:linear-gradient(90deg,var(--yellow),var(--pink) 55%,var(--cyan));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    h1 .grade { font-size:.55em; color:var(--muted); -webkit-text-fill-color:var(--muted); background:none; font-weight:700; }
+    .sub { color:var(--muted); margin-top:2px; font-size:.9rem; }
+    .hdr-right { margin-left:auto; display:flex; align-items:center; gap:8px; }
+    .lvlpill { background:linear-gradient(135deg,#241d5e,#171242); border-color:#4a3f9e; color:var(--text); font-weight:800; }
+    .iconbtn {
+      width:42px; height:42px; border-radius:14px; font-size:1.15rem; padding:0;
+      display:grid; place-items:center;
+    }
+    .iconbtn.exit { width:36px; height:36px; border-radius:12px; font-size:.85rem; color:var(--muted); margin-left:auto; }
+    .iconbtn.exit:hover { border-color:var(--bad); color:var(--bad); }
+
+    /* ---------- cards & basics ---------- */
+    .card {
+      background:linear-gradient(180deg,rgba(26,33,88,.94),rgba(19,26,68,.97));
+      border:2px solid var(--border); border-radius:26px; padding:20px; box-shadow:var(--shadow);
+    }
+    h2 { margin:4px 0 14px; font-size:1.3rem; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+    @media(max-width:640px){ .grid{grid-template-columns:1fr;} }
+    label.fld { display:block; color:var(--muted); font-size:.86rem; margin-bottom:6px; font-weight:700; }
+    select, button { font:inherit; border-radius:16px; border:2px solid var(--border); color:var(--text); }
+    select { width:100%; padding:12px 13px; background:var(--input); font-weight:600; }
+    button {
+      cursor:pointer; padding:13px 18px; font-weight:800; background:var(--panel2);
+      transition:transform .15s, box-shadow .15s, border-color .15s, filter .15s;
+    }
+    button:hover { transform:translateY(-2px); border-color:#4d5db4; }
+    button:active { transform:translateY(1px); }
+    button:disabled { cursor:default; opacity:.45; transform:none; }
+    button:focus-visible, select:focus-visible { outline:3px solid var(--cyan); outline-offset:2px; }
+    .primary {
+      background:linear-gradient(135deg,var(--purple),#5a3ee0); border-color:#a68cff;
+      box-shadow:0 8px 22px rgba(139,107,255,.35);
+    }
+    .goodbtn { background:linear-gradient(135deg,#26b45f,#188a49); border-color:#4fe08c; }
+    .ghost { background:transparent; border-color:var(--border); color:var(--muted); }
+    .big { font-size:1.06rem; padding:15px 22px; }
+    .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .start-actions { margin-top:16px; }
+    .statline { margin-top:14px; color:var(--muted); font-size:.9rem; }
+    .hidden { display:none !important; }
+    .pill {
+      padding:7px 12px; background:var(--input); border:2px solid var(--border);
+      border-radius:999px; color:var(--muted); font-size:.88rem; font-weight:700;
+    }
+
+    /* ---------- setup extras ---------- */
+    .bubble {
+      position:relative; background:#231c63; border:2px solid #4a3f9e; border-radius:18px;
+      padding:12px 14px; margin-bottom:16px; font-size:.95rem; line-height:1.4; color:#e9e6ff;
+    }
+    .bubble::before {
+      content:""; position:absolute; top:-11px; left:26px; width:18px; height:18px;
+      background:#231c63; border-left:2px solid #4a3f9e; border-top:2px solid #4a3f9e;
+      transform:rotate(45deg); border-radius:4px 0 0 0;
+    }
+    .bubble .tag { color:var(--yellow); font-weight:800; margin-right:6px; }
+    #fact { transition:opacity .35s; }
+    #fact.fade { opacity:0; }
+
+    .switch { display:flex; align-items:center; gap:10px; margin-top:14px; cursor:pointer; font-weight:700; color:var(--text); user-select:none; }
+    .switch input { position:absolute; opacity:0; pointer-events:none; }
+    .switch .slider {
+      flex:0 0 52px; height:30px; border-radius:999px; background:var(--input);
+      border:2px solid var(--border); position:relative; transition:background .2s,border-color .2s;
+    }
+    .switch .slider::after {
+      content:""; position:absolute; top:3px; left:3px; width:20px; height:20px; border-radius:50%;
+      background:var(--muted); transition:transform .2s, background .2s;
+    }
+    .switch input:checked + .slider { background:linear-gradient(135deg,#b46eff,#6e3ee0); border-color:#c9a4ff; }
+    .switch input:checked + .slider::after { transform:translateX(22px); background:#fff; }
+    .switch input:focus-visible + .slider { outline:3px solid var(--cyan); outline-offset:2px; }
+    .switch small { display:block; color:var(--muted); font-weight:600; }
+
+    .shelf-title { margin:22px 0 10px; font-size:1.02rem; }
+    .badges { display:flex; flex-wrap:wrap; gap:8px; }
+    .badge {
+      display:flex; align-items:center; gap:7px; padding:8px 12px; border-radius:999px;
+      background:linear-gradient(135deg,#3a2f86,#241d5e); border:2px solid #6f5bd6;
+      font-size:.85rem; font-weight:800;
+    }
+    .badge .bemoji { font-size:1.05rem; }
+    .badge.locked { background:var(--input); border-color:var(--border); color:var(--muted); opacity:.75; font-weight:700; }
+
+    /* ---------- quiz ---------- */
+    .topbar { position:relative; display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:16px; flex-wrap:wrap; }
+    .streak {
+      background:linear-gradient(135deg,#5b2a00,#3a1a00); border-color:var(--orange); color:#ffd8a8;
+    }
+    .streak.pulse { animation:pop .35s ease; }
+    .score-pill { color:var(--yellow); border-color:#6b5a1f; }
+    .xpfl {
+      position:absolute; right:6px; top:100%; color:var(--yellow); font-weight:900; font-size:1rem;
+      pointer-events:none; animation:floatUp 1s ease forwards; text-shadow:0 2px 8px rgba(0,0,0,.5);
+    }
+
+    .progress {
+      position:relative; height:14px; background:#060920; border-radius:999px;
+      border:2px solid var(--border); margin:6px 8px 22px 2px;
+    }
+    .progress > div {
+      height:100%; width:0; border-radius:999px;
+      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink));
+      transition:width .5s cubic-bezier(.3,1.4,.5,1);
+    }
+    #rocket {
+      position:absolute; top:50%; left:0; transform:translate(-40%,-52%) rotate(45deg);
+      font-size:1.5rem; transition:left .5s cubic-bezier(.3,1.4,.5,1);
+      filter:drop-shadow(0 0 8px rgba(77,216,255,.6));
+    }
+    .goal { position:absolute; right:-6px; top:50%; transform:translateY(-52%); font-size:1.4rem; }
+
+    .timer { position:relative; height:12px; background:#060920; border:2px solid var(--border); border-radius:999px; margin:-8px 2px 18px; }
+    .timer > div { height:100%; width:100%; border-radius:999px; background:linear-gradient(90deg,var(--good),var(--yellow)); transition:width .1s linear; }
+    .timer.low > div { background:linear-gradient(90deg,var(--bad),var(--orange)); }
+    .timer span {
+      position:absolute; right:-2px; top:-30px; font-weight:900; color:var(--yellow); font-size:.95rem;
+    }
+    .timer.low span { color:var(--bad); }
+
+    .meta { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+    .chip {
+      font-size:.76rem; font-weight:800; padding:4px 10px; border-radius:999px;
+      background:var(--input); border:1.5px solid var(--border); color:var(--muted);
+    }
+    .chip.easy { color:#8df5b6; border-color:#2f7f52; }
+    .chip.mid  { color:#ffe08a; border-color:#8a6d1f; }
+    .chip.hard { color:#ff9fb0; border-color:#8a2f42; }
+
+    .question { font-size:clamp(1.2rem,4.4vw,1.5rem); line-height:1.4; margin:4px 0 16px; font-weight:800; animation:fadeUp .3s ease; }
+    .qimage {
+      background:#060920; border:2px solid var(--border); border-radius:18px;
+      padding:14px; margin:0 0 16px; display:flex; justify-content:center; animation:fadeUp .35s ease;
+    }
+    .qimage svg { width:100%; max-width:430px; height:auto; display:block; }
+    .qimage img { max-width:100%; border-radius:12px; display:block; }
+    .qimage.small { max-width:260px; padding:8px; margin:8px 0 6px; }
+    .qimage.small svg { max-width:240px; }
+    .qimage.fb { max-width:340px; margin:12px auto 2px; }
+    .qimage.fb svg { max-width:320px; }
+    .answers { display:grid; gap:11px; animation:fadeUp .35s ease; }
+    .answer {
+      text-align:left; width:100%; background:#101642; border:2px solid #33408c;
+      min-height:56px; display:flex; align-items:center; gap:12px; border-radius:18px; font-weight:700;
+    }
+    .answer:hover:not(:disabled) { border-color:var(--cyan); box-shadow:0 6px 18px rgba(77,216,255,.18); }
+    .answer .letter {
+      flex:0 0 32px; height:32px; border-radius:11px; display:grid; place-items:center;
+      color:#fff; font-weight:900; font-size:.95rem;
+    }
+    .answer:nth-child(1) .letter { background:#2f6fed; }
+    .answer:nth-child(2) .letter { background:#8b5cf6; }
+    .answer:nth-child(3) .letter { background:#ec4899; }
+    .answer:nth-child(4) .letter { background:#f59e0b; }
+    .answer.correct { background:rgba(58,227,116,.14); border-color:var(--good); animation:pop .4s ease; }
+    .answer.wrong { background:rgba(255,94,120,.13); border-color:var(--bad); animation:shake .45s ease; }
+
+    .feedback {
+      margin-top:16px; padding:14px 16px; border-radius:18px; line-height:1.5;
+      background:var(--input); border:2px solid var(--border); animation:fadeUp .3s ease;
+    }
+    .feedback strong.good { color:var(--good); }
+    .feedback strong.bad { color:var(--bad); }
+    .nextrow { display:flex; justify-content:flex-end; margin-top:14px; }
+
+    /* ---------- result ---------- */
+    .stars { text-align:center; font-size:clamp(2.4rem,10vw,3.6rem); letter-spacing:8px; margin:2px 0 4px; }
+    .stars .star { color:#2c3670; display:inline-block; }
+    .stars .star.on { color:var(--yellow); text-shadow:0 0 18px rgba(255,217,59,.55); animation:pop .5s ease backwards; }
+    .rankmsg { text-align:center; font-size:clamp(1.1rem,4.5vw,1.45rem); font-weight:900; margin-bottom:6px; }
+    .score {
+      text-align:center; font-size:clamp(2.2rem,10vw,4rem); font-weight:900; margin:4px 0 14px;
+      background:linear-gradient(90deg,var(--cyan),var(--pink)); -webkit-background-clip:text; background-clip:text; color:transparent;
+      animation:pop .5s ease;
+    }
+    .xpbox { background:var(--input); border:2px solid var(--border); border-radius:18px; padding:12px 14px; margin-bottom:14px; }
+    .xprow { display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:8px; flex-wrap:wrap; }
+    .xpgain { color:var(--yellow); font-weight:900; font-size:1.05rem; }
+    .lvllabel { color:var(--muted); font-size:.85rem; font-weight:700; }
+    .lvlbar { height:12px; background:#060920; border-radius:999px; border:2px solid var(--border); overflow:hidden; }
+    .lvlbar > div { height:100%; width:0; background:linear-gradient(90deg,var(--yellow),var(--orange)); transition:width 1s cubic-bezier(.3,1.2,.4,1); }
+    .result-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px; margin:14px 0 18px; }
+    .result-box { background:var(--input); border:2px solid var(--border); border-radius:16px; padding:12px; text-align:center; }
+    .result-box span { color:var(--muted); font-size:.82rem; font-weight:700; }
+    .result-box b { display:block; font-size:1.45rem; margin-top:2px; }
+    .review { margin-top:18px; }
+    .review-item { padding:12px 0; border-top:2px solid var(--border); line-height:1.45; }
+    .review-item b { font-weight:800; }
+
+    footer { color:var(--muted); text-align:center; font-size:.82rem; margin-top:20px; }
+
+    /* ---------- toasts ---------- */
+    #toasts { position:fixed; left:50%; bottom:22px; transform:translateX(-50%); z-index:60; display:flex; flex-direction:column; gap:8px; align-items:center; width:min(92vw,420px); }
+    .toast {
+      background:linear-gradient(135deg,#3a2f86,#241d5e); border:2px solid #8f7bff; border-radius:16px;
+      padding:11px 16px; font-weight:800; box-shadow:var(--shadow); animation:toastIn .35s cubic-bezier(.2,1.4,.4,1);
+      text-align:center; transition:opacity .5s, transform .5s;
+    }
+    .toast.bye { opacity:0; transform:translateY(10px); }
+
+    /* ---------- animations ---------- */
+    @keyframes floaty { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
+    @keyframes jump { 0%{transform:translateY(0)} 30%{transform:translateY(-12px) rotate(-8deg)} 55%{transform:translateY(0)} 75%{transform:translateY(-5px)} 100%{transform:translateY(0)} }
+    @keyframes wob { 0%,100%{transform:rotate(0)} 25%{transform:rotate(-13deg)} 70%{transform:rotate(11deg)} }
+    @keyframes pop { 0%{transform:scale(.55); opacity:0} 65%{transform:scale(1.12)} 100%{transform:scale(1); opacity:1} }
+    @keyframes shake { 10%,90%{transform:translateX(-3px)} 25%,75%{transform:translateX(5px)} 50%{transform:translateX(-5px)} }
+    @keyframes fadeUp { from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none} }
+    @keyframes floatUp { from{opacity:1; transform:translateY(0)} to{opacity:0; transform:translateY(-26px)} }
+    @keyframes toastIn { from{opacity:0; transform:translateY(16px) scale(.9)} to{opacity:1; transform:none} }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation:none !important; transition:none !important; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="sky" aria-hidden="true"></canvas>
+
+  <div class="wrap">
+    <header>
+      <svg id="mascot" viewBox="0 0 64 64" width="54" height="54" aria-hidden="true">
+        <polygon points="32,4 40.2,23.2 61,25 45.2,38.8 49.9,59 32,48.2 14.1,59 18.8,38.8 3,25 23.8,23.2"
+          fill="#ffd93b" stroke="#e8a400" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="25" cy="31" r="3" fill="#2b2350"/>
+        <circle cx="39" cy="31" r="3" fill="#2b2350"/>
+        <circle cx="20.5" cy="37" r="2.6" fill="#ff9fb8" opacity=".85"/>
+        <circle cx="43.5" cy="37" r="2.6" fill="#ff9fb8" opacity=".85"/>
+        <path id="mouth" d="M24 39 Q32 46 40 39" fill="none" stroke="#2b2350" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div class="titles">
+        <h1>Astro kviz <span class="grade">· 5. razred</span></h1>
+        <div class="sub">Tvoja svemirska misija do natjecanja! 🛰️</div>
+      </div>
+      <div class="hdr-right">
+        <span id="lvl" class="pill lvlpill"></span>
+        <button id="soundBtn" class="iconbtn" title="Uključi/isključi zvuk" aria-label="Zvuk">🔊</button>
+      </div>
+    </header>
+
+    <section id="setup" class="card">
+      <div class="bubble"><span class="tag">Jesi li znao?</span><span id="fact"></span></div>
+      <h2>🚀 Nova misija</h2>
+      <div class="grid">
+        <div>
+          <label class="fld" for="count">Broj pitanja</label>
+          <select id="count">
+            <option value="10">10 pitanja</option>
+            <option value="20" selected>20 pitanja</option>
+            <option value="30">30 pitanja</option>
+            <option value="all">Sva pitanja</option>
+          </select>
+        </div>
+        <div>
+          <label class="fld" for="topic">Tema</label>
+          <select id="topic"><option value="all">Sve teme</option></select>
+        </div>
+        <div>
+          <label class="fld" for="difficulty">Težina</label>
+          <select id="difficulty">
+            <option value="all">Sve težine</option>
+            <option value="lako">Lako</option>
+            <option value="srednje">Srednje</option>
+            <option value="teško">Teško</option>
+          </select>
+        </div>
+        <div>
+          <label class="fld" for="level">Razina natjecanja</label>
+          <select id="level">
+            <option value="all">Sve razine</option>
+            <option value="školsko">Školsko</option>
+            <option value="županijsko">Županijsko</option>
+            <option value="državno">Državno</option>
+          </select>
+        </div>
+      </div>
+
+      <label class="switch">
+        <input type="checkbox" id="speed">
+        <span class="slider"></span>
+        <span>⚡ Brzinska misija <small>20 sekundi po pitanju · dodatni XP!</small></span>
+      </label>
+
+      <div class="row start-actions">
+        <button id="startBtn" class="primary big">🚀 Kreni u misiju!</button>
+        <button id="wrongBtn">🔁 Ponovi pogrešna</button>
+        <button id="resetStatsBtn" class="ghost">🗑️ Obriši napredak</button>
+      </div>
+      <div id="stats" class="statline"></div>
+
+      <h3 class="shelf-title">🏅 Tvoje značke</h3>
+      <div id="badges" class="badges"></div>
+    </section>
+
+    <section id="quiz" class="card hidden">
+      <div class="topbar">
+        <span id="counter" class="pill"></span>
+        <span id="streakPill" class="pill streak hidden"></span>
+        <span id="liveScore" class="pill score-pill"></span>
+        <button id="exitBtn" class="iconbtn exit" title="Prekini misiju i vrati se na postavke" aria-label="Izađi iz misije">✖</button>
+      </div>
+      <div class="progress"><div id="progressBar"></div><span id="rocket">🚀</span><span class="goal">🪐</span></div>
+      <div id="timer" class="timer hidden"><div id="timeFill"></div><span id="timeNum"></span></div>
+      <div id="meta" class="meta"></div>
+      <div id="question" class="question"></div>
+      <div id="qimage" class="qimage hidden" aria-label="Slika uz pitanje"></div>
+      <div id="answers" class="answers"></div>
+      <div id="feedback" class="feedback hidden"></div>
+      <div class="nextrow">
+        <button id="nextBtn" class="primary hidden">Sljedeće pitanje ➜</button>
+      </div>
+    </section>
+
+    <section id="result" class="card hidden">
+      <div id="stars" class="stars"></div>
+      <div id="rankMsg" class="rankmsg"></div>
+      <div id="score" class="score"></div>
+      <div class="xpbox">
+        <div class="xprow"><span id="xpGain" class="xpgain"></span><span id="lvlLabel" class="lvllabel"></span></div>
+        <div class="lvlbar"><div id="lvlBar"></div></div>
+      </div>
+      <div class="result-grid">
+        <div class="result-box"><span>Točno ✅</span><b id="correctCount"></b></div>
+        <div class="result-box"><span>Netočno ❌</span><b id="wrongCount"></b></div>
+        <div class="result-box"><span>Uspješnost 🎯</span><b id="percent"></b></div>
+        <div class="result-box"><span>Najbolji niz 🔥</span><b id="streakCount"></b></div>
+      </div>
+      <div class="row">
+        <button id="againBtn" class="primary">🚀 Nova misija</button>
+        <button id="retryWrongBtn" class="goodbtn">🔁 Ponovi pogrešna</button>
+      </div>
+      <div id="review" class="review"></div>
+    </section>
+
+    <footer>Napredak se sprema samo na ovom uređaju. Sretno na natjecanju! 🍀</footer>
+  </div>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div id="toasts" aria-live="polite"></div>
+
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
+const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const SPEED_SECS = 20;
+
+let allQuestions = [], quizQuestions = [], current = 0, correct = 0, wrongIds = [], answered = false;
+let streak = 0, maxStreak = 0, xpQuiz = 0, speedMode = false;
+let timerId = null, timeLeft = 0;
+
+/* ============ zvuk ============ */
+let audioCtx = null;
+let soundOn = localStorage.getItem("astroSound") !== "off";
+function ac() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  return audioCtx;
+}
+function beep(freq, dur = 0.12, type = "sine", when = 0, vol = 0.22) {
+  if (!soundOn) return;
+  try {
+    const c = ac();
+    const o = c.createOscillator(), g = c.createGain();
+    o.type = type; o.frequency.value = freq;
+    o.connect(g); g.connect(c.destination);
+    const t = c.currentTime + when;
+    g.gain.setValueAtTime(0, t);
+    g.gain.linearRampToValueAtTime(vol, t + 0.012);
+    g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+    o.start(t); o.stop(t + dur + 0.06);
+  } catch (e) {}
+}
+const sCorrect = () => { beep(523); beep(659, 0.12, "sine", 0.08); beep(784, 0.18, "sine", 0.16); };
+const sWrong   = () => { beep(196, 0.22, "square", 0, 0.14); beep(147, 0.28, "square", 0.11, 0.12); };
+const sClick   = () => beep(620, 0.06, "sine", 0, 0.1);
+const sFanfare = () => [523, 659, 784, 1047].forEach((f, i) => beep(f, 0.2, "triangle", i * 0.11, 0.26));
+const sTimeout = () => beep(220, 0.3, "sawtooth", 0, 0.13);
+document.addEventListener("pointerdown", () => { try { if (soundOn) ac().resume(); } catch (e) {} }, { once: true });
+
+function renderSoundBtn() { $("soundBtn").textContent = soundOn ? "🔊" : "🔇"; }
+$("soundBtn").onclick = () => {
+  soundOn = !soundOn;
+  localStorage.setItem("astroSound", soundOn ? "on" : "off");
+  renderSoundBtn();
+  if (soundOn) sClick();
+};
+
+const vib = p => { try { navigator.vibrate && navigator.vibrate(p); } catch (e) {} };
+
+/* ============ maskota ============ */
+const MOUTHS = {
+  smile: "M24 39 Q32 46 40 39",
+  happy: "M23 38 Q32 52 41 38",
+  sad:   "M24 45 Q32 37 40 45",
+  oh:    "M32 38 a3.6 4.2 0 1 0 0.01 0"
+};
+const mascotEl = $("mascot");
+mascotEl.addEventListener("animationend", e => {
+  if (e.animationName !== "floaty") mascotEl.classList.remove("jump", "wob");
+});
+function setMood(m) {
+  const mouth = $("mouth");
+  mouth.setAttribute("d", MOUTHS[m] || MOUTHS.smile);
+  mouth.setAttribute("fill", (m === "happy" || m === "oh") ? "#8a3050" : "none");
+  mascotEl.classList.remove("jump", "wob");
+  void mascotEl.getBoundingClientRect();
+  if (m === "happy") mascotEl.classList.add("jump");
+  if (m === "sad") mascotEl.classList.add("wob");
+}
+
+/* ============ zvjezdano nebo ============ */
+(function sky() {
+  const cv = $("sky"), ctx = cv.getContext("2d");
+  let W = 0, H = 0, stars = [], shooting = null;
+  const COLORS = ["#ffffff", "#cfe8ff", "#ffe9a8", "#d9ccff"];
+  function resize() {
+    W = cv.width = window.innerWidth;
+    H = cv.height = window.innerHeight;
+    const n = Math.min(160, Math.round(W * H / 9000));
+    stars = Array.from({ length: n }, () => ({
+      x: Math.random() * W, y: Math.random() * H,
+      r: 0.5 + Math.random() * 1.6,
+      c: COLORS[Math.floor(Math.random() * COLORS.length)],
+      ph: Math.random() * Math.PI * 2,
+      sp: 0.4 + Math.random() * 1.4
+    }));
+    if (REDUCED) drawStatic();
+  }
+  function drawStatic() {
+    ctx.clearRect(0, 0, W, H);
+    stars.forEach(s => {
+      ctx.globalAlpha = 0.8;
+      ctx.fillStyle = s.c;
+      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, 7); ctx.fill();
+    });
+    ctx.globalAlpha = 1;
+  }
+  function frame(t) {
+    ctx.clearRect(0, 0, W, H);
+    const sec = t / 1000;
+    stars.forEach(s => {
+      ctx.globalAlpha = 0.35 + 0.65 * Math.abs(Math.sin(sec * s.sp + s.ph));
+      ctx.fillStyle = s.c;
+      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, 7); ctx.fill();
+    });
+    ctx.globalAlpha = 1;
+    if (!shooting && Math.random() < 0.004) {
+      shooting = { x: Math.random() * W * 0.7, y: Math.random() * H * 0.35, vx: 7 + Math.random() * 5, vy: 2.5 + Math.random() * 2, life: 0 };
+    }
+    if (shooting) {
+      const s = shooting;
+      const grad = ctx.createLinearGradient(s.x, s.y, s.x - s.vx * 7, s.y - s.vy * 7);
+      grad.addColorStop(0, "rgba(255,255,255,.95)");
+      grad.addColorStop(1, "rgba(255,255,255,0)");
+      ctx.strokeStyle = grad; ctx.lineWidth = 2.2; ctx.lineCap = "round";
+      ctx.beginPath(); ctx.moveTo(s.x, s.y); ctx.lineTo(s.x - s.vx * 7, s.y - s.vy * 7); ctx.stroke();
+      s.x += s.vx; s.y += s.vy; s.life++;
+      if (s.life > 45 || s.x > W + 80 || s.y > H + 80) shooting = null;
+    }
+    requestAnimationFrame(frame);
+  }
+  window.addEventListener("resize", resize);
+  resize();
+  if (!REDUCED) requestAnimationFrame(frame);
+})();
+
+/* ============ konfeti ============ */
+const confettiCv = $("confetti"), cctx = confettiCv.getContext("2d");
+let pieces = [], confettiRunning = false;
+function sizeConfetti() { confettiCv.width = window.innerWidth; confettiCv.height = window.innerHeight; }
+window.addEventListener("resize", sizeConfetti); sizeConfetti();
+function confettiBurst(x, y, n = 30, big = false) {
+  if (REDUCED) return;
+  const COLORS = ["#ffd93b", "#4dd8ff", "#ff7ac3", "#8b6bff", "#3ae374", "#ff9f43"];
+  for (let i = 0; i < n; i++) {
+    pieces.push({
+      x, y,
+      vx: (Math.random() - 0.5) * (big ? 14 : 9),
+      vy: -(3 + Math.random() * (big ? 10 : 6)),
+      g: 0.28, s: 4 + Math.random() * (big ? 6 : 4),
+      c: COLORS[Math.floor(Math.random() * COLORS.length)],
+      rot: Math.random() * Math.PI, vr: (Math.random() - 0.5) * 0.3,
+      life: 0, max: 70 + Math.random() * 40
+    });
+  }
+  if (!confettiRunning) { confettiRunning = true; requestAnimationFrame(confettiFrame); }
+}
+function confettiFrame() {
+  cctx.clearRect(0, 0, confettiCv.width, confettiCv.height);
+  pieces = pieces.filter(p => p.life < p.max);
+  pieces.forEach(p => {
+    p.x += p.vx; p.y += p.vy; p.vy += p.g; p.rot += p.vr; p.life++;
+    cctx.save();
+    cctx.translate(p.x, p.y); cctx.rotate(p.rot);
+    cctx.globalAlpha = Math.max(0, 1 - Math.max(0, p.life - (p.max - 20)) / 20);
+    cctx.fillStyle = p.c;
+    cctx.fillRect(-p.s / 2, -p.s / 2, p.s, p.s * 0.7);
+    cctx.restore();
+  });
+  if (pieces.length) requestAnimationFrame(confettiFrame);
+  else { confettiRunning = false; cctx.clearRect(0, 0, confettiCv.width, confettiCv.height); }
+}
+const bigConfetti = () => confettiBurst(window.innerWidth / 2, window.innerHeight * 0.3, 150, true);
+
+/* ============ obavijesti ============ */
+function toast(html) {
+  const t = document.createElement("div");
+  t.className = "toast"; t.innerHTML = html;
+  $("toasts").appendChild(t);
+  setTimeout(() => t.classList.add("bye"), 3200);
+  setTimeout(() => t.remove(), 3900);
+}
+
+/* ============ profil: XP, činovi, značke ============ */
+const RANKS = [
+  [0,    "Svemirski kadet",    "🧑‍🚀"],
+  [100,  "Mladi astronaut",    "🚀"],
+  [250,  "Pilot rakete",       "🛸"],
+  [450,  "Istraživač Mjeseca", "🌙"],
+  [700,  "Lovac na komete",    "☄️"],
+  [1000, "Kapetan flote",      "🛰️"],
+  [1400, "Zvjezdani majstor",  "🌟"],
+  [2000, "Legenda svemira",    "🌌"]
+];
+const BADGES = [
+  { id: "first",    emoji: "🚀", name: "Prvi let",             desc: "Završi svoj prvi kviz" },
+  { id: "streak5",  emoji: "🔥", name: "Vrući niz",            desc: "5 točnih odgovora zaredom" },
+  { id: "streak10", emoji: "☄️", name: "Kometa",               desc: "10 točnih odgovora zaredom" },
+  { id: "perfect",  emoji: "💯", name: "Savršena misija",      desc: "100 % u kvizu od barem 10 pitanja" },
+  { id: "c50",      emoji: "⭐", name: "Zvjezdani učenik",     desc: "Ukupno 50 točnih odgovora" },
+  { id: "c200",     emoji: "🌌", name: "Istraživač galaksije", desc: "Ukupno 200 točnih odgovora" },
+  { id: "fixer",    emoji: "🧠", name: "Majstor popravaka",    desc: "Isprazni popis pitanja za ponavljanje" },
+  { id: "fast",     emoji: "⚡", name: "Brz kao svjetlost",    desc: "Brzinska misija s 80 % ili više" }
+];
+function loadProfile() {
+  return JSON.parse(localStorage.getItem("astroProfile") || '{"xp":0,"badges":[],"bestStreak":0}');
+}
+function saveProfile(p) { localStorage.setItem("astroProfile", JSON.stringify(p)); }
+function rankIndex(xp) { let i = 0; RANKS.forEach((r, idx) => { if (xp >= r[0]) i = idx; }); return i; }
+function renderLevel() {
+  const p = loadProfile(), i = rankIndex(p.xp);
+  $("lvl").textContent = `${RANKS[i][2]} ${RANKS[i][1]} · ${p.xp} XP`;
+}
+function levelUp(i) {
+  toast(`🎉 Novi čin: <b>${RANKS[i][2]} ${RANKS[i][1]}</b>!`);
+  sFanfare(); bigConfetti(); setMood("happy");
+}
+function addXP(n) {
+  const p = loadProfile();
+  const before = rankIndex(p.xp);
+  p.xp += n;
+  const after = rankIndex(p.xp);
+  saveProfile(p); renderLevel();
+  const fl = document.createElement("span");
+  fl.className = "xpfl"; fl.textContent = `+${n} XP`;
+  document.querySelector("#quiz .topbar").appendChild(fl);
+  setTimeout(() => fl.remove(), 1000);
+  if (after > before) levelUp(after);
+}
+function award(id) {
+  const p = loadProfile();
+  if (p.badges.includes(id)) return;
+  p.badges.push(id); saveProfile(p);
+  const b = BADGES.find(x => x.id === id);
+  toast(`🏅 Nova značka: <b>${b.emoji} ${b.name}</b>`);
+  sFanfare();
+  confettiBurst(window.innerWidth / 2, window.innerHeight * 0.7, 50);
+  renderBadges();
+}
+function renderBadges() {
+  const owned = new Set(loadProfile().badges);
+  $("badges").innerHTML = BADGES.map(b => {
+    const has = owned.has(b.id);
+    return `<div class="badge ${has ? "" : "locked"}" title="${b.desc}"><span class="bemoji">${has ? b.emoji : "🔒"}</span><span>${b.name}</span></div>`;
+  }).join("");
+}
+
+/* ============ zanimljivosti ============ */
+const FACTS = [
+  "Na Mjesecu bi tvoj skok bio oko 6 puta viši nego na Zemlji!",
+  "Sunčevoj svjetlosti treba oko 8 minuta da stigne do Zemlje.",
+  "Jupiter je tako velik da bi u njega stalo više od 1300 Zemalja.",
+  "Na Veneri je dan dulji od godine!",
+  "Žličica tvari neutronske zvijezde teška je kao cijela planina.",
+  "Saturnovi prstenovi većinom su komadići leda i stijena.",
+  "Olympus Mons na Marsu najviši je vulkan u Sunčevu sustavu.",
+  "Mliječna staza ima više od 100 milijardi zvijezda.",
+  "Zvijezde padalice zapravo su sitni kamenčići koji izgaraju u atmosferi.",
+  "Mjesec se svake godine udalji od Zemlje oko 4 centimetra."
+];
+let factIdx = Math.floor(Math.random() * FACTS.length);
+function startFacts() {
+  const el = $("fact");
+  el.textContent = FACTS[factIdx];
+  setInterval(() => {
+    el.classList.add("fade");
+    setTimeout(() => {
+      factIdx = (factIdx + 1) % FACTS.length;
+      el.textContent = FACTS[factIdx];
+      el.classList.remove("fade");
+    }, 380);
+  }, 8000);
+}
+
+/* ============ statistika ============ */
+function loadStats() {
+  return JSON.parse(localStorage.getItem("astroStats") || '{"attempts":0,"correct":0,"wrong":[],"seen":0}');
+}
+function saveStats(s) { localStorage.setItem("astroStats", JSON.stringify(s)); }
+function updateStatsText() {
+  const s = loadStats();
+  const accuracy = s.seen ? Math.round(s.correct / s.seen * 100) : 0;
+  $("stats").textContent = `Misije: ${s.attempts} · Odgovoreno: ${s.seen} · Točnost: ${accuracy} %`;
+  $("wrongBtn").textContent = `🔁 Ponovi pogrešna (${s.wrong.length})`;
+  $("wrongBtn").disabled = !s.wrong.length;
+}
+
+/* ============ slike u pitanjima ============ */
+const PLANETS = [
+  { r: 5,  c: "#b9a08a" },              /* Merkur */
+  { r: 9,  c: "#e8c07a" },              /* Venera */
+  { r: 10, c: "#4d8be5", earth: true }, /* Zemlja */
+  { r: 7,  c: "#e06a4a" },              /* Mars */
+  { r: 26, c: "#d9a066", bands: true }, /* Jupiter */
+  { r: 21, c: "#e6cf9a", ring: true, pad: 10 }, /* Saturn */
+  { r: 14, c: "#8fd8e8" },              /* Uran */
+  { r: 13, c: "#4a6fe0" }               /* Neptun */
+];
+function constellationSVG(img) {
+  const stars = img.stars, lines = img.lines || [];
+  const hi = img.highlight === undefined ? [] : (Array.isArray(img.highlight) ? img.highlight : [img.highlight]);
+  const labels = img.labels || [];
+  /* granice uključuju i natpise i prstene isticanja */
+  const pts = stars.map(s => [s[0], s[1]]);
+  labels.forEach(l => {
+    const s = stars[l[0]], r = s[2] || 4.5;
+    const x = s[0] + (l[2] !== undefined ? l[2] : r + 8);
+    const y = s[1] + (l[3] !== undefined ? l[3] : 4);
+    pts.push([x, y - 11], [x + String(l[1]).length * 6.6, y + 3]);
+  });
+  hi.forEach(i => { const s = stars[i]; pts.push([s[0] - 14, s[1] - 14], [s[0] + 14, s[1] + 14]); });
+  const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+  const pad = 16;
+  const minX = Math.min(...xs) - pad, minY = Math.min(...ys) - pad;
+  const w = Math.max(...xs) - Math.min(...xs) + pad * 2;
+  const h = Math.max(...ys) - Math.min(...ys) + pad * 2;
+  let out = `<svg viewBox="${minX.toFixed(1)} ${minY.toFixed(1)} ${w.toFixed(1)} ${h.toFixed(1)}" xmlns="http://www.w3.org/2000/svg" role="img">`;
+  lines.forEach(l => {
+    const a = stars[l[0]], b = stars[l[1]];
+    out += `<line x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}" stroke="#5f74c9" stroke-width="1.8" stroke-linecap="round" opacity=".9"/>`;
+  });
+  stars.forEach((s, i) => {
+    const r = s[2] || 4.5;
+    const isHi = hi.includes(i);
+    out += `<circle cx="${s[0]}" cy="${s[1]}" r="${(r * (isHi ? 2.5 : 2.1)).toFixed(1)}" fill="${isHi ? "rgba(77,216,255,.22)" : "rgba(255,233,168,.16)"}"/>`;
+    out += `<circle cx="${s[0]}" cy="${s[1]}" r="${r}" fill="#fff8dd"/>`;
+    if (isHi) out += `<circle cx="${s[0]}" cy="${s[1]}" r="${(r + 7).toFixed(1)}" fill="none" stroke="#4dd8ff" stroke-width="2.5" stroke-dasharray="6 5"/>`;
+  });
+  labels.forEach(l => {
+    const s = stars[l[0]], r = s[2] || 4.5;
+    const x = s[0] + (l[2] !== undefined ? l[2] : r + 8);
+    const y = s[1] + (l[3] !== undefined ? l[3] : 4);
+    out += `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="11" font-weight="700" fill="#cfe0ff">${l[1]}</text>`;
+  });
+  return out + "</svg>";
+}
+function solarSVG(img) {
+  const hi = img.highlight;
+  const cy = 65;
+  let out = `<svg viewBox="0 0 420 130" xmlns="http://www.w3.org/2000/svg" role="img">`;
+  out += `<circle cx="6" cy="${cy}" r="54" fill="#ffb52e"/><circle cx="6" cy="${cy}" r="45" fill="#ffd93b"/>`;
+  let x = 86;
+  PLANETS.forEach((p, i) => {
+    const extra = p.pad || 0;
+    const cx = x + extra + p.r;
+    out += `<circle cx="${cx}" cy="${cy}" r="${p.r}" fill="${p.c}"/>`;
+    if (p.earth) {
+      out += `<ellipse cx="${cx - 3}" cy="${cy - 3}" rx="4" ry="2.6" fill="#3ac17e"/>`;
+      out += `<ellipse cx="${cx + 3.5}" cy="${cy + 3.5}" rx="3" ry="2" fill="#3ac17e"/>`;
+    }
+    if (p.bands) {
+      [-9, 0, 9].forEach(dy => {
+        const half = Math.sqrt(p.r * p.r - dy * dy) * 0.92;
+        out += `<line x1="${(cx - half).toFixed(1)}" y1="${cy + dy}" x2="${(cx + half).toFixed(1)}" y2="${cy + dy}" stroke="#b97f45" stroke-width="3.5" stroke-linecap="round" opacity=".65"/>`;
+      });
+    }
+    if (p.ring) {
+      out += `<ellipse cx="${cx}" cy="${cy}" rx="${(p.r * 1.75).toFixed(1)}" ry="${(p.r * 0.5).toFixed(1)}" fill="none" stroke="#cbb37e" stroke-width="4" transform="rotate(-16 ${cx} ${cy})"/>`;
+    }
+    if (i === hi) {
+      out += `<circle cx="${cx}" cy="${cy}" r="${p.r + 9}" fill="none" stroke="#4dd8ff" stroke-width="3" stroke-dasharray="7 6"/>`;
+    }
+    x = cx + p.r + extra + 11;
+  });
+  return out + "</svg>";
+}
+function buildImage(img) {
+  if (!img) return "";
+  if (img.type === "constellation") return constellationSVG(img);
+  if (img.type === "solar") return solarSVG(img);
+  if (img.type === "svg") return img.svg || "";
+  if (img.type === "src") return `<img src="${img.src}" alt="${img.alt || "Slika uz pitanje"}" loading="lazy">`;
+  return "";
+}
+
+/* ============ kviz ============ */
+function populateTopics() {
+  const topics = [...new Set(allQuestions.map(q => q.topic))].sort((a, b) => a.localeCompare(b, "hr"));
+  topics.forEach(t => {
+    const o = document.createElement("option");
+    o.value = t; o.textContent = t;
+    $("topic").appendChild(o);
+  });
+}
+function filteredQuestions() {
+  return allQuestions.filter(q =>
+    q.status === "spremno" &&
+    ($("topic").value === "all" || q.topic === $("topic").value) &&
+    ($("difficulty").value === "all" || q.difficulty === $("difficulty").value) &&
+    ($("level").value === "all" || q.level === $("level").value)
+  );
+}
+function begin(list) {
+  if (!list.length) { alert("Nema pitanja za odabrane filtre. Probaj druge postavke!"); return; }
+  sClick();
+  quizQuestions = shuffle(list);
+  const countVal = $("count").value;
+  if (countVal !== "all") quizQuestions = quizQuestions.slice(0, Number(countVal));
+  current = 0; correct = 0; wrongIds = []; answered = false;
+  streak = 0; maxStreak = 0; xpQuiz = 0;
+  speedMode = $("speed").checked;
+  setMood("smile");
+  $("setup").classList.add("hidden");
+  $("result").classList.add("hidden");
+  $("quiz").classList.remove("hidden");
+  renderQuestion();
+}
+function updatePills() {
+  $("liveScore").textContent = `⭐ ${correct}`;
+  const sp = $("streakPill");
+  if (streak >= 2) {
+    sp.textContent = `🔥 ${streak}`;
+    sp.classList.remove("hidden", "pulse");
+    void sp.getBoundingClientRect();
+    sp.classList.add("pulse");
+  } else {
+    sp.classList.add("hidden");
+  }
+}
+function setProgress(pct) {
+  $("progressBar").style.width = pct + "%";
+  $("rocket").style.left = pct + "%";
+}
+function stopTimer() { if (timerId) { clearInterval(timerId); timerId = null; } }
+function paintTimer() {
+  $("timeFill").style.width = Math.max(0, timeLeft / SPEED_SECS * 100) + "%";
+  $("timeNum").textContent = "⏱ " + Math.ceil(Math.max(0, timeLeft));
+  $("timer").classList.toggle("low", timeLeft <= 5);
+}
+function startTimer(q) {
+  $("timer").classList.remove("hidden");
+  timeLeft = SPEED_SECS; paintTimer();
+  timerId = setInterval(() => {
+    timeLeft -= 0.1;
+    if (timeLeft <= 0) { stopTimer(); timeUp(q); }
+    else paintTimer();
+  }, 100);
+}
+function renderQuestion() {
+  answered = false;
+  stopTimer();
+  $("feedback").classList.add("hidden");
+  $("nextBtn").classList.add("hidden");
+  const q = quizQuestions[current];
+  $("counter").textContent = `🪐 ${current + 1} / ${quizQuestions.length}`;
+  updatePills();
+  setProgress(current / quizQuestions.length * 100);
+  const diffClass = { "lako": "easy", "srednje": "mid", "teško": "hard" }[q.difficulty] || "mid";
+  $("meta").innerHTML =
+    `<span class="chip">🔭 ${q.topic}</span>` +
+    `<span class="chip ${diffClass}">${q.difficulty}</span>` +
+    `<span class="chip">${q.level} ${q.year}</span>`;
+  $("question").textContent = q.question;
+  const imgBox = $("qimage");
+  if (q.image) {
+    imgBox.innerHTML = buildImage(q.image);
+    imgBox.classList.remove("hidden");
+  } else {
+    imgBox.innerHTML = "";
+    imgBox.classList.add("hidden");
+  }
+  const box = $("answers");
+  box.innerHTML = "";
+  const order = shuffle(q.answers.map((text, originalIndex) => ({ text, originalIndex })));
+  order.forEach((a, i) => {
+    const btn = document.createElement("button");
+    btn.className = "answer";
+    btn.dataset.oi = a.originalIndex;
+    btn.innerHTML = `<span class="letter">${String.fromCharCode(65 + i)}</span><span>${a.text}</span>`;
+    btn.onclick = () => chooseAnswer(btn, a.originalIndex, q);
+    box.appendChild(btn);
+  });
+  if (speedMode) startTimer(q); else $("timer").classList.add("hidden");
+}
+function markCorrectButton(q) {
+  document.querySelectorAll(".answer").forEach(b => {
+    if (Number(b.dataset.oi) === q.correct) b.classList.add("correct");
+  });
+}
+function showNext() {
+  $("nextBtn").textContent = current === quizQuestions.length - 1 ? "🏁 Prikaži rezultat" : "Sljedeće pitanje ➜";
+  $("nextBtn").classList.remove("hidden");
+}
+const CORRECT_MSGS = ["Bravo! 🌟", "Svemirski dobro! 🚀", "Točno — prava si zvijezda! ⭐", "Odlično, samo nastavi! 💫", "To je to! 🛸", "Sjajno kao supernova! 🌠"];
+const WRONG_MSGS = ["Ne brini, i astronauti griješe! 🚀", "Skoro! Sljedeće će biti tvoje. 💪", "Uh! Ali sad znaš više. 🧠", "Nema veze — svemir je pun tajni. 🌌"];
+const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+const fbExtra = q => q.feedbackImage ? `<div class="qimage small fb">${buildImage(q.feedbackImage)}</div>` : "";
+
+function chooseAnswer(btn, selectedIndex, q) {
+  if (answered) return;
+  answered = true;
+  stopTimer();
+  const buttons = [...document.querySelectorAll(".answer")];
+  buttons.forEach(b => b.disabled = true);
+
+  const isCorrect = selectedIndex === q.correct;
+  if (isCorrect) {
+    correct++;
+    streak++;
+    if (streak > maxStreak) maxStreak = streak;
+    const p = loadProfile();
+    if (streak > (p.bestStreak || 0)) { p.bestStreak = streak; saveProfile(p); }
+    btn.classList.add("correct");
+    const xp = 10 + Math.min(streak - 1, 5) * 2 + (speedMode ? 5 : 0);
+    xpQuiz += xp;
+    addXP(xp);
+    sCorrect(); vib(25); setMood("happy");
+    const r = btn.getBoundingClientRect();
+    confettiBurst(r.left + r.width / 2, r.top + r.height / 2, 26);
+    if (streak === 5) award("streak5");
+    if (streak === 10) award("streak10");
+    $("feedback").innerHTML = `<strong class="good">${pick(CORRECT_MSGS)}</strong><br>${q.explanation}` + fbExtra(q);
+  } else {
+    streak = 0;
+    btn.classList.add("wrong");
+    wrongIds.push(q.id);
+    markCorrectButton(q);
+    sWrong(); vib([60, 40, 60]); setMood("sad");
+    $("feedback").innerHTML = `<strong class="bad">${pick(WRONG_MSGS)}</strong><br>${q.explanation}` + fbExtra(q);
+  }
+  updatePills();
+  setProgress((current + 1) / quizQuestions.length * 100);
+  $("feedback").classList.remove("hidden");
+  showNext();
+}
+function timeUp(q) {
+  if (answered) return;
+  answered = true;
+  document.querySelectorAll(".answer").forEach(b => b.disabled = true);
+  streak = 0;
+  wrongIds.push(q.id);
+  markCorrectButton(q);
+  sTimeout(); vib([80, 50, 80]); setMood("sad");
+  updatePills();
+  setProgress((current + 1) / quizQuestions.length * 100);
+  $("feedback").innerHTML = `<strong class="bad">⏱️ Vrijeme je isteklo!</strong><br>${q.explanation}` + fbExtra(q);
+  $("feedback").classList.remove("hidden");
+  showNext();
+}
+function rankMessage(pct) {
+  if (pct === 100) return "🏆 Savršena misija!";
+  if (pct >= 90) return "🥇 Zvjezdano dobro!";
+  if (pct >= 75) return "🥈 Odličan let, astronaute!";
+  if (pct >= 50) return "🥉 Dobar posao, kadete — samo nastavi!";
+  return "🔭 Trening čini majstora — pokušaj ponovno!";
+}
+function renderStars(pct) {
+  const n = pct >= 85 ? 3 : pct >= 60 ? 2 : 1;
+  $("stars").innerHTML = [1, 2, 3].map(k =>
+    `<span class="star ${k <= n ? "on" : ""}" style="animation-delay:${k * 0.18}s">★</span>`
+  ).join("");
+}
+function finish() {
+  stopTimer();
+  const statsBefore = loadStats();
+  const hadWrongBefore = statsBefore.wrong.length;
+
+  const s = loadStats();
+  s.attempts += 1; s.seen += quizQuestions.length; s.correct += correct;
+  s.wrong = [...new Set([...s.wrong, ...wrongIds])];
+  const attemptedIds = quizQuestions.map(q => q.id);
+  attemptedIds.forEach(id => {
+    if (!wrongIds.includes(id)) s.wrong = s.wrong.filter(x => x !== id);
+  });
+  saveStats(s);
+
+  const wrong = quizQuestions.length - correct;
+  const pct = Math.round(correct / quizQuestions.length * 100);
+
+  award("first");
+  if (pct === 100 && quizQuestions.length >= 10) award("perfect");
+  if (s.correct >= 50) award("c50");
+  if (s.correct >= 200) award("c200");
+  if (hadWrongBefore >= 3 && s.wrong.length === 0) award("fixer");
+  if (speedMode && pct >= 80) award("fast");
+
+  $("quiz").classList.add("hidden");
+  $("result").classList.remove("hidden");
+  renderStars(pct);
+  $("rankMsg").textContent = rankMessage(pct);
+  $("score").textContent = `${correct} / ${quizQuestions.length}`;
+  $("correctCount").textContent = correct;
+  $("wrongCount").textContent = wrong;
+  $("percent").textContent = `${pct} %`;
+  $("streakCount").textContent = maxStreak;
+  $("xpGain").textContent = `+${xpQuiz} XP`;
+
+  const p = loadProfile(), i = rankIndex(p.xp), next = RANKS[i + 1];
+  if (next) {
+    const barPct = (p.xp - RANKS[i][0]) / (next[0] - RANKS[i][0]) * 100;
+    $("lvlLabel").textContent = `${RANKS[i][2]} ${RANKS[i][1]} → ${next[2]} ${next[1]} (${p.xp}/${next[0]} XP)`;
+    $("lvlBar").style.width = "0%";
+    setTimeout(() => { $("lvlBar").style.width = barPct + "%"; }, 60);
+  } else {
+    $("lvlLabel").textContent = "🌌 Najviši čin — legenda si!";
+    $("lvlBar").style.width = "100%";
+  }
+
+  if (pct >= 80) { bigConfetti(); sFanfare(); setMood("happy"); }
+  else if (pct >= 50) setMood("smile");
+  else setMood("oh");
+
+  $("retryWrongBtn").disabled = !wrongIds.length;
+  const wrongQs = quizQuestions.filter(q => wrongIds.includes(q.id));
+  $("review").innerHTML = wrongQs.length
+    ? `<h3>📚 Pitanja za ponavljanje</h3>` + wrongQs.map(q =>
+        `<div class="review-item"><b>${q.question}</b>` +
+        ((q.feedbackImage || q.image) ? `<div class="qimage small">${buildImage(q.feedbackImage || q.image)}</div>` : "<br>") +
+        `<span style="color:var(--muted)">Točan odgovor: ${q.answers[q.correct]}</span></div>`
+      ).join("")
+    : `<div class="feedback"><strong class="good">Odlično, sve je točno! 🎉</strong></div>`;
+  updateStatsText();
+}
+
+/* ============ gumbi ============ */
+$("startBtn").onclick = () => begin(filteredQuestions());
+$("wrongBtn").onclick = () => {
+  const ids = loadStats().wrong;
+  begin(allQuestions.filter(q => ids.includes(q.id)));
+};
+$("nextBtn").onclick = () => {
+  sClick();
+  if (current < quizQuestions.length - 1) { current++; renderQuestion(); }
+  else finish();
+};
+$("againBtn").onclick = () => {
+  sClick();
+  $("result").classList.add("hidden");
+  $("setup").classList.remove("hidden");
+  setMood("smile");
+  updateStatsText();
+};
+$("retryWrongBtn").onclick = () => begin(quizQuestions.filter(q => wrongIds.includes(q.id)));
+$("exitBtn").onclick = () => {
+  if (confirm("Prekinuti misiju i vratiti se na postavke? Rezultat ove misije neće biti spremljen, ali osvojeni XP ostaje.")) {
+    stopTimer();
+    $("quiz").classList.add("hidden");
+    $("setup").classList.remove("hidden");
+    setMood("smile");
+    updateStatsText();
+  }
+};
+$("resetStatsBtn").onclick = () => {
+  if (confirm("Obrisati sav napredak (statistiku, XP i značke) na ovom uređaju?")) {
+    localStorage.removeItem("astroStats");
+    localStorage.removeItem("astroProfile");
+    updateStatsText(); renderLevel(); renderBadges();
+    toast("🧹 Napredak je obrisan. Nova avantura počinje!");
+  }
+};
+
+/* ============ start ============ */
+fetch("questions.json")
+  .then(r => r.json())
+  .then(data => {
+    allQuestions = data;
+    populateTopics();
+    updateStatsText();
+  })
+  .catch(() => {
+    document.body.innerHTML = '<div style="padding:2rem;color:white;font-family:sans-serif">Nije moguće učitati questions.json. Aplikaciju pokreni preko lokalnog ili web servera.</div>';
+  });
+
+renderSoundBtn();
+renderLevel();
+renderBadges();
+startFacts();
+setMood("smile");
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("service-worker.js").catch(() => {}));
+}
+</script>
+</body>
+</html>

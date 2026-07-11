@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd93b"/>
+      <stop offset="1" stop-color="#ff9f43"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#080b24"/>
+  <circle cx="96" cy="110" r="7" fill="#ffe9a8"/>
+  <circle cx="420" cy="90" r="5" fill="#cfe8ff"/>
+  <circle cx="440" cy="360" r="6" fill="#ffffff"/>
+  <circle cx="80" cy="400" r="5" fill="#d9ccff"/>
+  <circle cx="380" cy="440" r="4" fill="#ffe9a8"/>
+  <path d="M120 170 l10 24 24 10 -24 10 -10 24 -10 -24 -24 -10 24 -10 z" fill="#ffd93b"/>
+  <g transform="rotate(40 256 256)">
+    <path d="M216 168 Q256 60 296 168 Z" fill="#ff5e78"/>
+    <rect x="216" y="150" width="80" height="190" rx="40" fill="#f6f7ff"/>
+    <circle cx="256" cy="216" r="27" fill="#7fdcff" stroke="#2c3670" stroke-width="9"/>
+    <path d="M216 288 L172 348 L216 330 Z" fill="#ff5e78"/>
+    <path d="M296 288 L340 348 L296 330 Z" fill="#ff5e78"/>
+    <path d="M234 340 Q256 402 278 340 Q256 358 234 340 Z" fill="url(#flame)"/>
+  </g>
+</svg>
