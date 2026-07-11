@@ -1,0 +1,258 @@
+/* Astro kviz v14 - thumb-first mobilni raspored */
+@media (max-width: 700px) {
+  :root {
+    --bottom-nav-h: 72px;
+    --safe-bottom: max(10px, env(safe-area-inset-bottom));
+  }
+
+  /* ---------- kompaktno zaglavlje ---------- */
+  body.screen-setup header {
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 8px;
+    min-height: 66px;
+  }
+  body.screen-setup #mascot {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+  }
+  body.screen-setup header > div:nth-child(2) {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+  body.screen-setup h1 {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    margin: 0;
+    font-size: 1.32rem;
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+  body.screen-setup h1 .grade {
+    white-space: nowrap;
+    font-size: .58em;
+  }
+  body.screen-setup .sub {
+    margin-top: 3px;
+    font-size: .72rem;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body.screen-setup .hdr-right {
+    flex: 0 0 auto;
+    gap: 4px;
+  }
+  body.screen-setup .lvlpill {
+    max-width: 38vw;
+    padding: 5px 7px;
+    font-size: .66rem;
+  }
+  body.screen-setup .iconbtn {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* ---------- setup kao prava mobilna aplikacija ---------- */
+  body.screen-setup {
+    overflow: hidden !important;
+  }
+  body.screen-setup .wrap {
+    height: 100dvh;
+    max-height: 100dvh;
+    min-height: 0;
+    overflow: hidden;
+    padding: max(6px, env(safe-area-inset-top)) 7px calc(var(--bottom-nav-h) + var(--safe-bottom) + 8px);
+  }
+  body.screen-setup #setup.card {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 11px;
+  }
+
+  /* Donja navigacija za palac */
+  body.screen-setup .setup-tabs {
+    position: fixed;
+    z-index: 100;
+    left: 10px;
+    right: 10px;
+    bottom: var(--safe-bottom);
+    height: var(--bottom-nav-h);
+    margin: 0;
+    padding: 6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    border: 2px solid #33427f;
+    border-radius: 22px;
+    background: rgba(8, 13, 43, .96);
+    box-shadow: 0 16px 38px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.05);
+    backdrop-filter: blur(14px);
+  }
+  body.screen-setup .setup-tab {
+    min-height: 0;
+    border-radius: 16px;
+    font-size: .9rem;
+    font-weight: 900;
+    color: #cbd5ff;
+  }
+  body.screen-setup .setup-tab.active {
+    color: #fff;
+    background: linear-gradient(135deg, #725dff, #2f8de9);
+    box-shadow: 0 7px 18px rgba(65, 114, 255, .34);
+  }
+
+  body.screen-setup .mission-pane,
+  body.screen-setup .progress-pane {
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+  body.screen-setup .mission-pane {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  body.screen-setup .progress-pane {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: 8px;
+  }
+
+  /* Zanimljivost ostaje gore, kontrole idu u zonu palca */
+  body.screen-setup .bubble {
+    flex: 0 0 auto;
+    margin-bottom: 8px;
+    padding: 7px 9px;
+    font-size: .74rem;
+    line-height: 1.28;
+  }
+  body.screen-setup #setup .grid {
+    margin-top: auto;
+    gap: 8px;
+  }
+  body.screen-setup .advanced-toggle {
+    margin-top: 9px;
+    min-height: 48px;
+  }
+  body.screen-setup .start-actions {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  body.screen-setup #startBtn {
+    min-height: 58px;
+  }
+  body.screen-setup #retryWrongBtn {
+    min-height: 50px;
+  }
+  body.screen-setup .mission-pane:has(.advanced-panel:not(.hidden)) {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 2px;
+  }
+  body.screen-setup .mission-pane:has(.advanced-panel:not(.hidden)) #setup .grid {
+    margin-top: 0;
+  }
+
+  /* ---------- kviz: pitanje gore, odgovori u thumb zoni ---------- */
+  body.screen-quiz .question-pane {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+  }
+  body.screen-quiz .question {
+    flex: 0 0 auto;
+    margin: 0 0 8px;
+  }
+  body.screen-quiz .qimage {
+    flex: 0 1 auto;
+  }
+  body.screen-quiz .answers,
+  body.screen-quiz.short-answers .answers {
+    flex: 0 0 auto;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: none !important;
+    grid-auto-rows: minmax(64px, auto);
+    gap: 8px;
+    max-height: 47dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 2px 1px 1px;
+  }
+
+  /* Kompaktna lista umjesto velikih tileova */
+  body.screen-quiz .answer,
+  body.screen-quiz.long-answers .answer {
+    min-height: 64px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 10px 13px;
+    border-radius: 17px;
+    border: 2px solid #33427f;
+    background: linear-gradient(180deg, rgba(13,20,61,.98), rgba(18,27,82,.98));
+    text-align: left;
+    font-size: clamp(.98rem, 4vw, 1.08rem);
+    line-height: 1.18;
+    font-weight: 800;
+    overflow: visible;
+  }
+  body.screen-quiz .answer .letter,
+  body.screen-quiz.long-answers .answer .letter {
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    font-size: .92rem;
+    font-weight: 900;
+  }
+  body.screen-quiz .answer > span:last-child,
+  body.screen-quiz.long-answers .answer > span:last-child {
+    display: block;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: visible;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    color: #f6f8ff;
+  }
+  body.screen-quiz .answer.correct {
+    border-color: #47e694;
+    background: linear-gradient(180deg, rgba(18,72,52,.96), rgba(12,53,39,.98));
+  }
+  body.screen-quiz .answer.wrong {
+    border-color: #ff6c88;
+    background: linear-gradient(180deg, rgba(84,24,42,.96), rgba(61,17,31,.98));
+  }
+
+  /* Na nižim ekranima dodatno zbije bez gubitka čitljivosti */
+  @media (max-height: 720px) {
+    body.screen-setup header { min-height: 58px; margin-bottom: 5px; }
+    body.screen-setup #mascot { width: 40px; height: 40px; flex-basis: 40px; }
+    body.screen-setup h1 { font-size: 1.18rem; }
+    body.screen-setup .sub { display: none; }
+    body.screen-setup .bubble { font-size: .69rem; margin-bottom: 5px; }
+    body.screen-setup .count-choice { min-height: 50px; }
+    body.screen-quiz .answers,
+    body.screen-quiz.short-answers .answers { gap: 6px; max-height: 50dvh; }
+    body.screen-quiz .answer,
+    body.screen-quiz.long-answers .answer { min-height: 58px; padding: 8px 11px; }
+    body.screen-quiz .answer .letter,
+    body.screen-quiz.long-answers .answer .letter { width: 34px; height: 34px; flex-basis: 34px; }
+  }
+}
