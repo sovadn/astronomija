@@ -1,4 +1,4 @@
-const CACHE = "astro-kviz-v18";
+const CACHE = "astro-kviz-v19";
 const ASSETS = [
   "./",
   "./index.html",
@@ -34,7 +34,7 @@ self.addEventListener("activate", event => {
   })());
 });
 
-const ASSET_VERSION = "18";
+const ASSET_VERSION = "19";
 
 function injectMobileAssets(html) {
   if (!html.includes("mobile-v9.css")) {
