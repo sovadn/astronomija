@@ -1,0 +1,38 @@
+name: Embed visual improvements v15
+
+on:
+  push:
+    paths:
+      - .github/workflows/embed-mobile-v15.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Load v15 CSS and JavaScript directly
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path('index.html')
+          html = path.read_text(encoding='utf-8')
+          html = re.sub(r'\s*<link rel="stylesheet" href="mobile-v15\.css\?v=[^"]+">', '', html)
+          html = re.sub(r'\s*<script src="mobile-v15\.js\?v=[^"]+"></script>', '', html)
+          html = re.sub(r'\s*<script src="mobile-v15-fix\.js\?v=[^"]+"></script>', '', html)
+          html = html.replace('</head>', '<link rel="stylesheet" href="mobile-v15.css?v=15-1">\n</head>')
+          html = html.replace('</body>', '<script src="mobile-v15.js?v=15-1"></script>\n<script src="mobile-v15-fix.js?v=15-1"></script>\n</body>')
+          path.write_text(html, encoding='utf-8')
+          PY
+
+      - name: Commit updated index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Load visual study improvements v15"
+          git push
