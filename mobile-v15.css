@@ -1,0 +1,629 @@
+/* Astro kviz v15 - poliran mobilni UI */
+.ui-icon {
+  width: 1.15em;
+  height: 1.15em;
+  flex: 0 0 auto;
+  vertical-align: -0.16em;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --muted-strong: #c7d1ef;
+    --neutral-button: #111944;
+    --neutral-border: #3a4b89;
+  }
+
+  /* ---------- zaglavlje bez gužve ---------- */
+  body.screen-setup header {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr) 38px;
+    align-items: center;
+    gap: 9px;
+    min-height: 58px;
+    margin-bottom: 7px;
+  }
+  body.screen-setup #mascot {
+    width: 46px;
+    height: 46px;
+    flex-basis: auto;
+  }
+  body.screen-setup header .titles {
+    min-width: 0;
+  }
+  body.screen-setup header h1 {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    min-width: 0;
+    margin: 0;
+    font-size: 1.28rem;
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+  body.screen-setup header h1 .grade {
+    font-size: .57em;
+    white-space: nowrap;
+  }
+  body.screen-setup header .sub {
+    display: block;
+    margin-top: 4px;
+    color: var(--muted-strong);
+    font-size: .72rem;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body.screen-setup .hdr-right {
+    width: 38px;
+    min-width: 38px;
+  }
+  body.screen-setup .hdr-right .lvlpill {
+    display: none !important;
+  }
+  body.screen-setup #soundBtn {
+    width: 38px;
+    height: 38px;
+    padding: 9px;
+    border-radius: 13px;
+    color: #d8e6ff;
+  }
+  body.screen-setup #soundBtn .ui-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* ---------- glavni tabovi ostaju dolje ---------- */
+  body.screen-setup .setup-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  body.screen-setup .setup-tab .ui-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* ---------- ilustracija popunjava sredinu, ali ne smeta palcu ---------- */
+  body.screen-setup .mission-art {
+    flex: 1 1 auto;
+    min-height: 72px;
+    max-height: 170px;
+    display: grid;
+    place-items: center;
+    color: #91a9ff;
+    opacity: .9;
+    pointer-events: none;
+  }
+  body.screen-setup .mission-art svg {
+    width: min(78vw, 310px);
+    max-height: 100%;
+    filter: drop-shadow(0 14px 30px rgba(63, 75, 190, .28));
+  }
+  body.screen-setup .mission-pane .bubble {
+    margin-bottom: 0;
+  }
+  body.screen-setup #setup .grid {
+    margin-top: 0 !important;
+  }
+
+  /* ---------- glavni gumbi i ikone ---------- */
+  body.screen-setup #startBtn,
+  body.screen-setup #wrongBtn,
+  body.screen-setup #resetStatsBtn,
+  body.screen-result #againBtn,
+  body.screen-result #retryWrongBtn,
+  body.screen-quiz #nextBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+  }
+  body.screen-setup #startBtn .ui-icon,
+  body.screen-setup #wrongBtn .ui-icon,
+  body.screen-result button .ui-icon,
+  body.screen-quiz #nextBtn .ui-icon {
+    width: 20px;
+    height: 20px;
+  }
+  body.screen-setup .advanced-label,
+  body.screen-setup .switch > span:last-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  body.screen-setup .advanced-label .ui-icon,
+  body.screen-setup .switch .ui-icon {
+    width: 19px;
+    height: 19px;
+    color: #9ccfff;
+  }
+  body.screen-setup .switch > span:last-child > span {
+    display: grid;
+  }
+
+  /* ---------- XP samo na Napretku ---------- */
+  body.screen-setup .profile-card {
+    margin-bottom: 10px;
+    padding: 13px;
+    border: 2px solid #42549a;
+    border-radius: 18px;
+    background:
+      radial-gradient(circle at 90% 0%, rgba(80, 190, 255, .15), transparent 38%),
+      linear-gradient(155deg, #17225c, #0e153f);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 10px 24px rgba(0,0,0,.24);
+  }
+  body.screen-setup .profile-rank-row {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+  body.screen-setup .profile-rank-icon {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    color: #ffe073;
+    background: rgba(255, 215, 82, .11);
+    border: 1px solid rgba(255, 218, 95, .35);
+  }
+  body.screen-setup .profile-rank-icon .ui-icon {
+    width: 23px;
+    height: 23px;
+  }
+  body.screen-setup .profile-rank-copy {
+    display: grid;
+    gap: 2px;
+  }
+  body.screen-setup .profile-rank-copy strong {
+    color: #fff;
+    font-size: 1rem;
+  }
+  body.screen-setup .profile-rank-copy span {
+    color: #cbd5f4;
+    font-size: .79rem;
+  }
+  body.screen-setup .profile-xp-track {
+    height: 8px;
+    margin-top: 11px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #080d2d;
+    border: 1px solid #334581;
+  }
+  body.screen-setup #profileXpFill {
+    height: 100%;
+    width: 0;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #55d8ff, #7d5cff, #ffd95b);
+    box-shadow: 0 0 12px rgba(85, 216, 255, .45);
+    transition: width .55s ease;
+  }
+  body.screen-setup .profile-xp-next {
+    margin-top: 6px;
+    color: #bfc9e8;
+    font-size: .7rem;
+    text-align: right;
+  }
+
+  /* ---------- značke s motivacijom ---------- */
+  body.screen-setup .progress-pane .badges {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  body.screen-setup .badge.badge-card {
+    min-width: 0;
+    width: 100%;
+    padding: 10px 11px;
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    border: 1.5px solid #35467f;
+    background: linear-gradient(155deg, #101844, #0b1235);
+    color: #eef3ff;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.035);
+  }
+  body.screen-setup .badge.badge-card.earned {
+    border-color: #785cff;
+    background: linear-gradient(155deg, rgba(72, 45, 140, .72), rgba(31, 27, 87, .9));
+  }
+  body.screen-setup .badge.badge-card.locked {
+    opacity: 1;
+    filter: none;
+  }
+  body.screen-setup .badge-art {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    color: #8090bd;
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(145, 161, 210, .18);
+  }
+  body.screen-setup .badge-card.earned .badge-art {
+    color: #ffe173;
+    background: rgba(255, 215, 84, .11);
+    border-color: rgba(255, 221, 104, .36);
+  }
+  body.screen-setup .badge-svg {
+    width: 22px;
+    height: 22px;
+  }
+  body.screen-setup .badge-copy {
+    min-width: 0;
+    display: grid;
+    gap: 3px;
+  }
+  body.screen-setup .badge-copy strong {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #f5f7ff;
+    font-size: .84rem;
+    line-height: 1.15;
+  }
+  body.screen-setup .badge-copy small {
+    color: #bac5e5;
+    font-size: .68rem;
+    line-height: 1.2;
+  }
+  body.screen-setup .badge-check {
+    display: inline-grid;
+    place-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: #85f1b8;
+    background: rgba(60, 202, 126, .14);
+  }
+  body.screen-setup .badge-check .ui-icon {
+    width: 12px;
+    height: 12px;
+  }
+  body.screen-setup .badge-progress {
+    height: 5px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #080d29;
+    border: 1px solid rgba(86, 103, 160, .42);
+  }
+  body.screen-setup .badge-progress > span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #575cff, #4bcaff);
+  }
+  body.screen-setup .badge-card.earned .badge-progress > span {
+    background: linear-gradient(90deg, #7c5cff, #ffd75d);
+  }
+
+  /* Destruktivna radnja više nije golemi gumb */
+  body.screen-setup .progress-actions {
+    margin: 14px 0 4px;
+    text-align: center;
+  }
+  body.screen-setup #resetStatsBtn {
+    width: auto !important;
+    min-height: 0 !important;
+    padding: 7px 10px !important;
+    border: 0 !important;
+    border-radius: 10px !important;
+    background: transparent !important;
+    color: #ff8ba3 !important;
+    box-shadow: none !important;
+    font-size: .72rem !important;
+    font-weight: 700 !important;
+  }
+  body.screen-setup #resetStatsBtn .ui-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* ---------- neutralni odgovori ---------- */
+  body.screen-quiz .answer .letter,
+  body.screen-quiz .answer:nth-child(1) .letter,
+  body.screen-quiz .answer:nth-child(2) .letter,
+  body.screen-quiz .answer:nth-child(3) .letter,
+  body.screen-quiz .answer:nth-child(4) .letter {
+    color: #dbe5ff !important;
+    background: #1c285b !important;
+    border: 1px solid #4a5d9d !important;
+    box-shadow: none !important;
+  }
+  body.screen-quiz .answer {
+    background: linear-gradient(180deg, #111944, #0d153b) !important;
+    border-color: #3a4b89 !important;
+  }
+  body.screen-quiz .answer.correct {
+    background: linear-gradient(180deg, rgba(20, 76, 54, .98), rgba(12, 54, 39, .99)) !important;
+    border-color: #48e394 !important;
+  }
+  body.screen-quiz .answer.correct .letter {
+    color: #effff7 !important;
+    background: #207a54 !important;
+    border-color: #66efaa !important;
+  }
+  body.screen-quiz .answer.wrong {
+    background: linear-gradient(180deg, rgba(85, 26, 44, .98), rgba(58, 16, 31, .99)) !important;
+    border-color: #ff6e8a !important;
+  }
+  body.screen-quiz .answer.wrong .letter {
+    color: #fff3f6 !important;
+    background: #8c2e4b !important;
+    border-color: #ff879d !important;
+  }
+
+  /* ---------- konzistentne ikone u vrhu kviza ---------- */
+  body.screen-quiz .topbar .pill,
+  body.screen-quiz #nextBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  body.screen-quiz .topbar .ui-icon {
+    width: 15px;
+    height: 15px;
+  }
+  body.screen-quiz #exitBtn .ui-icon {
+    width: 18px;
+    height: 18px;
+  }
+  body.screen-quiz #rocket .ui-icon,
+  body.screen-quiz .goal .ui-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* ---------- objašnjenje kao mini-lekcija ---------- */
+  body.screen-quiz .explanation-pane {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+  }
+  body.screen-quiz .answer-summary {
+    margin-bottom: 7px;
+    padding: 10px;
+    display: grid;
+    gap: 8px;
+    border: 1.5px solid #3b4d8b;
+    background: linear-gradient(160deg, #111945, #0c1438);
+  }
+  body.screen-quiz .lesson-question-label {
+    color: #8fa1cf;
+    font-size: .62rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  body.screen-quiz .lesson-question {
+    color: #f7f8ff;
+    font-size: .9rem;
+    font-weight: 800;
+    line-height: 1.27;
+  }
+  body.screen-quiz .lesson-answer-stack {
+    display: grid;
+    gap: 6px;
+  }
+  body.screen-quiz .lesson-answer-row {
+    display: grid;
+    grid-template-columns: 27px minmax(0, 1fr);
+    align-items: center;
+    gap: 8px;
+    padding: 7px 8px;
+    border-radius: 12px;
+    border: 1px solid;
+  }
+  body.screen-quiz .lesson-answer-row > .ui-icon {
+    width: 18px;
+    height: 18px;
+    justify-self: center;
+  }
+  body.screen-quiz .lesson-answer-row span {
+    display: grid;
+    gap: 1px;
+    min-width: 0;
+  }
+  body.screen-quiz .lesson-answer-row small {
+    font-size: .6rem;
+    color: #c3cbea;
+  }
+  body.screen-quiz .lesson-answer-row b {
+    color: #fff;
+    font-size: .78rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+  body.screen-quiz .correct-row {
+    color: #7cf0b2;
+    border-color: rgba(72, 227, 148, .48);
+    background: rgba(24, 106, 71, .22);
+  }
+  body.screen-quiz .wrong-row {
+    color: #ff829a;
+    border-color: rgba(255, 105, 132, .48);
+    background: rgba(130, 36, 65, .22);
+  }
+
+  body.screen-quiz .feedback {
+    flex: 1 1 auto !important;
+    max-height: none !important;
+    min-height: 0;
+    padding: 10px !important;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    border: 1.5px solid #3b4d8b;
+    background:
+      radial-gradient(circle at 88% 8%, rgba(81, 126, 255, .11), transparent 36%),
+      linear-gradient(160deg, #111945, #0c1438);
+  }
+  body.screen-quiz .lesson-block {
+    display: grid;
+    gap: 5px;
+  }
+  body.screen-quiz .lesson-block h3 {
+    margin: 0;
+    color: #f3d96e;
+    font-size: .84rem;
+  }
+  body.screen-quiz .lesson-block p {
+    margin: 0;
+    color: #f2f5ff;
+    font-size: .9rem;
+    line-height: 1.42;
+  }
+  body.screen-quiz .bonus-fact {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    align-items: start;
+    gap: 8px;
+    padding: 9px;
+    border-radius: 13px;
+    color: #dfe7ff;
+    background: rgba(96, 80, 190, .18);
+    border: 1px solid rgba(146, 125, 255, .36);
+    font-size: .73rem;
+    line-height: 1.35;
+  }
+  body.screen-quiz .bonus-icon {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    color: #ffe16f;
+    background: rgba(255, 222, 98, .1);
+  }
+  body.screen-quiz .bonus-icon .ui-icon {
+    width: 18px;
+    height: 18px;
+  }
+  body.screen-quiz .bonus-fact > span:last-child {
+    display: grid;
+    gap: 2px;
+  }
+  body.screen-quiz .bonus-fact strong {
+    color: #ffe27b;
+    font-size: .66rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+  body.screen-quiz .lesson-visual {
+    margin: 0 auto !important;
+    border: 1px solid #36477f;
+    background: #070c29;
+  }
+  body.screen-quiz .lesson-visual.qimage {
+    width: 100%;
+    max-height: 26dvh;
+  }
+  body.screen-quiz .lesson-visual.qimage svg,
+  body.screen-quiz .lesson-visual.qimage img {
+    max-height: 23dvh;
+  }
+  body.screen-quiz .lesson-planet {
+    position: relative;
+    width: 100%;
+    min-height: 110px;
+    overflow: hidden;
+    border-radius: 14px;
+  }
+  body.screen-quiz .lesson-planet-core {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 58px;
+    height: 58px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle at 32% 28%, #79e1ff, #6c5cff 50%, #252767 100%);
+    box-shadow: 0 0 28px rgba(93, 116, 255, .38);
+  }
+  body.screen-quiz .lesson-orbit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 52px;
+    transform: translate(-50%, -50%) rotate(-12deg);
+    border: 2px solid rgba(190, 205, 255, .5);
+    border-radius: 50%;
+  }
+  body.screen-quiz .lesson-moon {
+    position: absolute;
+    left: calc(50% + 64px);
+    top: calc(50% - 12px);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ffe288;
+    box-shadow: 0 0 12px rgba(255, 225, 130, .5);
+  }
+
+  /* ---------- star burst ---------- */
+  .star-burst {
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 43%;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+  .star-burst span {
+    --a: calc(var(--i) * 40deg);
+    position: absolute;
+    inset: 0;
+    color: #ffe36e;
+    animation: starPop .85s ease-out forwards;
+    transform: rotate(var(--a)) translateY(0) scale(.25);
+  }
+  .star-burst .ui-icon {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+  @keyframes starPop {
+    0% { opacity: 0; transform: rotate(var(--a)) translateY(0) scale(.2); }
+    25% { opacity: 1; }
+    100% { opacity: 0; transform: rotate(var(--a)) translateY(-90px) scale(1); }
+  }
+
+  /* ---------- bolji kontrast sitnog teksta ---------- */
+  body.screen-setup .statline,
+  body.screen-setup label.fld,
+  body.screen-setup .switch small,
+  body.screen-quiz .chip,
+  body.screen-result .lvllabel {
+    color: var(--muted-strong) !important;
+  }
+
+  @media (max-height: 720px) {
+    body.screen-setup .mission-art {
+      min-height: 42px;
+      max-height: 92px;
+    }
+    body.screen-quiz .lesson-question {
+      font-size: .82rem;
+    }
+    body.screen-quiz .lesson-answer-row {
+      padding: 6px 7px;
+    }
+    body.screen-quiz .lesson-block p {
+      font-size: .82rem;
+    }
+    body.screen-quiz .lesson-planet {
+      min-height: 78px;
+    }
+  }
+}
