@@ -1,4 +1,4 @@
-const CACHE = "astro-kviz-v15";
+const CACHE = "astro-kviz-v15-1";
 const ASSETS = [
   "./",
   "./index.html",
@@ -10,7 +10,8 @@ const ASSETS = [
   "./mobile-v13.css",
   "./mobile-v14.css",
   "./mobile-v15.css",
-  "./mobile-v15.js"
+  "./mobile-v15.js",
+  "./mobile-v15-fix.js"
 ];
 
 self.addEventListener("install", event => {
@@ -30,26 +31,30 @@ self.addEventListener("activate", event => {
 });
 
 function injectMobileAssets(html) {
-  html = html.replace(/<link rel="stylesheet" href="mobile-v15\.css\?v=\d+">/g, "");
-  html = html.replace(/<script src="mobile-v15\.js\?v=\d+"><\/script>/g, "");
+  html = html.replace(/<link rel="stylesheet" href="mobile-v15\.css\?v=[^"]+">/g, "");
+  html = html.replace(/<script src="mobile-v15\.js\?v=[^"]+"><\/script>/g, "");
+  html = html.replace(/<script src="mobile-v15-fix\.js\?v=[^"]+"><\/script>/g, "");
 
   if (!html.includes("mobile-v9.css")) {
-    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v9.css?v=15"></head>');
+    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v9.css?v=15-1"></head>');
   }
   if (!html.includes("mobile-v13.css")) {
-    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v13.css?v=15"></head>');
+    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v13.css?v=15-1"></head>');
   }
   if (!html.includes("mobile-v14.css")) {
-    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v14.css?v=15"></head>');
+    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v14.css?v=15-1"></head>');
   }
   if (!html.includes("mobile-v15.css")) {
-    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v15.css?v=15"></head>');
+    html = html.replace("</head>", '<link rel="stylesheet" href="mobile-v15.css?v=15-1"></head>');
   }
   if (!html.includes("mobile-v9.js")) {
-    html = html.replace("</body>", '<script src="mobile-v9.js?v=15"></script></body>');
+    html = html.replace("</body>", '<script src="mobile-v9.js?v=15-1"></script></body>');
   }
   if (!html.includes("mobile-v15.js")) {
-    html = html.replace("</body>", '<script src="mobile-v15.js?v=15"></script></body>');
+    html = html.replace("</body>", '<script src="mobile-v15.js?v=15-1"></script></body>');
+  }
+  if (!html.includes("mobile-v15-fix.js")) {
+    html = html.replace("</body>", '<script src="mobile-v15-fix.js?v=15-1"></script></body>');
   }
   return html;
 }
